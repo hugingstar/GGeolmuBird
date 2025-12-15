@@ -421,7 +421,7 @@ if not data_df.empty:
             y=data_df_filtered['Close'], 
             mode='lines', 
             name='Close', 
-            line=dict(color='green', width=5)  
+            line=dict(color='forestgreen', width=5)  
         ),
 
         go.Scatter(
@@ -429,7 +429,7 @@ if not data_df.empty:
             y=data_df_filtered['MA5'], 
             mode='lines', 
             name='MA5', 
-            line=dict(color='red', width=5)  
+            line=dict(color='silver', width=5)  
         ),
 
         go.Scatter(
@@ -437,7 +437,7 @@ if not data_df.empty:
             y=data_df_filtered['MA60'], 
             mode='lines', 
             name='MA60', 
-            line=dict(color='gray', width=5)  
+            line=dict(color='darkgrey', width=5)  
         ),
 
         go.Scatter(
@@ -445,7 +445,7 @@ if not data_df.empty:
             y=data_df_filtered['MA120'], 
             mode='lines', 
             name='MA120', 
-            line=dict(color='darkgray', width=5)  
+            line=dict(color='dimgray', width=5)  
         ),
 
         go.Scatter(
@@ -453,7 +453,7 @@ if not data_df.empty:
             y=data_df_filtered['MA224'], 
             mode='lines', 
             name='MA224', 
-            line=dict(color='black', width=5)  
+            line=dict(color='maroon', width=5)  
         ),
 
         go.Scatter(
