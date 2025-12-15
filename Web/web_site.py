@@ -6,30 +6,19 @@ import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 import ta
 import numpy as np
+import stock_mapping
 
 # 페이지 설정은 맨 처음 나와야 합니다.
 st.set_page_config(layout="wide", page_title="GGeolmu Bird")
 
 # 종목 이름과 종목 코드를 매핑하는 딕셔너리 (예시)
 # 실제 서비스에서는 전체 종목 리스트를 API나 DB에서 가져와야 합니다.
-stock_map = {
-    "삼성전자": "005930",
-    "SK하이닉스": "000660",
-    "LG에너지솔루션": "373220",
-    "NAVER": "035420",
-    "카카오": "035720",
-    "삼성바이오로직스": "207940",
-    "현대차": "005380",
-    "기아": "000270",
-    "삼성SDI" : "006400",
-    "POSCO홀딩스": "005490",
-    "셀트리온": "068270",
-    "코웨이" : "021240",
-    "효성티앤씨" : "298020",
-    "F&F" : "383220",
-    "신세계인터내셔날" : "031430",
-    "메리츠증권" :"138040"
-}
+
+mmp = stock_mapping.mapped(path="Web/stock_list.csv")
+
+stock_map = mmp.output()
+
+print(stock_map)
 
 # 캐싱을 사용하여 데이터 로딩 속도를 개선합니다. (데이터가 변경되지 않는 한 재실행하지 않음)
 @st.cache_data
@@ -542,7 +531,7 @@ if not data_df.empty:
 
     fig_price.update_layout(
         yaxis_title="Signals",
-        height=200,
+        height=300,
         xaxis_rangeslider_visible=False,
         
         # 여백
