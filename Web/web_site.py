@@ -370,7 +370,7 @@ else:
 
 # --- (이후 데이터 기간 설정 및 분석 로직 계속) ---
 if stock_ticker:
-    st.sidebar.write(f"선택된 종목: **{stock_name}** ({stock_ticker})")
+    st.sidebar.write(f"선택된 종목:\n**{stock_name}**\n({stock_ticker})")
 else:
     st.sidebar.write("선택된 종목이 없습니다.")
 
@@ -389,7 +389,7 @@ else:
 # )
 
 # 종목 이름으로 종목 코드를 찾습니다.
-stock_ticker = stock_map_kospi.get(stock_name)
+# stock_ticker = stock_map_kospi.get(stock_name)s
 
 if not stock_ticker:
     st.error(f"'{stock_name}'에 해당하는 종목 코드를 찾을 수 없습니다. (지원되는 종목: {', '.join(stock_map_kospi.keys())})")
