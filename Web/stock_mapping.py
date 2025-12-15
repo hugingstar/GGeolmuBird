@@ -7,13 +7,13 @@ class mapped():
         # Mapping
         df_map = df_stock.set_index('Name')['Code']
         #Dict    
-        self.stock_map = self.stock_map = df_map.to_dict()
+        self.stock_map = df_map.to_dict()
 
     def output(self):
         return self.stock_map
 
 if __name__ == '__main__':
-    mmp = mapped(path="C:/Users/User/PycharmProjects/TRADE/Web/stock_list.csv")
+    mmp = mapped(path="C:/Users/User/PycharmProjects/GGEOLMUFBIRD/Web/stock_list.csv")
 
     stock_map = mmp.output()
 
