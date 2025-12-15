@@ -3,7 +3,7 @@ import pandas as pd
 class mapped():
     def __init__(self, path):
         #Stock dataframe
-        df_stock = pd.read_csv(path, encoding="cp949")
+        df_stock = pd.read_csv(path, encoding="utf-8-sig")
         # Mapping
         df_map = df_stock.set_index('Name')['Code']
         #Dict    
