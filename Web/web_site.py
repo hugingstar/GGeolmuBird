@@ -437,7 +437,23 @@ if not data_df.empty:
             y=data_df_filtered['MA60'], 
             mode='lines', 
             name='MA60', 
-            line=dict(color='orange', width=5)  
+            line=dict(color='gray', width=5)  
+        ),
+
+        go.Scatter(
+            x=data_df_filtered.index, 
+            y=data_df_filtered['MA120'], 
+            mode='lines', 
+            name='MA120', 
+            line=dict(color='darkgray', width=5)  
+        ),
+
+        go.Scatter(
+            x=data_df_filtered.index, 
+            y=data_df_filtered['MA224'], 
+            mode='lines', 
+            name='MA224', 
+            line=dict(color='black', width=5)  
         ),
 
         go.Scatter(
@@ -595,6 +611,9 @@ if not data_df.empty:
         st.markdown("#### CCI (Commodity Channel Index)")
         fig_cci = go.Figure(data=[
             go.Scatter(x=data_df_filtered.index, y=data_df_filtered['CCI'], mode='lines', name='CCI', line=dict(color='orange'))
+            go.Scatter(x=data_df_filtered.index, y=data_df_filtered['CCI3'], mode='lines', name='CCI3', line=dict(color='red'))
+            go.Scatter(x=data_df_filtered.index, y=data_df_filtered['CCI6'], mode='lines', name='CCI6', line=dict(color='green'))
+            go.Scatter(x=data_df_filtered.index, y=data_df_filtered['CCI9'], mode='lines', name='CCI9', line=dict(color='blue'))
         ])
         fig_cci.add_hline(y=100, line_dash="dash", line_color="red", annotation_text="+100", annotation_position="top left")
         fig_cci.add_hline(y=0, line_dash="dash", line_color="white", annotation_text="0", annotation_position="top left")
@@ -629,6 +648,9 @@ if not data_df.empty:
         st.markdown("#### RSI (Relative Strength Index)")
         fig_rsi = go.Figure(data=[
             go.Scatter(x=data_df_filtered.index, y=data_df_filtered['RSI'], mode='lines', name='RSI', line=dict(color='purple'))
+            go.Scatter(x=data_df_filtered.index, y=data_df_filtered['RSI3'], mode='lines', name='RSI3', line=dict(color='red'))    
+            go.Scatter(x=data_df_filtered.index, y=data_df_filtered['RSI6'], mode='lines', name='RSI6', line=dict(color='green'))
+            go.Scatter(x=data_df_filtered.index, y=data_df_filtered['RSI9'], mode='lines', name='RSI9', line=dict(color='blue'))
         ])
         fig_rsi.add_hline(y=70, line_dash="dash", line_color="red", annotation_text="과매수(70)", annotation_position="top left")
         fig_rsi.add_hline(y=50, line_dash="dash", line_color="white", annotation_text="50", annotation_position="top left")
