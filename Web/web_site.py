@@ -742,15 +742,15 @@ if not data_df.empty:
             range=[-1.1, 0]
         ),
 
-        legend=dict(
-            font=dict(size=18),
-            # 오른쪽 상단에 배치 (x=1, y=1)
-            x=0,
-            y=1,
-            orientation="h",
-            # 범례 상자의 오른쪽 상단 모서리를 (1, 1) 좌표에 고정
-            xanchor='left',
-            yanchor='top')
+        # legend=dict(
+        #     font=dict(size=18),
+        #     # 오른쪽 상단에 배치 (x=1, y=1)
+        #     x=0,
+        #     y=1,
+        #     orientation="h",
+        #     # 범례 상자의 오른쪽 상단 모서리를 (1, 1) 좌표에 고정
+        #     xanchor='left',
+        #     yanchor='top')
         )
         st.plotly_chart(fig_mdd, use_container_width=True)
     
@@ -772,15 +772,15 @@ if not data_df.empty:
             tickfont=dict(size=16)
         ),
 
-        legend=dict(
-            font=dict(size=18),
-            # 오른쪽 상단에 배치 (x=1, y=1)
-            x=0,
-            y=1,
-            orientation="h",
-            # 범례 상자의 오른쪽 상단 모서리를 (1, 1) 좌표에 고정
-            xanchor='left',
-            yanchor='top')
+        # legend=dict(
+        #     font=dict(size=18),
+        #     # 오른쪽 상단에 배치 (x=1, y=1)
+        #     x=0,
+        #     y=1,
+        #     orientation="h",
+        #     # 범례 상자의 오른쪽 상단 모서리를 (1, 1) 좌표에 고정
+        #     xanchor='left',
+        #     yanchor='top')
         )
         st.plotly_chart(fig_obv, use_container_width=True)
 
