@@ -214,6 +214,7 @@ def calculate_indicators(data):
 
     # Moving average
     data["MA5"] = data["Close"].rolling(window=5).mean()
+    data["MA10"] = data["Close"].rolling(window=5).mean()
     data["MA50"] = data["Close"].rolling(window=50).mean()
     data["MA60"] = data["Close"].rolling(window=60).mean()
     data["MA120"] = data["Close"].rolling(window=120).mean()
@@ -248,13 +249,13 @@ def calculate_indicators(data):
     # 다이버전스(롤링) — MA5 기준으로 계산
     rsi_rollback = 90
     rsi_bull, rsi_bear = rsi_divergence_rolling(
-        price=data["MA5"], rsi=data["RSI"], lookback=rsi_rollback)
+        price=data["MA10"], rsi=data["RSI9"], lookback=rsi_rollback)
     data["RSI_BullDiv"] = rsi_bull
     data["RSI_BearDiv"] = rsi_bear
 
     rsi_hidden_rollback = 180
     hidden_bull, hidden_bear = rsi_hidden_divergence_rolling(
-        price=data["MA5"], rsi=data["RSI"], lookback=rsi_hidden_rollback)
+        price=data["MA10"], rsi=data["RSI9"], lookback=rsi_hidden_rollback)
     data["RSI_Hidden_BullDiv"] = hidden_bull
     data["RSI_Hidden_BearDiv"] = hidden_bear
 
@@ -489,7 +490,7 @@ if not data_df.empty:
             hovertemplate = 
                     '<b>Date:</b> %{x|%Y-%m-%d}<br>' +
                     '<b>Close:</b> %{y:,.0f} KRW<br>' +
-                    '<b>Signal:</b> Bull signal (강세)<extra></extra>'
+                    '<b>Signal:</b> Bull signal<extra></extra>'
                     ),
 
         go.Scatter(
@@ -501,7 +502,7 @@ if not data_df.empty:
             hovertemplate = 
                     '<b>Date:</b> %{x|%Y-%m-%d}<br>' +
                     '<b>Close:</b> %{y:,.0f} KRW<br>' +
-                    '<b>Signal:</b> Sell signal (강세)<extra></extra>'
+                    '<b>Signal:</b> Sell signal<extra></extra>'
                     ),
         
         go.Scatter(
