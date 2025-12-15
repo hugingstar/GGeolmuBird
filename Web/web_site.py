@@ -650,6 +650,8 @@ if not data_df.empty:
         )
         st.plotly_chart(fig_rsi, use_container_width=True)
 
+    st.markdown("---")
+
     col3, col4 = st.columns(2)
 
     # --- 3열: MACD ---
@@ -785,10 +787,6 @@ if not data_df.empty:
             yanchor='top')
         )
         st.plotly_chart(fig_cci, use_container_width=True)
-
-
-
-
 
 
 
