@@ -484,7 +484,7 @@ if not data_df.empty:
             x=bull_div_signals.index, 
             y=bull_div_signals['Close'], # 종가 그래프 위에 표시
             mode='markers', 
-            name='RSI BullDiv Signal', 
+            name='Bull Signal', 
             marker=dict(color='red', size=20, symbol='triangle-up'),
             # hovertemplate = 
             #         '<b>Date:</b> %{x|%Y-%m-%d}<br>' +
@@ -508,7 +508,7 @@ if not data_df.empty:
             x=hidden_bull_signals.index, 
             y=hidden_bull_signals['Close'], # 종가 그래프 위에 표시
             mode='markers', 
-            name='RSI BullDiv Signal', 
+            name='Hidden Bull', 
             marker=dict(color='orange', size=20, symbol='triangle-up'),
             # hovertemplate = 
             #         '<b>Date:</b> %{x|%Y-%m-%d}<br>' +
@@ -517,10 +517,10 @@ if not data_df.empty:
                     ),
         
         go.Scatter(
-            x=hidden_bull_signals.index, 
-            y=hidden_bull_signals['Close'], # 종가 그래프 위에 표시
+            x=hidden_bear_signals.index, 
+            y=hidden_bear_signals['Close'], # 종가 그래프 위에 표시
             mode='markers', 
-            name='RSI BullDiv Signal', 
+            name='Hidden Bear', 
             marker=dict(color='royalblue', size=20, symbol='triangle-down'),
             # hovertemplate = 
             #         '<b>Date:</b> %{x|%Y-%m-%d}<br>' +
