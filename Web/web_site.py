@@ -249,13 +249,13 @@ def calculate_indicators(data):
     # 다이버전스(롤링) — MA5 기준으로 계산
     rsi_rollback = 90
     rsi_bull, rsi_bear = rsi_divergence_rolling(
-        price=data["MA10"], rsi=data["RSI9"], lookback=rsi_rollback)
+        price=data["MA5"], rsi=data["RSI6"], lookback=rsi_rollback)
     data["RSI_BullDiv"] = rsi_bull
     data["RSI_BearDiv"] = rsi_bear
 
     rsi_hidden_rollback = 180
     hidden_bull, hidden_bear = rsi_hidden_divergence_rolling(
-        price=data["MA10"], rsi=data["RSI9"], lookback=rsi_hidden_rollback)
+        price=data["MA5"], rsi=data["RSI6"], lookback=rsi_hidden_rollback)
     data["RSI_Hidden_BullDiv"] = hidden_bull
     data["RSI_Hidden_BearDiv"] = hidden_bear
 
