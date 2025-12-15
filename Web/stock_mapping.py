@@ -2,10 +2,11 @@ import pandas as pd
 
 class mapped():
     def __init__(self, path):
+        #Stock dataframe
         df_stock = pd.read_csv(path, encoding="cp949")
-        
+        # Mapping
         df_map = df_stock.set_index('Name')['Code']
-
+        #Dict    
         self.stock_map = self.stock_map = df_map.to_dict()
 
     def output(self):
