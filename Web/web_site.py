@@ -461,7 +461,7 @@ if not data_df.empty:
             y=data_df_filtered['BB_Upper'], 
             mode='lines', 
             name='BB Upper', 
-            line=dict(color='gray', width=3)  
+            line=dict(color='indianred', width=3)  
         ),
 
         go.Scatter(
@@ -469,7 +469,7 @@ if not data_df.empty:
             y=data_df_filtered['BB_Lower'], 
             mode='lines', 
             name='BB Lower', 
-            line=dict(color='gray', width=3)  
+            line=dict(color='royalblue', width=3)  
         )
 
     ])
