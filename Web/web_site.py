@@ -415,6 +415,8 @@ if not data_df.empty:
     data_df_filtered = data_df.copy()
 
     bull_div_signals = data_df_filtered[data_df_filtered['RSI_BullDiv'] == 1].copy()
+
+    sell_signals = data_df_filtered[data_df_filtered['Sell_Signal'] == 1].copy()
     
     # 2. 주가 Line Chart
     fig_price = go.Figure(data=[
@@ -425,18 +427,6 @@ if not data_df.empty:
             name='Close', 
             line=dict(color='forestgreen', width=5)  
         ),
-
-        go.Scatter(
-            x=bull_div_signals.index, 
-            y=bull_div_signals['Close'], # 종가 그래프 위에 표시
-            mode='markers', 
-            name='RSI BullDiv Signal', 
-            marker=dict(color='red', size=25, symbol='triangle-up'),
-            hovertemplate = 
-                    '<b>Date:</b> %{x|%Y-%m-%d}<br>' +
-                    '<b>Close:</b> %{y:,.0f} KRW<br>' +
-                    '<b>Signal:</b> RSI Bull Divergence (강세)<extra></extra>'),
-
 
         go.Scatter(
             x=data_df_filtered.index, 
@@ -484,7 +474,32 @@ if not data_df.empty:
             mode='lines', 
             name='BB Lower', 
             line=dict(color='royalblue', width=3)  
-        )
+        ),
+
+        go.Scatter(
+            x=bull_div_signals.index, 
+            y=bull_div_signals['Close'], # 종가 그래프 위에 표시
+            mode='markers', 
+            name='RSI BullDiv Signal', 
+            marker=dict(color='red', size=20, symbol='triangle-up'),
+            # hovertemplate = 
+            #         '<b>Date:</b> %{x|%Y-%m-%d}<br>' +
+            #         '<b>Close:</b> %{y:,.0f} KRW<br>' +
+            #         '<b>Signal:</b> RSI Bull Divergence (강세)<extra></extra>'
+                    ),
+
+        go.Scatter(
+            x=sell_signals.index, 
+            y=sell_signals['Close'], # 종가 그래프 위에 표시
+            mode='markers', 
+            name='Sell Signals', 
+            marker=dict(color='blue', size=20, symbol='triangle-down'),
+            # hovertemplate = 
+            #         '<b>Date:</b> %{x|%Y-%m-%d}<br>' +
+            #         '<b>Close:</b> %{y:,.0f} KRW<br>' +
+            #         '<b>Signal:</b> RSI Bull Divergence (강세)<extra></extra>'
+                    ),
+
 
     ])
 
