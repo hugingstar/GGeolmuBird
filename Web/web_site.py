@@ -745,7 +745,7 @@ if not data_df.empty:
             font=dict(size=18),
             # 오른쪽 상단에 배치 (x=1, y=1)
             x=0,
-            y=1.1,
+            y=1,
             orientation="h",
             # 범례 상자의 오른쪽 상단 모서리를 (1, 1) 좌표에 고정
             xanchor='left',
@@ -775,7 +775,7 @@ if not data_df.empty:
             font=dict(size=18),
             # 오른쪽 상단에 배치 (x=1, y=1)
             x=0,
-            y=1.1,
+            y=1,
             orientation="h",
             # 범례 상자의 오른쪽 상단 모서리를 (1, 1) 좌표에 고정
             xanchor='left',
