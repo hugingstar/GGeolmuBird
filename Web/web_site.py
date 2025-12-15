@@ -33,7 +33,7 @@ def load_data(ticker, start_date, end_date):
         st.error(f"데이터 로딩 중 오류 발생: {e}")
         return pd.DataFrame()
 
-def rsi_divergence(price, rsi, lookback):
+def divergence(price, rsi, lookback):
 
     up_div_price = [0.01, 0.15] # 가격 저점 상승률 하한/상한
     up_div_rsi = [0.01, 0.15] # RSI 저점 상승률 하한/상한
@@ -72,10 +72,10 @@ def rsi_divergence(price, rsi, lookback):
 
     return bull_div, bear_div
 
-def rsi_hidden_divergence(price, rsi, lookback):
+def hidden_divergence(price, rsi, lookback):
 
     up_hide_price = [0.03, 0.15]
-    up_hide_rsi = [-0.03, -0.15]
+    up_hide_rsi = [-0.15, -0.03]
     down_hide_price = [-0.03, -0.15]
     down_hide_rsi = [0.03, 0.15]
 
@@ -98,7 +98,7 @@ def rsi_hidden_divergence(price, rsi, lookback):
             price_LL_pct = (p[b] - p[a]) / p[a]
             rsi_LL_pct = (r[b] - r[a]) / r[a]
             if ((up_hide_price[0] <= price_LL_pct <= up_hide_price[1]) and
-                (down_hide_rsi[0]  <= -rsi_LL_pct <= down_hide_rsi[1])):  # rsi 하락 → 부호 주의
+                (up_hide_rsi[0]  <= rsi_LL_pct <= up_hide_rsi[1])):  # rsi 하락 → 부호 주의
                 hidden_bull[b] = 1
 
     if len(peak_idx) >= 2:
@@ -111,8 +111,8 @@ def rsi_hidden_divergence(price, rsi, lookback):
 
     return hidden_bull, hidden_bear
 
-def rsi_divergence_rolling(price, rsi, lookback):
-    print("RSI divergence rolling")
+def divergence_rolling(price, rsi, lookback):
+    print("Divergence rolling")
     bull_div_full = pd.Series(index=price.index, dtype=float)
     bear_div_full = pd.Series(index=price.index, dtype=float)
     n = len(price)
@@ -121,15 +121,15 @@ def rsi_divergence_rolling(price, rsi, lookback):
     bull_div_full.iloc[:lookback - 1] = 0.0
     bear_div_full.iloc[:lookback - 1] = 0.0
     for t in range(lookback - 1, n):
-        bull_win, bear_win = rsi_divergence(price.iloc[:t + 1], rsi, lookback=lookback)
+        bull_win, bear_win = divergence(price.iloc[:t + 1], rsi, lookback=lookback)
         bull_idx = bull_win.index[bull_win.values == 1]
         bear_idx = bear_win.index[bear_win.values == 1]
         bull_div_full.loc[bull_idx] = 1
         bear_div_full.loc[bear_idx] = 1
     return bull_div_full.fillna(0).astype("int8"), bear_div_full.fillna(0).astype("int8")
 
-def rsi_hidden_divergence_rolling(price, rsi, lookback):
-    print("RSI hidden divergence rolling")
+def hidden_divergence_rolling(price, rsi, lookback):
+    print("Hidden divergence rolling")
     bull_div_full = pd.Series(index=price.index, dtype=float)
     bear_div_full = pd.Series(index=price.index, dtype=float)
     n = len(price)
@@ -138,7 +138,7 @@ def rsi_hidden_divergence_rolling(price, rsi, lookback):
     bull_div_full.iloc[:lookback - 1] = 0.0
     bear_div_full.iloc[:lookback - 1] = 0.0
     for t in range(lookback - 1, n):
-        bull_win, bear_win = rsi_hidden_divergence(price.iloc[:t + 1], rsi, lookback=lookback)
+        bull_win, bear_win = hidden_divergence(price.iloc[:t + 1], rsi, lookback=lookback)
         bull_idx = bull_win.index[bull_win.values == 1]
         bear_idx = bear_win.index[bear_win.values == 1]
         bull_div_full.loc[bull_idx] = 1
@@ -174,8 +174,6 @@ def add_dmi(data, window=14, adx_threshold=25, adxr_window=None):
 
         data["ADXR_Signal"] = np.where(data["ADXR"] >= 25, 1,
                         np.where(data["ADXR"] < 25, 0, 0))
-
-
 
     except IndexError:
         data["PDI"]  = -1000
@@ -248,16 +246,16 @@ def calculate_indicators(data):
 
     # 다이버전스(롤링) — MA5 기준으로 계산
     rsi_rollback = 90
-    rsi_bull, rsi_bear = rsi_divergence_rolling(
-        price=data["MA5"], rsi=data["RSI8"], lookback=rsi_rollback)
+    rsi_bull, rsi_bear = divergence_rolling(
+        price=data["MA5"], rsi=data["RSI3"], lookback=rsi_rollback)
     data["RSI_BullDiv"] = rsi_bull
     data["RSI_BearDiv"] = rsi_bear
 
     rsi_hidden_rollback = 180
-    hidden_bull, hidden_bear = rsi_hidden_divergence_rolling(
-        price=data["MA5"], rsi=data["RSI8"], lookback=rsi_hidden_rollback)
-    data["RSI_Hidden_BullDiv"] = hidden_bull
-    data["RSI_Hidden_BearDiv"] = hidden_bear
+    rsi_hidden_bull, rsi_hidden_bear = hidden_divergence_rolling(
+        price=data["MA5"], rsi=data["RSI3"], lookback=rsi_hidden_rollback)
+    data["RSI_Hidden_BullDiv"] = rsi_hidden_bull
+    data["RSI_Hidden_BearDiv"] = rsi_hidden_bear
 
     # CCI
     data["CCI"] = ta.trend.CCIIndicator(
@@ -280,6 +278,18 @@ def calculate_indicators(data):
 
     data["CCI_Signal"] = np.where(data["CCI"] >= 100, 1,
                             np.where(data["CCI"] <= -100, -1, 0))
+    
+    cci_rollback = 90
+    cci_bull, cci_bear = divergence_rolling(
+        price=data["MA5"], rsi=data["CCI3"], lookback=cci_rollback)
+    data["CCI_BullDiv"] = cci_bull
+    data["CCI_BearDiv"] = cci_bear
+
+    cci_hidden_rollback = 180
+    cci_hidden_bull, cci_hidden_bear = hidden_divergence_rolling(
+        price=data["MA5"], rsi=data["CCI3"], lookback=cci_hidden_rollback)
+    data["CCI_Hidden_BullDiv"] = cci_hidden_bull
+    data["CCI_Hidden_BearDiv"] = cci_hidden_bear
 
     # MACD
     macd = ta.trend.MACD(close=data["Close"], window_slow=26, window_fast=12, window_sign=9)
@@ -415,13 +425,19 @@ if not data_df.empty:
     # 선택된 기간에 맞게 데이터 필터링
     data_df_filtered = data_df.copy()
 
-    bull_div_signals = data_df_filtered[data_df_filtered['RSI_BullDiv'] == 1].copy()
+    rsi_bull_div_signals = data_df_filtered[data_df_filtered['RSI_BullDiv'] == 1].copy()
+
+    cci_bull_div_signals = data_df_filtered[data_df_filtered['CCI_BullDiv'] == 1].copy()
 
     sell_signals = data_df_filtered[data_df_filtered['Sell_Signal'] == 1].copy()
 
-    hidden_bull_signals = data_df_filtered[data_df_filtered['RSI_Hidden_BullDiv'] == 1].copy()
+    rsi_hidden_bull_signals = data_df_filtered[data_df_filtered['RSI_Hidden_BullDiv'] == 1].copy()
 
-    hidden_bear_signals = data_df_filtered[data_df_filtered['RSI_Hidden_BearDiv'] == 1].copy()
+    rsi_hidden_bear_signals = data_df_filtered[data_df_filtered['RSI_Hidden_BearDiv'] == 1].copy()
+
+    cci_hidden_bull_signals = data_df_filtered[data_df_filtered['CCI_Hidden_BullDiv'] == 1].copy()
+
+    cci_hidden_bear_signals = data_df_filtered[data_df_filtered['CCI_Hidden_BearDiv'] == 1].copy()
     
     # 2. 주가 Line Chart
     fig_price = go.Figure(data=[
@@ -482,8 +498,8 @@ if not data_df.empty:
         ),
 
         go.Scatter(
-            x=bull_div_signals.index, 
-            y=bull_div_signals['Close'], # 종가 그래프 위에 표시
+            x=rsi_bull_div_signals.index, 
+            y=rsi_bull_div_signals['Close'], # 종가 그래프 위에 표시
             mode='markers', 
             name='Bull Signal', 
             marker=dict(color='red', size=20, symbol='triangle-up'),
@@ -506,8 +522,8 @@ if not data_df.empty:
                     ),
         
         go.Scatter(
-            x=hidden_bull_signals.index, 
-            y=hidden_bull_signals['Close'], # 종가 그래프 위에 표시
+            x=rsi_hidden_bull_signals.index, 
+            y=rsi_hidden_bull_signals['Close'], # 종가 그래프 위에 표시
             mode='markers', 
             name='Hidden Bull', 
             marker=dict(color='orange', size=20, symbol='triangle-up'),
@@ -518,8 +534,8 @@ if not data_df.empty:
                     ),
         
         go.Scatter(
-            x=hidden_bear_signals.index, 
-            y=hidden_bear_signals['Close'], # 종가 그래프 위에 표시
+            x=rsi_hidden_bear_signals.index, 
+            y=rsi_hidden_bear_signals['Close'], # 종가 그래프 위에 표시
             mode='markers', 
             name='Hidden Bear', 
             marker=dict(color='royalblue', size=20, symbol='triangle-down'),
@@ -529,6 +545,41 @@ if not data_df.empty:
                     '<b>Signal:</b> Hidden bear<extra></extra>'
                     ),
 
+        go.Scatter(
+            x=cci_bull_div_signals.index, 
+            y=cci_bull_div_signals['Close'], # 종가 그래프 위에 표시
+            mode='markers', 
+            name='Bull Signal', 
+            marker=dict(color='red', size=20, symbol='triangle-up'),
+            hovertemplate = 
+                    '<b>Date:</b> %{x|%Y-%m-%d}<br>' +
+                    '<b>Close:</b> %{y:,.0f} KRW<br>' +
+                    '<b>Signal:</b> Bull signal<extra></extra>'
+                    ),
+        
+        go.Scatter(
+            x=cci_hidden_bull_signals.index, 
+            y=cci_hidden_bull_signals['Close'], # 종가 그래프 위에 표시
+            mode='markers', 
+            name='Hidden Bull', 
+            marker=dict(color='orange', size=20, symbol='triangle-up'),
+            hovertemplate = 
+                    '<b>Date:</b> %{x|%Y-%m-%d}<br>' +
+                    '<b>Close:</b> %{y:,.0f} KRW<br>' +
+                    '<b>Signal:</b> Hidden bull<extra></extra>'
+                    ),
+    
+        go.Scatter(
+            x=cci_hidden_bear_signals.index, 
+            y=cci_hidden_bear_signals['Close'], # 종가 그래프 위에 표시
+            mode='markers', 
+            name='Hidden Bear', 
+            marker=dict(color='royalblue', size=20, symbol='triangle-down'),
+            hovertemplate = 
+                    '<b>Date:</b> %{x|%Y-%m-%d}<br>' +
+                    '<b>Close:</b> %{y:,.0f} KRW<br>' +
+                    '<b>Signal:</b> Hidden bear<extra></extra>'
+                    ),
 
     ])
 
