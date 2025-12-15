@@ -39,7 +39,8 @@ def load_data(ticker, start_date, end_date):
     try:
         # FinanceDataReader를 사용하여 NAVER Finance에서 데이터를 가져옵니다.
         # ticker는 '005930'과 같은 6자리 종목 코드여야 합니다.
-        df = fdr.DataReader(f"NAVER:{ticker}", start=start_date, end=end_date)
+        # df = fdr.DataReader(f"NAVER:{ticker}", start=start_date, end=end_date)
+        df = fdr.DataReader(f"{ticker}", start=start_date, end=end_date)
         return df
     except Exception as e:
         st.error(f"데이터 로딩 중 오류 발생: {e}")
