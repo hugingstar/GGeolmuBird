@@ -583,9 +583,6 @@ if not data_df.empty:
     )
     st.plotly_chart(fig_price, use_container_width=True)
 
-
-
-
     # 3. 기술적 지표 시각화 (RSI, CCI, MACD, ADX/DMI)
     st.markdown("---")
 
@@ -604,7 +601,7 @@ if not data_df.empty:
         fig_cci.add_hline(y=-100, line_dash="dash", line_color="green", annotation_text="-100", annotation_position="bottom left")
         fig_cci.update_layout(height=300, 
         
-        margin=dict(t=30, b=30),
+        margin=dict(t=10, b=10),
 
         xaxis=dict(
             tickfont=dict(size=16) 
@@ -636,7 +633,8 @@ if not data_df.empty:
         fig_rsi.add_hline(y=70, line_dash="dash", line_color="red", annotation_text="과매수(70)", annotation_position="top left")
         fig_rsi.add_hline(y=50, line_dash="dash", line_color="white", annotation_position="top left")
         fig_rsi.add_hline(y=30, line_dash="dash", line_color="green", annotation_text="과매도(30)", annotation_position="bottom left")
-        fig_rsi.update_layout(height=300, margin=dict(t=30, b=30),
+        fig_rsi.update_layout(height=300, 
+                              margin=dict(t=10, b=10),
             legend=dict(
             font=dict(size=18),
             # 오른쪽 상단에 배치 (x=1, y=1)
@@ -664,7 +662,7 @@ if not data_df.empty:
         ])
         fig_macd.add_hline(y=0, line_dash="dash", line_color="white", annotation_position="top left")
         fig_macd.update_layout(height=300, 
-        margin=dict(t=30, b=30),
+        margin=dict(t=10, b=10),
 
         xaxis=dict(
             tickfont=dict(size=16) 
@@ -697,7 +695,7 @@ if not data_df.empty:
         ])
         fig_dmi_adx.add_hline(y=20, line_dash="dash", line_color="white", annotation_position="top left")
         fig_dmi_adx.update_layout(height=300, 
-        margin=dict(t=30, b=30),
+        margin=dict(t=10, b=10),
 
         xaxis=dict(
             tickfont=dict(size=16) 
@@ -736,7 +734,7 @@ if not data_df.empty:
         # fig_mdd.add_hline(y=-100, line_dash="dash", line_color="green", annotation_text="-100", annotation_position="bottom left")
         fig_cci.update_layout(height=300, 
         
-        margin=dict(t=30, b=30),
+        margin=dict(t=10, b=10),
 
         xaxis=dict(
             tickfont=dict(size=16) 
@@ -766,7 +764,7 @@ if not data_df.empty:
 
         fig_obv.update_layout(height=300, 
         
-        margin=dict(t=30, b=30),
+        margin=dict(t=10, b=10),
 
         xaxis=dict(
             tickfont=dict(size=16) 
