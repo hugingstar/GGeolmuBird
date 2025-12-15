@@ -838,13 +838,13 @@ if not data_df.empty:
 
 
     # --- 데이터 확인 (선택 사항) ---
-    st.markdown("---")
-    st.subheader("원시테이터 보기")
-    if st.checkbox('원시 데이터 보기'):
-        st.dataframe(data_df_filtered.tail(90),
-        width=1900, # 예시로 1500px 너비를 지정
-        height=1000   # 높이는 90개 행을 보기에 적절한 값으로 설정 (선택 사항)
-        )
+    # st.markdown("---")
+    # st.subheader("원시테이터 보기")
+    # if st.checkbox('원시 데이터 보기'):
+    #     st.dataframe(data_df_filtered.tail(90),
+    #     width=1900, # 예시로 1500px 너비를 지정
+    #     height=1000   # 높이는 90개 행을 보기에 적절한 값으로 설정 (선택 사항)
+    #     )
 
 else:
     st.warning("주식 데이터를 불러오지 못했습니다. 종목 코드 또는 기간을 확인해 주세요.")
