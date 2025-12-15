@@ -739,9 +739,7 @@ if not data_df.empty:
         
         yaxis=dict(
             tickfont=dict(size=16),
-            # Y축 범위를 0%에서 -100%까지로 설정 (MDD는 음수 값입니다)
-            # 예를 들어, -0.6에서 0.05 사이로 설정하여 캔들 상단에 여백을 줍니다.
-            range=[0, -1] 
+            range=[-1.1, 0]
         ),
 
         legend=dict(
