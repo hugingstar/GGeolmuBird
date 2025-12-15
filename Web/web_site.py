@@ -15,8 +15,8 @@ st.set_page_config(layout="wide", page_title="GGeolmu Bird")
 # 실제 서비스에서는 전체 종목 리스트를 API나 DB에서 가져와야 합니다.
 
 mmp = stock_mapping.mapped(path="Web/stock_list.csv")
-
-stock_map = dict(mmp.output())
+mmp_sorted = mmp.sort_values(by='Name', ascending=True) # 가나다순
+stock_map = dict(mmp_sorted.output())
 
 print(stock_map)
 
