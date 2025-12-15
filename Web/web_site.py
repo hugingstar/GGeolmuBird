@@ -26,11 +26,9 @@ stock_map_kospi = dict(mmp_kospi.output())
 # mmp_nyse = stock_mapping.mapped(path="Web/market/nyse/stock_list.csv")
 # stock_map_nyse = dict(mmp_nyse.output())
 
-stock_map_kosdaq = {"셀트리온헬스케어": "091990", "에코프로비엠": "247540"}
-stock_map_nyse = {"Coca-Cola": "KO", "Walmart": "WMT"}
+stock_map_kosdaq = {"알테오젠": "196170", "에코프로비엠": "247540"}
+stock_map_nyse = {"TSMC": "TSM", "Berkshire Hathaway": "BRK-A"}
 stock_map_nasdaq = {"Apple": "AAPL", "Microsoft": "MSFT"}
-
-print(stock_map_kospi)
 
 # 캐싱을 사용하여 데이터 로딩 속도를 개선합니다. (데이터가 변경되지 않는 한 재실행하지 않음)
 @st.cache_data
