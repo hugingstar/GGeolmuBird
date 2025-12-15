@@ -26,18 +26,38 @@ stock_map_nasdaq = dict(mmp_nasdaq.output())
 mmp_nyse = stock_mapping.mapped(path="Web/market/nyse/stock_list.csv")
 stock_map_nyse = dict(mmp_nyse.output())
 
-# stock_map_kosdaq = {"알테오젠": "196170", "에코프로비엠": "247540"}
-# stock_map_nyse = {"TSMC": "TSM", "Berkshire Hathaway": "BRK-A"}
-# stock_map_nasdaq = {"Apple": "AAPL", "Microsoft": "MSFT"}
+stock_map_futures = {
+    "Gold" : "GC=F",
+    "Silver" : "SI=F",
+    "Copper" : "HG=F",
+    
+    "WTI Crude oil" : "CL=F",
+    "Brent oil" : "BZ=F",
+    "Natural gas" : "NG=F"
+}
+
+stock_map_money = {
+    "USD/KRW" : "USD/KRW",
+    "USD/EUR" : "USD/EUR",
+    "USD/CNY" : "USD/CNY",
+    
+    "CNY/KRW" : "CNY/KRW",
+    "EUR/CNY" : "EUR/CNY",
+}
+
+stock_map_coin = {
+    "BTC/KRW" : "BTC/KRW",
+    "ETH/KRW" : "ETH/KRW",
+    "BTC/USD" : "BTC/USD",
+    "ETH/USD" : "ETH/USD",
+}
+
 
 # 캐싱을 사용하여 데이터 로딩 속도를 개선합니다. (데이터가 변경되지 않는 한 재실행하지 않음)
 @st.cache_data
 def load_data(ticker, start_date, end_date):
-    """지정된 기간의 주식 데이터를 가져옵니다. (NAVER Finance 사용)"""
+    """지정된 기간의 주식 데이터를 가져옵니다. """
     try:
-        # FinanceDataReader를 사용하여 NAVER Finance에서 데이터를 가져옵니다.
-        # ticker는 '005930'과 같은 6자리 종목 코드여야 합니다.
-        # df = fdr.DataReader(f"NAVER:{ticker}", start=start_date, end=end_date)
         df = fdr.DataReader(f"{ticker}", start=start_date, end=end_date)
         return df
     except Exception as e:
@@ -335,7 +355,10 @@ market_options = {
     "KOSPI": stock_map_kospi,
     "KOSDAQ": stock_map_kosdaq,
     "NYSE": stock_map_nyse,
-    "NASDAQ": stock_map_nasdaq
+    "NASDAQ": stock_map_nasdaq,
+    "Currency" : stock_map_money,
+    "Crypto Currency" : stock_map_coin,
+    "Futures" : stock_map_futures
 }
 
 # Market
