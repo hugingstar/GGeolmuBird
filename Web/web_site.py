@@ -731,7 +731,7 @@ if not data_df.empty:
         ])
         fig_cci.update_layout(height=300, 
         
-        margin=dict(t=10, b=10),
+        margin=dict(t=3, b=3),
 
         xaxis=dict(
             tickfont=dict(size=16) 
@@ -761,7 +761,7 @@ if not data_df.empty:
 
         fig_obv.update_layout(height=300, 
         
-        margin=dict(t=10, b=10),
+        margin=dict(t=3, b=3),
 
         xaxis=dict(
             tickfont=dict(size=16) 
