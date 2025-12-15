@@ -3,7 +3,8 @@ import pandas as pd
 class mapped():
     def __init__(self, path):
         #Stock dataframe
-        df_stock = pd.read_csv(path, encoding="utf-8-sig")
+        # df_stock = pd.read_csv(path, encoding="utf-8-sig")
+        df_stock = pd.read_csv(path, encoding="utf-8")
         # 
         df_stock['Code'] = df_stock['Code'].astype(str)
         df_stock['Name'] = df_stock['Name'].astype(str)
