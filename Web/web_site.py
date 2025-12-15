@@ -590,7 +590,8 @@ if not data_df.empty:
     st.markdown("---")
 
     # (RSI, CCI, MACD, ADX/DMI)
-    col1, col2, col3, col4 = st.columns(4)
+    # col1, col2, col3, col4 = st.columns(4)
+    col1, col2 = st.columns(2)
     
     # --- 1열: CCI ---
     with col1:
@@ -648,6 +649,8 @@ if not data_df.empty:
         
         )
         st.plotly_chart(fig_rsi, use_container_width=True)
+
+    col3, col4 = st.columns(2)
 
     # --- 3열: MACD ---
     with col3:
@@ -719,7 +722,7 @@ if not data_df.empty:
     st.markdown("---")
 
     # MDD, OBV
-    col5, col6, col7, col8 = st.columns(4)
+    col5, col6 = st.columns(2)
 
     with col5:
         st.markdown("#### MDD (Max Draw Down)")
