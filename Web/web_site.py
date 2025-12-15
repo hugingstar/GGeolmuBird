@@ -17,18 +17,18 @@ st.set_page_config(layout="wide", page_title="GGeolmu Bird")
 mmp_kospi = stock_mapping.mapped(path="Web/market/kospi/stock_list.csv")
 stock_map_kospi = dict(mmp_kospi.output())
 
-# mmp_kosdaq = stock_mapping.mapped(path="Web/market/kosdaq/stock_list.csv")
-# stock_map_kosdaq = dict(mmp_kosdaq.output())
+mmp_kosdaq = stock_mapping.mapped(path="Web/market/kosdaq/stock_list.csv")
+stock_map_kosdaq = dict(mmp_kosdaq.output())
 
-# mmp_nasdaq = stock_mapping.mapped(path="Web/market/nasdaq/stock_list.csv")
-# stock_map_nasdaq = dict(mmp_nasdaq.output())
+mmp_nasdaq = stock_mapping.mapped(path="Web/market/nasdaq/stock_list.csv")
+stock_map_nasdaq = dict(mmp_nasdaq.output())
 
-# mmp_nyse = stock_mapping.mapped(path="Web/market/nyse/stock_list.csv")
-# stock_map_nyse = dict(mmp_nyse.output())
+mmp_nyse = stock_mapping.mapped(path="Web/market/nyse/stock_list.csv")
+stock_map_nyse = dict(mmp_nyse.output())
 
-stock_map_kosdaq = {"알테오젠": "196170", "에코프로비엠": "247540"}
-stock_map_nyse = {"TSMC": "TSM", "Berkshire Hathaway": "BRK-A"}
-stock_map_nasdaq = {"Apple": "AAPL", "Microsoft": "MSFT"}
+# stock_map_kosdaq = {"알테오젠": "196170", "에코프로비엠": "247540"}
+# stock_map_nyse = {"TSMC": "TSM", "Berkshire Hathaway": "BRK-A"}
+# stock_map_nasdaq = {"Apple": "AAPL", "Microsoft": "MSFT"}
 
 # 캐싱을 사용하여 데이터 로딩 속도를 개선합니다. (데이터가 변경되지 않는 한 재실행하지 않음)
 @st.cache_data
