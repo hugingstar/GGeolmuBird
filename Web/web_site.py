@@ -536,6 +536,7 @@ if not data_df.empty:
             name='MA224', 
             line=dict(color='maroon', width=5)  
         ),
+
         # Bollinger band
         go.Scatter(
             x=data_df_filtered.index, 
@@ -558,11 +559,11 @@ if not data_df.empty:
             x=sell_signals.index, 
             y=sell_signals['Close'], # 종가 그래프 위에 표시
             mode='markers', 
-            name='Sell Signals', 
+            name='Sell', 
             marker=dict(color='blue', size=20, symbol='triangle-down'),
             hovertemplate = 
                     '<b>Date:</b> %{x|%Y-%m-%d}<br>' +
-                    '<b>Close:</b> %{y:,.0f} KRW<br>' +
+                    '<b>Close:</b> %{y:,.0f}<br>' +
                     '<b>Signal:</b> Sell signal<extra></extra>'
                     ),
 
@@ -571,11 +572,11 @@ if not data_df.empty:
             x=rsi_bull_div_signals.index, 
             y=rsi_bull_div_signals['Close'], # 종가 그래프 위에 표시
             mode='markers', 
-            name='Bull Signal', 
+            name='Bull R', 
             marker=dict(color='red', size=20, symbol='triangle-up'),
             hovertemplate = 
                     '<b>Date:</b> %{x|%Y-%m-%d}<br>' +
-                    '<b>Close:</b> %{y:,.0f} KRW<br>' +
+                    '<b>Close:</b> %{y:,.0f}<br>' +
                     '<b>Signal:</b> Bull signal<extra></extra>'
                     ),
         
@@ -583,11 +584,11 @@ if not data_df.empty:
             x=rsi_hidden_bull_signals.index, 
             y=rsi_hidden_bull_signals['Close'], # 종가 그래프 위에 표시
             mode='markers', 
-            name='Hidden Bull', 
+            name='Keep Bull R', 
             marker=dict(color='orange', size=20, symbol='triangle-up'),
             hovertemplate = 
                     '<b>Date:</b> %{x|%Y-%m-%d}<br>' +
-                    '<b>Close:</b> %{y:,.0f} KRW<br>' +
+                    '<b>Close:</b> %{y:,.0f}<br>' +
                     '<b>Signal:</b> Hidden bull<extra></extra>'
                     ),
         
@@ -595,11 +596,11 @@ if not data_df.empty:
             x=rsi_hidden_bear_signals.index, 
             y=rsi_hidden_bear_signals['Close'], # 종가 그래프 위에 표시
             mode='markers', 
-            name='Hidden Bear', 
+            name='Keep Bear R', 
             marker=dict(color='royalblue', size=20, symbol='triangle-down'),
             hovertemplate = 
                     '<b>Date:</b> %{x|%Y-%m-%d}<br>' +
-                    '<b>Close:</b> %{y:,.0f} KRW<br>' +
+                    '<b>Close:</b> %{y:,.0f}<br>' +
                     '<b>Signal:</b> Hidden bear<extra></extra>'
                     ),
 
@@ -608,11 +609,11 @@ if not data_df.empty:
             x=cci_bull_div_signals.index, 
             y=cci_bull_div_signals['Close'], # 종가 그래프 위에 표시
             mode='markers', 
-            name='Bull Signal', 
+            name='Bull C', 
             marker=dict(color='chocolate', size=20, symbol='triangle-up'),
             hovertemplate = 
                     '<b>Date:</b> %{x|%Y-%m-%d}<br>' +
-                    '<b>Close:</b> %{y:,.0f} KRW<br>' +
+                    '<b>Close:</b> %{y:,.0f}<br>' +
                     '<b>Signal:</b> Bull signal<extra></extra>'
                     ),
         
@@ -620,7 +621,7 @@ if not data_df.empty:
             x=cci_hidden_bull_signals.index, 
             y=cci_hidden_bull_signals['Close'], # 종가 그래프 위에 표시
             mode='markers', 
-            name='Hidden Bull', 
+            name='Keep Bull C', 
             marker=dict(color='tomato', size=20, symbol='triangle-up'),
             hovertemplate = 
                     '<b>Date:</b> %{x|%Y-%m-%d}<br>' +
@@ -632,7 +633,7 @@ if not data_df.empty:
             x=cci_hidden_bear_signals.index, 
             y=cci_hidden_bear_signals['Close'], # 종가 그래프 위에 표시
             mode='markers', 
-            name='Hidden Bear', 
+            name='Keep Bear C', 
             marker=dict(color='deepskyblue', size=20, symbol='triangle-down'),
             hovertemplate = 
                     '<b>Date:</b> %{x|%Y-%m-%d}<br>' +
