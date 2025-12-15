@@ -309,11 +309,22 @@ def calculate_indicators(data):
 # 1. 사이드바: 종목 및 데이터 기간 설정
 st.sidebar.header("⚙️ 분석 설정")
 
+# 1. 기본값으로 설정하려는 종목 이름 정의
+target_stock_name = "삼성전자" 
+stock_keys = list(stock_map.keys())
+default_index = 0 # 기본 인덱스: 리스트의 첫 번째 항목
+
+
+# 1. 기본값으로 설정하려는 종목 이름 정의
+target_stock_name = "삼성전자" 
+stock_keys = list(stock_map.keys())
+default_index = 0 # 기본 인덱스: 리스트의 첫 번째 항목
+
 # **1-1. 종목 이름 입력 (요청 사항 반영)**
 stock_name = st.sidebar.selectbox(
     "종목 이름을 선택하세요:",
-    options=list(stock_map.keys()),
-    index=list(stock_map.keys()).index("삼성전자") # 기본값 삼성전자
+    options=stock_keys,
+    index=default_index # 계산된 default_index 사용
 )
 
 # 종목 이름으로 종목 코드를 찾습니다.
