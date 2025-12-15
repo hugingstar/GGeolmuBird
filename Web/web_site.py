@@ -728,12 +728,12 @@ if not data_df.empty:
 
     with col5:
         st.markdown("#### MDD (Max Draw Down)")
-        fig_cci = go.Figure(data=[
+        fig_mdd = go.Figure(data=[
             go.Scatter(x=data_df_filtered.index, y=data_df_filtered['Drawdown'], mode='lines', name='MDD', line=dict(color='red'))
         ])
-        # fig_cci.add_hline(y=100, line_dash="dash", line_color="red", annotation_text="+100", annotation_position="top left")
-        # fig_cci.add_hline(y=0, line_dash="dash", line_color="white", annotation_position="top left")
-        # fig_cci.add_hline(y=-100, line_dash="dash", line_color="green", annotation_text="-100", annotation_position="bottom left")
+        # fig_mdd.add_hline(y=100, line_dash="dash", line_color="red", annotation_text="+100", annotation_position="top left")
+        # fig_mdd.add_hline(y=0, line_dash="dash", line_color="white", annotation_position="top left")
+        # fig_mdd.add_hline(y=-100, line_dash="dash", line_color="green", annotation_text="-100", annotation_position="bottom left")
         fig_cci.update_layout(height=300, 
         
         margin=dict(t=30, b=30),
@@ -756,15 +756,15 @@ if not data_df.empty:
             xanchor='left',
             yanchor='top')
         )
-        st.plotly_chart(fig_cci, use_container_width=True)
+        st.plotly_chart(fig_mdd, use_container_width=True)
     
     with col6:
         st.markdown("#### OBV (On-Balance Volume)")
-        fig_cci = go.Figure(data=[
-            go.Scatter(x=data_df_filtered.index, y=data_df_filtered['OBV'], mode='lines', name='MDD', line=dict(color='gray'))
+        fig_obv = go.Figure(data=[
+            go.Scatter(x=data_df_filtered.index, y=data_df_filtered['OBV'], mode='lines', name='OBV', line=dict(color='gray'))
         ])
 
-        fig_cci.update_layout(height=300, 
+        fig_obv.update_layout(height=300, 
         
         margin=dict(t=30, b=30),
 
@@ -786,7 +786,7 @@ if not data_df.empty:
             xanchor='left',
             yanchor='top')
         )
-        st.plotly_chart(fig_cci, use_container_width=True)
+        st.plotly_chart(fig_obv, use_container_width=True)
 
 
 
