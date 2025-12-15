@@ -536,7 +536,7 @@ if not data_df.empty:
             name='MA224', 
             line=dict(color='maroon', width=5)  
         ),
-
+        # Bollinger band
         go.Scatter(
             x=data_df_filtered.index, 
             y=data_df_filtered['BB_Upper'], 
@@ -553,18 +553,7 @@ if not data_df.empty:
             line=dict(color='royalblue', width=3)  
         ),
 
-        go.Scatter(
-            x=rsi_bull_div_signals.index, 
-            y=rsi_bull_div_signals['Close'], # 종가 그래프 위에 표시
-            mode='markers', 
-            name='Bull Signal', 
-            marker=dict(color='red', size=20, symbol='triangle-up'),
-            hovertemplate = 
-                    '<b>Date:</b> %{x|%Y-%m-%d}<br>' +
-                    '<b>Close:</b> %{y:,.0f} KRW<br>' +
-                    '<b>Signal:</b> Bull signal<extra></extra>'
-                    ),
-
+        # Sell signals
         go.Scatter(
             x=sell_signals.index, 
             y=sell_signals['Close'], # 종가 그래프 위에 표시
@@ -575,6 +564,19 @@ if not data_df.empty:
                     '<b>Date:</b> %{x|%Y-%m-%d}<br>' +
                     '<b>Close:</b> %{y:,.0f} KRW<br>' +
                     '<b>Signal:</b> Sell signal<extra></extra>'
+                    ),
+
+        # RSI Signals
+        go.Scatter(
+            x=rsi_bull_div_signals.index, 
+            y=rsi_bull_div_signals['Close'], # 종가 그래프 위에 표시
+            mode='markers', 
+            name='Bull Signal', 
+            marker=dict(color='red', size=20, symbol='triangle-up'),
+            hovertemplate = 
+                    '<b>Date:</b> %{x|%Y-%m-%d}<br>' +
+                    '<b>Close:</b> %{y:,.0f} KRW<br>' +
+                    '<b>Signal:</b> Bull signal<extra></extra>'
                     ),
         
         go.Scatter(
@@ -601,12 +603,13 @@ if not data_df.empty:
                     '<b>Signal:</b> Hidden bear<extra></extra>'
                     ),
 
+        # CCI
         go.Scatter(
             x=cci_bull_div_signals.index, 
             y=cci_bull_div_signals['Close'], # 종가 그래프 위에 표시
             mode='markers', 
             name='Bull Signal', 
-            marker=dict(color='red', size=20, symbol='triangle-up'),
+            marker=dict(color='chocolate', size=20, symbol='triangle-up'),
             hovertemplate = 
                     '<b>Date:</b> %{x|%Y-%m-%d}<br>' +
                     '<b>Close:</b> %{y:,.0f} KRW<br>' +
@@ -618,7 +621,7 @@ if not data_df.empty:
             y=cci_hidden_bull_signals['Close'], # 종가 그래프 위에 표시
             mode='markers', 
             name='Hidden Bull', 
-            marker=dict(color='orange', size=20, symbol='triangle-up'),
+            marker=dict(color='tomato', size=20, symbol='triangle-up'),
             hovertemplate = 
                     '<b>Date:</b> %{x|%Y-%m-%d}<br>' +
                     '<b>Close:</b> %{y:,.0f} KRW<br>' +
@@ -630,7 +633,7 @@ if not data_df.empty:
             y=cci_hidden_bear_signals['Close'], # 종가 그래프 위에 표시
             mode='markers', 
             name='Hidden Bear', 
-            marker=dict(color='royalblue', size=20, symbol='triangle-down'),
+            marker=dict(color='deepskyblue', size=20, symbol='triangle-down'),
             hovertemplate = 
                     '<b>Date:</b> %{x|%Y-%m-%d}<br>' +
                     '<b>Close:</b> %{y:,.0f} KRW<br>' +
@@ -640,7 +643,7 @@ if not data_df.empty:
     ])
 
     fig_price.update_layout(
-        yaxis_title="Price (KRW)",
+        yaxis_title="Price",
         height=500,
         xaxis_rangeslider_visible=False,
         
@@ -652,23 +655,23 @@ if not data_df.empty:
                 b=10  # Bottom margin (하단 X축 제목, RangeSlider, 그리고 범례 공간)
             ),
 
-
         # <<-- [수정 2] 폰트 크기 설정
         font=dict(
             family="Arial, sans-serif",  # 폰트 종류 설정
             size=20,                     # 기본 폰트 크기 설정
             color="black"
         ),
+
         # 축 제목 폰트 크기 설정
-        xaxis=dict(title=dict(font=dict(size=20)),
-        tickfont=dict(size=17)
+        xaxis=dict(title=dict(font=dict(size=22)),
+        tickfont=dict(size=20)
         ),
-        yaxis=dict(title=dict(font=dict(size=20)),
-        tickfont=dict(size=17)
+        yaxis=dict(title=dict(font=dict(size=22)),
+        tickfont=dict(size=20)
         ),
 
         legend=dict(
-        font=dict(size=18),
+        font=dict(size=15),
         # 오른쪽 상단에 배치 (x=1, y=1)
         x=0,
         y=1.1,
