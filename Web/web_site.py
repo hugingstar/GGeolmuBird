@@ -14,11 +14,23 @@ st.set_page_config(layout="wide", page_title="GGeolmu Bird")
 # 종목 이름과 종목 코드를 매핑하는 딕셔너리 (예시)
 # 실제 서비스에서는 전체 종목 리스트를 API나 DB에서 가져와야 합니다.
 
-mmp = stock_mapping.mapped(path="Web/stock_list.csv")
+mmp_kospi = stock_mapping.mapped(path="Web/market/kospi/stock_list.csv")
+stock_map_kospi = dict(mmp_kospi.output())
 
-stock_map = dict(mmp.output())
+# mmp_kosdaq = stock_mapping.mapped(path="Web/market/kosdaq/stock_list.csv")
+# stock_map_kosdaq = dict(mmp_kosdaq.output())
 
-print(stock_map)
+# mmp_nasdaq = stock_mapping.mapped(path="Web/market/nasdaq/stock_list.csv")
+# stock_map_nasdaq = dict(mmp_nasdaq.output())
+
+# mmp_nyse = stock_mapping.mapped(path="Web/market/nyse/stock_list.csv")
+# stock_map_nyse = dict(mmp_nyse.output())
+
+stock_map_kosdaq = {"셀트리온헬스케어": "091990", "에코프로비엠": "247540"}
+stock_map_nyse = {"Coca-Cola": "KO", "Walmart": "WMT"}
+stock_map_nasdaq = {"Apple": "AAPL", "Microsoft": "MSFT"}
+
+print(stock_map_kospi)
 
 # 캐싱을 사용하여 데이터 로딩 속도를 개선합니다. (데이터가 변경되지 않는 한 재실행하지 않음)
 @st.cache_data
@@ -320,29 +332,68 @@ def calculate_indicators(data):
 # 1. 사이드바: 종목 및 데이터 기간 설정
 st.sidebar.header("⚙️ 분석 설정")
 
-# 1. 기본값으로 설정하려는 종목 이름 정의
-target_stock_name = "삼성전자" 
-stock_keys = list(stock_map.keys())
-default_index = 0 # 기본 인덱스: 리스트의 첫 번째 항목
+market_options = {
+    "KOSPI": stock_map_kospi,
+    "KOSDAQ": stock_map_kosdaq,
+    "NYSE": stock_map_nyse,
+    "NASDAQ": stock_map_nasdaq
+}
 
-
-# 1. 기본값으로 설정하려는 종목 이름 정의
-target_stock_name = "삼성전자" 
-stock_keys = list(stock_map.keys())
-default_index = 0 # 기본 인덱스: 리스트의 첫 번째 항목
-
-# **1-1. 종목 이름 입력 (요청 사항 반영)**
-stock_name = st.sidebar.selectbox(
-    "종목 이름을 선택하세요:",
-    options=stock_keys,
-    index=default_index # 계산된 default_index 사용
+# Market
+selected_market_name = st.sidebar.selectbox(
+    "시장을 선택하세요:",
+    options=list(market_options.keys()),
+    index=0 # 기본값 KOSPI
 )
 
+# 선택된 시장의 종목 맵을 가져옵니다.
+selected_stock_map = market_options[selected_market_name]
+stock_keys = list(selected_stock_map.keys())
+
+# **1-1. 종목 이름 입력 (선택된 시장에 따라 동적 변경)**
+# 선택된 시장의 종목이 없을 경우를 대비해 처리
+if not stock_keys:
+    st.sidebar.warning(f"선택하신 {selected_market_name} 시장에는 현재 종목 데이터가 없습니다.")
+    stock_name = None
+    stock_ticker = None
+else:
+    # 종목 리스트의 첫 번째 항목을 기본값으로 설정
+    default_index = 0 
+    
+    stock_name = st.sidebar.selectbox(
+        "종목 이름을 선택하세요:",
+        options=stock_keys,
+        index=default_index
+    )
+
+    # 종목 이름으로 종목 코드를 찾습니다.
+    stock_ticker = selected_stock_map.get(stock_name)
+
+# --- (이후 데이터 기간 설정 및 분석 로직 계속) ---
+if stock_ticker:
+    st.sidebar.write(f"선택된 종목: **{stock_name}** ({stock_ticker})")
+else:
+    st.sidebar.write("선택된 종목이 없습니다.")
+
+
+# # 1. 기본값으로 설정하려는 종목 이름 정의
+# target_stock_name = "삼성전자" 
+# stock_keys = list(stock_map_kospi.keys())
+# default_index = 0 # 기본 인덱스: 리스트의 첫 번째 항목
+
+
+# # **1-1. 종목 이름 입력 (요청 사항 반영)**
+# stock_name = st.sidebar.selectbox(
+#     "종목 이름을 선택하세요:",
+#     options=stock_keys,
+#     index=default_index # 계산된 default_index 사용
+# )
+
 # 종목 이름으로 종목 코드를 찾습니다.
-stock_ticker = stock_map.get(stock_name)
+stock_ticker = stock_map_kospi.get(stock_name)
 
 if not stock_ticker:
-    st.error(f"'{stock_name}'에 해당하는 종목 코드를 찾을 수 없습니다. (지원되는 종목: {', '.join(stock_map.keys())})")
+    st.error(f"'{stock_name}'에 해당하는 종목 코드를 찾을 수 없습니다. (지원되는 종목: {', '.join(stock_map_kospi.keys())})")
     st.stop() # 코드가 더 이상 진행되지 않도록 중단
 
 # **1-2. 데이터 기간 설정**
@@ -394,8 +445,7 @@ end_date = date_range[1]
 ID_label = "GGeolmu bird"
 Tier_label = "Silver"
 State = "안샀음😠"
-
-image_path = "Web/ggeolmujpjp.jpg"
+image_path = "Web/photo/ggeolmujpjp.jpg"
 
 st.sidebar.image(
     image_path, 
