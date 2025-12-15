@@ -15,8 +15,8 @@ st.set_page_config(layout="wide", page_title="GGeolmu Bird")
 # 실제 서비스에서는 전체 종목 리스트를 API나 DB에서 가져와야 합니다.
 
 mmp = stock_mapping.mapped(path="Web/stock_list.csv")
-mmp_sorted = mmp.sort_values(by='Name', ascending=True) # 가나다순
-stock_map = dict(mmp_sorted.output())
+
+stock_map = dict(mmp.output())
 
 print(stock_map)
 
@@ -486,10 +486,10 @@ if not data_df.empty:
             mode='markers', 
             name='Bull Signal', 
             marker=dict(color='red', size=20, symbol='triangle-up'),
-            # hovertemplate = 
-            #         '<b>Date:</b> %{x|%Y-%m-%d}<br>' +
-            #         '<b>Close:</b> %{y:,.0f} KRW<br>' +
-            #         '<b>Signal:</b> RSI Bull Divergence (강세)<extra></extra>'
+            hovertemplate = 
+                    '<b>Date:</b> %{x|%Y-%m-%d}<br>' +
+                    '<b>Close:</b> %{y:,.0f} KRW<br>' +
+                    '<b>Signal:</b> Bull signal (강세)<extra></extra>'
                     ),
 
         go.Scatter(
@@ -498,10 +498,10 @@ if not data_df.empty:
             mode='markers', 
             name='Sell Signals', 
             marker=dict(color='blue', size=20, symbol='triangle-down'),
-            # hovertemplate = 
-            #         '<b>Date:</b> %{x|%Y-%m-%d}<br>' +
-            #         '<b>Close:</b> %{y:,.0f} KRW<br>' +
-            #         '<b>Signal:</b> RSI Bull Divergence (강세)<extra></extra>'
+            hovertemplate = 
+                    '<b>Date:</b> %{x|%Y-%m-%d}<br>' +
+                    '<b>Close:</b> %{y:,.0f} KRW<br>' +
+                    '<b>Signal:</b> Sell signal (강세)<extra></extra>'
                     ),
         
         go.Scatter(
@@ -510,10 +510,10 @@ if not data_df.empty:
             mode='markers', 
             name='Hidden Bull', 
             marker=dict(color='orange', size=20, symbol='triangle-up'),
-            # hovertemplate = 
-            #         '<b>Date:</b> %{x|%Y-%m-%d}<br>' +
-            #         '<b>Close:</b> %{y:,.0f} KRW<br>' +
-            #         '<b>Signal:</b> RSI Bull Divergence (강세)<extra></extra>'
+            hovertemplate = 
+                    '<b>Date:</b> %{x|%Y-%m-%d}<br>' +
+                    '<b>Close:</b> %{y:,.0f} KRW<br>' +
+                    '<b>Signal:</b> Hidden bull<extra></extra>'
                     ),
         
         go.Scatter(
@@ -522,10 +522,10 @@ if not data_df.empty:
             mode='markers', 
             name='Hidden Bear', 
             marker=dict(color='royalblue', size=20, symbol='triangle-down'),
-            # hovertemplate = 
-            #         '<b>Date:</b> %{x|%Y-%m-%d}<br>' +
-            #         '<b>Close:</b> %{y:,.0f} KRW<br>' +
-            #         '<b>Signal:</b> RSI Bull Divergence (강세)<extra></extra>'
+            hovertemplate = 
+                    '<b>Date:</b> %{x|%Y-%m-%d}<br>' +
+                    '<b>Close:</b> %{y:,.0f} KRW<br>' +
+                    '<b>Signal:</b> Hidden bear<extra></extra>'
                     ),
 
 
