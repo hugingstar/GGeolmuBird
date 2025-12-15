@@ -313,7 +313,7 @@ st.sidebar.header("⚙️ 분석 설정")
 stock_name = st.sidebar.selectbox(
     "종목 이름을 선택하세요:",
     options=list(stock_map.keys()),
-    index=list(stock_map.keys()).index("삼성전자") # 기본값 삼성전자
+    index=list(stock_map.keys()) # .index("삼성전자") # 기본값 삼성전자
 )
 
 # 종목 이름으로 종목 코드를 찾습니다.
