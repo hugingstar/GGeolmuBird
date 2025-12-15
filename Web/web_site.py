@@ -597,7 +597,7 @@ if not data_df.empty:
             go.Scatter(x=data_df_filtered.index, y=data_df_filtered['CCI'], mode='lines', name='CCI', line=dict(color='orange'))
         ])
         fig_cci.add_hline(y=100, line_dash="dash", line_color="red", annotation_text="+100", annotation_position="top left")
-        fig_cci.add_hline(y=0, line_dash="dash", line_color="white", annotation_position="top left")
+        fig_cci.add_hline(y=0, line_dash="dash", line_color="white", annotation_text="0", annotation_position="top left")
         fig_cci.add_hline(y=-100, line_dash="dash", line_color="green", annotation_text="-100", annotation_position="bottom left")
         fig_cci.update_layout(height=300, 
         
@@ -631,7 +631,7 @@ if not data_df.empty:
             go.Scatter(x=data_df_filtered.index, y=data_df_filtered['RSI'], mode='lines', name='RSI', line=dict(color='purple'))
         ])
         fig_rsi.add_hline(y=70, line_dash="dash", line_color="red", annotation_text="과매수(70)", annotation_position="top left")
-        fig_rsi.add_hline(y=50, line_dash="dash", line_color="white", annotation_position="top left")
+        fig_rsi.add_hline(y=50, line_dash="dash", line_color="white", annotation_text="50" annotation_position="top left")
         fig_rsi.add_hline(y=30, line_dash="dash", line_color="green", annotation_text="과매도(30)", annotation_position="bottom left")
         fig_rsi.update_layout(height=300, 
                               margin=dict(t=10, b=10),
@@ -660,7 +660,7 @@ if not data_df.empty:
             go.Scatter(x=data_df_filtered.index, y=data_df_filtered['MACD'], mode='lines', name='MACD Line', line=dict(color='red')),
             go.Scatter(x=data_df_filtered.index, y=data_df_filtered['MACD_Signal'], mode='lines', name='Signal Line', line=dict(color='blue'))
         ])
-        fig_macd.add_hline(y=0, line_dash="dash", line_color="white", annotation_position="top left")
+        fig_macd.add_hline(y=0, line_dash="dash", line_color="white", annotation_text="0", annotation_position="top left")
         fig_macd.update_layout(height=300, 
         margin=dict(t=10, b=10),
 
@@ -693,7 +693,7 @@ if not data_df.empty:
             go.Scatter(x=data_df_filtered.index, y=data_df_filtered['ADX'], mode='lines', name='ADX', line=dict(color='gray', dash='dot')),
             go.Scatter(x=data_df_filtered.index, y=data_df_filtered['ADXR'], mode='lines', name='ADXR', line=dict(color='gray'))
         ])
-        fig_dmi_adx.add_hline(y=20, line_dash="dash", line_color="white", annotation_position="top left")
+        fig_dmi_adx.add_hline(y=20, line_dash="dash", line_color="white", annotation_text="20" annotation_position="top left")
         fig_dmi_adx.update_layout(height=300, 
         margin=dict(t=10, b=10),
 
@@ -729,9 +729,6 @@ if not data_df.empty:
         fig_mdd = go.Figure(data=[
             go.Scatter(x=data_df_filtered.index, y=data_df_filtered['Drawdown'], mode='lines', name='MDD', line=dict(color='red'))
         ])
-        # fig_mdd.add_hline(y=100, line_dash="dash", line_color="red", annotation_text="+100", annotation_position="top left")
-        # fig_mdd.add_hline(y=0, line_dash="dash", line_color="white", annotation_position="top left")
-        # fig_mdd.add_hline(y=-100, line_dash="dash", line_color="green", annotation_text="-100", annotation_position="bottom left")
         fig_cci.update_layout(height=300, 
         
         margin=dict(t=10, b=10),
