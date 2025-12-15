@@ -16,7 +16,7 @@ st.set_page_config(layout="wide", page_title="GGeolmu Bird")
 
 mmp = stock_mapping.mapped(path="Web/stock_list.csv")
 
-stock_map = mmp.output()
+stock_map = dict(mmp.output())
 
 print(stock_map)
 
@@ -313,7 +313,7 @@ st.sidebar.header("⚙️ 분석 설정")
 stock_name = st.sidebar.selectbox(
     "종목 이름을 선택하세요:",
     options=list(stock_map.keys()),
-    index=list(stock_map.keys()) # .index("삼성전자") # 기본값 삼성전자
+    index=list(stock_map.keys()).index("삼성전자") # 기본값 삼성전자
 )
 
 # 종목 이름으로 종목 코드를 찾습니다.
