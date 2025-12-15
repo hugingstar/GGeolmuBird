@@ -431,7 +431,7 @@ if not data_df.empty:
             y=bull_div_signals['Close'], # 종가 그래프 위에 표시
             mode='markers', 
             name='RSI BullDiv Signal', 
-            marker=dict(color='red', size=25, symbol='^'),
+            marker=dict(color='red', size=25, symbol='triangle-up'),
             hovertemplate = 
                     '<b>Date:</b> %{x|%Y-%m-%d}<br>' +
                     '<b>Close:</b> %{y:,.0f} KRW<br>' +
