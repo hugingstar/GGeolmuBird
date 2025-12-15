@@ -378,7 +378,7 @@ ID_label = "GGeolmu bird"
 Tier_label = "Silver"
 State = "안샀음😠"
 
-image_path = "C:/Users/User/PycharmProjects/TRADE/Web/ggeolmujpjp.jpg"
+image_path = "Web/ggeolmujpjp.jpg"
 
 st.sidebar.image(
     image_path, 
