@@ -662,7 +662,7 @@ if not data_df.empty:
         ])
         fig_macd.add_hline(y=0, line_dash="dash", line_color="white", annotation_text="0", annotation_position="top left")
         fig_macd.update_layout(height=300, 
-        margin=dict(t=10, b=10),
+        margin=dict(t=3, b=3),
 
         xaxis=dict(
             tickfont=dict(size=16) 
@@ -695,7 +695,7 @@ if not data_df.empty:
         ])
         fig_dmi_adx.add_hline(y=20, line_dash="dash", line_color="white", annotation_text="20", annotation_position="top left")
         fig_dmi_adx.update_layout(height=300, 
-        margin=dict(t=10, b=10),
+        margin=dict(t=3, b=3),
 
         xaxis=dict(
             tickfont=dict(size=16) 
