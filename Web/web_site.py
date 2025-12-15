@@ -631,7 +631,7 @@ if not data_df.empty:
             go.Scatter(x=data_df_filtered.index, y=data_df_filtered['RSI'], mode='lines', name='RSI', line=dict(color='purple'))
         ])
         fig_rsi.add_hline(y=70, line_dash="dash", line_color="red", annotation_text="과매수(70)", annotation_position="top left")
-        fig_rsi.add_hline(y=50, line_dash="dash", line_color="white", annotation_text="50" annotation_position="top left")
+        fig_rsi.add_hline(y=50, line_dash="dash", line_color="white", annotation_text="50", annotation_position="top left")
         fig_rsi.add_hline(y=30, line_dash="dash", line_color="green", annotation_text="과매도(30)", annotation_position="bottom left")
         fig_rsi.update_layout(height=300, 
                               margin=dict(t=10, b=10),
@@ -693,7 +693,7 @@ if not data_df.empty:
             go.Scatter(x=data_df_filtered.index, y=data_df_filtered['ADX'], mode='lines', name='ADX', line=dict(color='gray', dash='dot')),
             go.Scatter(x=data_df_filtered.index, y=data_df_filtered['ADXR'], mode='lines', name='ADXR', line=dict(color='gray'))
         ])
-        fig_dmi_adx.add_hline(y=20, line_dash="dash", line_color="white", annotation_text="20" annotation_position="top left")
+        fig_dmi_adx.add_hline(y=20, line_dash="dash", line_color="white", annotation_text="20", annotation_position="top left")
         fig_dmi_adx.update_layout(height=300, 
         margin=dict(t=10, b=10),
 
