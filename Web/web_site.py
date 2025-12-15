@@ -375,22 +375,6 @@ else:
     st.sidebar.write("선택된 종목이 없습니다.")
 
 
-# # 1. 기본값으로 설정하려는 종목 이름 정의
-# target_stock_name = "삼성전자" 
-# stock_keys = list(stock_map_kospi.keys())
-# default_index = 0 # 기본 인덱스: 리스트의 첫 번째 항목
-
-
-# # **1-1. 종목 이름 입력 (요청 사항 반영)**
-# stock_name = st.sidebar.selectbox(
-#     "종목 이름을 선택하세요:",
-#     options=stock_keys,
-#     index=default_index # 계산된 default_index 사용
-# )
-
-# 종목 이름으로 종목 코드를 찾습니다.
-# stock_ticker = stock_map_kospi.get(stock_name)s
-
 if not stock_ticker:
     st.error(f"'{stock_name}'에 해당하는 종목 코드를 찾을 수 없습니다. (지원되는 종목: {', '.join(stock_map_kospi.keys())})")
     st.stop() # 코드가 더 이상 진행되지 않도록 중단
