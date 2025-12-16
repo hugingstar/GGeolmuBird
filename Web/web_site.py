@@ -231,6 +231,23 @@ def add_dmi(data, window=14, adx_threshold=25, adxr_window=None):
 # 기술적 지표 계산 함수
 def calculate_indicators(data):
 
+    # Setting values
+    # RSI
+    price_label_rsi = "MA5"
+    rsi_label = "RSI4"
+    rsi_rollback = 90
+    price_label_rsi_hidden = "MA5"
+    rsi_label_hidden = "RSI3"
+    rsi_hidden_rollback = 180
+
+    # CCI
+    price_label_cci = "MA5"
+    cci_label = "CCI4"
+    cci_rollback = 90
+    price_label_cci_hidden = "MA5"
+    cci_label_hidden = "CCI9"
+    cci_hidden_rollback = 180
+
     # 가격차이
     data['Close_diff_first'] = data['Close'].diff()
     data['Close_diff_second'] = data['Close'].diff(2)
@@ -263,19 +280,6 @@ def calculate_indicators(data):
     data['BB_Upper'] = data['MA20'] + (k * data['STD20'])
     data['BB_Lower'] = data['MA20'] - (k * data['STD20'])
 
-
-    # RSI
-    price_label_rsi = "MA5"
-    rsi_label = "RSI3"
-    rsi_rollback = 90
-
-    # CCI
-    price_label_cci = "MA5"
-    cci_label = "CCI3"
-    cci_rollback = 90
-
-
-
     # RSI
     data["RSI"] = ta.momentum.RSIIndicator(data["Close"], window=14).rsi()
     data["RSI2"] = data['RSI'].rolling(window=2).mean()
@@ -300,9 +304,8 @@ def calculate_indicators(data):
     data["RSI_BullDiv"] = rsi_bull
     data["RSI_BearDiv"] = rsi_bear
 
-    rsi_hidden_rollback = 180
     rsi_hidden_bull, rsi_hidden_bear = hidden_divergence_rolling(
-        price=data[price_label_rsi], rsi=data[rsi_label], lookback=rsi_hidden_rollback)
+        price=data[price_label_rsi_hidden], rsi=data[rsi_label_hidden], lookback=rsi_hidden_rollback)
     data["RSI_Hidden_BullDiv"] = rsi_hidden_bull
     data["RSI_Hidden_BearDiv"] = rsi_hidden_bear
 
@@ -331,9 +334,8 @@ def calculate_indicators(data):
     data["CCI_BullDiv"] = cci_bull
     data["CCI_BearDiv"] = cci_bear
 
-    cci_hidden_rollback = 180
     cci_hidden_bull, cci_hidden_bear = hidden_divergence_rolling(
-        price=data[price_label_cci], rsi=data[cci_label], lookback=cci_hidden_rollback)
+        price=data[price_label_cci_hidden], rsi=data[cci_label_hidden], lookback=cci_hidden_rollback)
     data["CCI_Hidden_BullDiv"] = cci_hidden_bull
     data["CCI_Hidden_BearDiv"] = cci_hidden_bear
 
@@ -360,7 +362,6 @@ def calculate_indicators(data):
         (data["CCI_Signal"] == 1),
         1, 0
     )
-    
     return data
 
 # 데이터 캐싱
@@ -505,20 +506,17 @@ if not data_df.empty:
     data_df_filtered = data_df.copy()
 
     rsi_bull_div_signals = data_df_filtered[data_df_filtered['RSI_BullDiv'] == 1].copy()
-
     cci_bull_div_signals = data_df_filtered[data_df_filtered['CCI_BullDiv'] == 1].copy()
 
     sell_signals = data_df_filtered[data_df_filtered['Sell_Signal'] == 1].copy()
 
     rsi_hidden_bull_signals = data_df_filtered[data_df_filtered['RSI_Hidden_BullDiv'] == 1].copy()
-
     rsi_hidden_bear_signals = data_df_filtered[data_df_filtered['RSI_Hidden_BearDiv'] == 1].copy()
 
     cci_hidden_bull_signals = data_df_filtered[data_df_filtered['CCI_Hidden_BullDiv'] == 1].copy()
-
     cci_hidden_bear_signals = data_df_filtered[data_df_filtered['CCI_Hidden_BearDiv'] == 1].copy()
     
-    # 2. 주가 Line Chart
+    # 2. Line Chart
     fig_price = go.Figure(data=[
         go.Scatter(
             x=data_df_filtered.index, 
