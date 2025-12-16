@@ -78,9 +78,7 @@ def load_data(ticker, start_date, end_date):
     """지정된 기간의 주식 데이터를 가져옵니다. """
     try:
         df = fdr.DataReader(f"{ticker}", start=start_date, end=end_date)
-        df_linear = df.interpolate(method='linear')
-        
-        return df_linear
+        return df
     except Exception as e:
         st.error(f"데이터 로딩 중 오류 발생: {e}")
         return pd.DataFrame()
@@ -242,7 +240,7 @@ def add_dmi(data, window=14, adx_threshold=25, adxr_window=None):
     return data
 
 # 기술적 지표 계산 함수
-def calculate_indicators(data, rsi_ma_label, cci_ma_label, price_ma_label):
+def calculate_indicators(data):
 
     OVERLAP_DAYS = 730  # 예: 240일 내외
 
@@ -491,55 +489,6 @@ caption_html = f"""
 """
 st.sidebar.markdown(caption_html, unsafe_allow_html=True)
 
-
-# ==============================================================================
-# --- (다이버전스 지표 선택 - 사용자 요청 수정 사항) ---
-st.sidebar.markdown("---")
-st.sidebar.subheader("세부 조정")
-
-# Price MA
-price_options = {
-    "Close": "Close", 
-    "MA5": "MA5"
-}
-selected_price_key = st.sidebar.selectbox(
-    "기준 가격 지표 선택:",
-    options=list(price_options.keys()),
-    index=1 # 기본값 MA5
-)
-price_divergence_column = price_options[selected_price_key]
-
-# RSI MA
-rsi_options = {
-    "RSI": "RSI", 
-    "RSI3": "RSI3", 
-    "RSI5" : "RSI5",
-    "RSI6": "RSI6",
-    "RSI9": "RSI9"
-}
-selected_rsi_key = st.sidebar.selectbox(
-    "RSI 평활화 기간 선택:",
-    options=list(rsi_options.keys()),
-    index=1 # 기본값 RSI3 (MA3)
-)
-rsi_divergence_column = rsi_options[selected_rsi_key]
-
-## CCI MA
-cci_options = {
-    "CCI": "CCI", 
-    "CCI3": "CCI3",
-    "CCI5" : "CCI5",
-    "CCI6": "CCI6", 
-    "CCI9": "CCI9"
-}
-selected_cci_key = st.sidebar.selectbox(
-    "CCI 평활화 기간 선택:",
-    options=list(cci_options.keys()),
-    index=1 # 기본값 CCI3 (MA3)
-)
-cci_divergence_column = cci_options[selected_cci_key]
-
-
 # 데이터 로딩
 data_df = load_data(stock_ticker, start_date, end_date)
 
@@ -547,11 +496,7 @@ if not data_df.empty:
     st.markdown(f"# **{stock_name}** ({stock_ticker}) / 기간: {start_date} ~ {end_date}")
     
     # 기술적 지표 계산
-    data_df = calculate_indicators(data=data_df,
-    price_ma_label = price_divergence_column #"MA5",
-    rsi_ma_label= rsi_divergence_column #"MA3", 
-    cci_ma_label = cci_divergence_column #"MA3"
-    )
+    data_df = calculate_indicators(data=data_df)
     
     # 선택된 기간에 맞게 데이터 필터링
     data_df_filtered = data_df.copy()
