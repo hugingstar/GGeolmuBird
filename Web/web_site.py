@@ -55,9 +55,7 @@ stock_map_money = {
     "달러인덱스" : "DX",
     "USD/KRW" : "USD/KRW",
     "EUR/KRW" : "EUR/KRW",
-    "GBP/KRW" : "GBP/KRW",
     "JPY/KRW" : "JPY/KRW",
-    "CNY/KRW" : "CNY/KRW",
     "CHF/KRW" : "CHF/KRW",
 
     "USD/EUR" : "USD/EUR",
@@ -70,8 +68,6 @@ stock_map_coin = {
     "ETH/KRW" : "ETH/KRW",
     "XRP/KRW" : "XRP/KRW",
     "SOL/KRW" : "SOL/KRW",
-    "ETC/KRW" : "ETC/KRW",
-    "TRX/KRW" : "TRX/KRW",
     "BTC/USD" : "BTC/USD",
     "ETH/USD" : "ETH/USD",
 }
