@@ -52,7 +52,7 @@ stock_map_futures = {
 }
 
 stock_map_money = {
-    "달러인덱스" : "NYICDX",
+    "달러인덱스" : "DXY",
     "USD/KRW" : "USD/KRW",
     "EUR/KRW" : "EUR/KRW",
     "JPY/KRW" : "JPY/KRW",
