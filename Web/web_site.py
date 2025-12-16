@@ -234,18 +234,18 @@ def calculate_indicators(data):
     # Setting values
     # RSI
     price_label_rsi = "MA5"
-    rsi_label = "RSI"
+    rsi_label = "RSI6"
     rsi_rollback = 90
     price_label_rsi_hidden = "MA5"
-    rsi_label_hidden = "RSI"
+    rsi_label_hidden = "RSI6"
     rsi_hidden_rollback = 180
 
     # CCI
     price_label_cci = "MA5"
-    cci_label = "CCI"
+    cci_label = "CCI6"
     cci_rollback = 90
     price_label_cci_hidden = "MA5"
-    cci_label_hidden = "CCI"
+    cci_label_hidden = "CCI6"
     cci_hidden_rollback = 180
 
     # 가격차이
