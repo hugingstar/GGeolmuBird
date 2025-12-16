@@ -72,17 +72,6 @@ stock_map_coin = {
 }
 
 
-# 캐싱을 사용하여 데이터 로딩 속도를 개선합니다. (데이터가 변경되지 않는 한 재실행하지 않음)
-@st.cache_data
-def load_data(ticker, start_date, end_date):
-    """지정된 기간의 주식 데이터를 가져옵니다. """
-    try:
-        df = fdr.DataReader(f"{ticker}", start=start_date, end=end_date)
-        return df
-    except Exception as e:
-        st.error(f"데이터 로딩 중 오류 발생: {e}")
-        return pd.DataFrame()
-
 def divergence(price, rsi, lookback):
 
     up_div_price = [0.01, 0.15] # 가격 저점 상승률 하한/상한
@@ -242,8 +231,6 @@ def add_dmi(data, window=14, adx_threshold=25, adxr_window=None):
 # 기술적 지표 계산 함수
 def calculate_indicators(data):
 
-    OVERLAP_DAYS = 730  # 예: 240일 내외
-
     # 가격차이
     data['Close_diff_first'] = data['Close'].diff()
     data['Close_diff_second'] = data['Close'].diff(2)
@@ -276,6 +263,19 @@ def calculate_indicators(data):
     data['BB_Upper'] = data['MA20'] + (k * data['STD20'])
     data['BB_Lower'] = data['MA20'] - (k * data['STD20'])
 
+
+    # RSI
+    price_label_rsi = "MA5"
+    rsi_label = "RSI3"
+    rsi_rollback = 90
+
+    # CCI
+    price_label_cci = "MA5"
+    cci_label = "CCI3"
+    cci_rollback = 90
+
+
+
     # RSI
     data["RSI"] = ta.momentum.RSIIndicator(data["Close"], window=14).rsi()
     data["RSI2"] = data['RSI'].rolling(window=2).mean()
@@ -294,16 +294,15 @@ def calculate_indicators(data):
     data["RSI_Signal"] = np.where(data["RSI"] >= 70, 1,
                             np.where(data["RSI"] <= 30, -1, 0))
 
-    # 다이버전스(롤링) — MA5 기준으로 계산
-    rsi_rollback = 90
+    # RSI Divergence rolling
     rsi_bull, rsi_bear = divergence_rolling(
-        price=data["MA5"], rsi=data["RSI3"], lookback=rsi_rollback)
+        price=data[price_label_rsi], rsi=data[rsi_label], lookback=rsi_rollback)
     data["RSI_BullDiv"] = rsi_bull
     data["RSI_BearDiv"] = rsi_bear
 
     rsi_hidden_rollback = 180
     rsi_hidden_bull, rsi_hidden_bear = hidden_divergence_rolling(
-        price=data["MA5"], rsi=data["RSI3"], lookback=rsi_hidden_rollback)
+        price=data[price_label_rsi], rsi=data[rsi_label], lookback=rsi_hidden_rollback)
     data["RSI_Hidden_BullDiv"] = rsi_hidden_bull
     data["RSI_Hidden_BearDiv"] = rsi_hidden_bear
 
@@ -311,8 +310,6 @@ def calculate_indicators(data):
     data["CCI"] = ta.trend.CCIIndicator(
         high=data["High"], low=data["Low"], close=data["Close"], window=20
     ).cci()
-
-    # CCI 이동평균
     data["CCI2"] = data['CCI'].rolling(window=2).mean()
     data["CCI3"] = data['CCI'].rolling(window=3).mean()
     data["CCI4"] = data['CCI'].rolling(window=4).mean()
@@ -325,19 +322,18 @@ def calculate_indicators(data):
     # CCI rate
     data['CCI_rate_first'] = data['CCI'].pct_change() * 100 # 1 행 전
     data['CCI_rate_second'] = data['CCI'].pct_change(2) * 100 # 2 행 전
-
     data["CCI_Signal"] = np.where(data["CCI"] >= 100, 1,
                             np.where(data["CCI"] <= -100, -1, 0))
     
-    cci_rollback = 90
+    # CCI Divergence rolling
     cci_bull, cci_bear = divergence_rolling(
-        price=data["MA5"], rsi=data["CCI3"], lookback=cci_rollback)
+        price=data[price_label_cci], rsi=data[cci_label], lookback=cci_rollback)
     data["CCI_BullDiv"] = cci_bull
     data["CCI_BearDiv"] = cci_bear
 
     cci_hidden_rollback = 180
     cci_hidden_bull, cci_hidden_bear = hidden_divergence_rolling(
-        price=data["MA5"], rsi=data["CCI3"], lookback=cci_hidden_rollback)
+        price=data[price_label_cci], rsi=data[cci_label], lookback=cci_hidden_rollback)
     data["CCI_Hidden_BullDiv"] = cci_hidden_bull
     data["CCI_Hidden_BearDiv"] = cci_hidden_bear
 
@@ -367,7 +363,18 @@ def calculate_indicators(data):
     
     return data
 
-# 1. 사이드바: 종목 및 데이터 기간 설정
+# 데이터 캐싱
+@st.cache_data
+def load_data(ticker, start_date, end_date):
+    """지정된 기간의 주식 데이터를 가져옵니다. """
+    try:
+        df = fdr.DataReader(f"{ticker}", start=start_date, end=end_date)
+        return df
+    except Exception as e:
+        st.error(f"데이터 로딩 중 오류 발생: {e}")
+        return pd.DataFrame()
+
+# Sidebar
 st.sidebar.header("⚙️ 분석 설정")
 
 market_options = {
@@ -387,19 +394,16 @@ selected_market_name = st.sidebar.selectbox(
     options=list(market_options.keys()),
     index=0 # 기본값 KOSPI
 )
-
-# 선택된 시장의 종목 맵을 가져옵니다.
 selected_stock_map = market_options[selected_market_name]
 stock_keys = list(selected_stock_map.keys())
 
-# **1-1. 종목 이름 입력 (선택된 시장에 따라 동적 변경)**
-# 선택된 시장의 종목이 없을 경우를 대비해 처리
+# Name
 if not stock_keys:
     st.sidebar.warning(f"선택하신 {selected_market_name} 시장에는 현재 종목 데이터가 없습니다.")
     stock_name = None
     stock_ticker = None
 else:
-    # 종목 리스트의 첫 번째 항목을 기본값으로 설정
+    # 종목 리스트의 첫 번째
     default_index = 0 
     
     stock_name = st.sidebar.selectbox(
@@ -408,7 +412,7 @@ else:
         index=default_index
     )
 
-    # 종목 이름으로 종목 코드를 찾습니다.
+    # 종목 이름으로 종목 코드
     stock_ticker = selected_stock_map.get(stock_name)
 
 # --- (이후 데이터 기간 설정 및 분석 로직 계속) ---
@@ -417,12 +421,11 @@ if stock_ticker:
 else:
     st.sidebar.write("선택된 종목이 없습니다.")
 
-
 if not stock_ticker:
     st.error(f"'{stock_name}'에 해당하는 종목 코드를 찾을 수 없습니다. (지원되는 종목: {', '.join(stock_map_kospi.keys())})")
     st.stop() # 코드가 더 이상 진행되지 않도록 중단
 
-# **1-2. 데이터 기간 설정**
+# 2. 데이터 기간
 st.sidebar.markdown("---")
 st.sidebar.subheader("🗓️ 데이터 기간 설정")
 
@@ -468,6 +471,8 @@ date_range = st.sidebar.slider(
 start_date = date_range[0]
 end_date = date_range[1]
 
+
+# 4.ID
 ID_label = "GGeolmu bird"
 Tier_label = "Silver"
 State = "안샀음😠"
@@ -478,8 +483,6 @@ st.sidebar.image(
     width=280
 )
 
-# 🌟 캡션을 왼쪽 정렬하여 별도로 표시합니다.
-# 'text-align: left' CSS 스타일을 적용하고, unsafe_allow_html=True를 사용합니다.
 caption_html = f"""
 <div style="text-align: left; font-size: 20px; padding-left: 5px;">
     ID : {ID_label}<br>
@@ -489,7 +492,7 @@ caption_html = f"""
 """
 st.sidebar.markdown(caption_html, unsafe_allow_html=True)
 
-# 데이터 로딩
+# 5. Data loading
 data_df = load_data(stock_ticker, start_date, end_date)
 
 if not data_df.empty:
