@@ -27,8 +27,8 @@ mmp_nyse = stock_mapping.mapped(path="Web/market/nyse/stock_list.csv")
 stock_map_nyse = dict(mmp_nyse.output())
 
 stock_map_spot = {
-    "Gold" : "GC",
-    "Silver" : "SI",
+    "Gold ETF" : "GLD",
+    "Silver ETF" : "SLV",
     "WTI Crude oil" : "CL",
     "Brent oil" : "BZ",
     "Natural gas" : "NG",
