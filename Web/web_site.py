@@ -26,28 +26,52 @@ stock_map_nasdaq = dict(mmp_nasdaq.output())
 mmp_nyse = stock_mapping.mapped(path="Web/market/nyse/stock_list.csv")
 stock_map_nyse = dict(mmp_nyse.output())
 
+stock_map_spot = {
+    "Gold" : "GC",
+    "Silver" : "SI",
+    "WTI Crude oil" : "CL",
+    "Brent oil" : "BZ",
+    "Natural gas" : "NG",
+
+    "Copper" : "HG",
+    "NI" : "NI",
+    "PL" : "PL"
+
+}
+
 stock_map_futures = {
     "Gold" : "GC=F",
     "Silver" : "SI=F",
     "Copper" : "HG=F",
+    "NI" : "NI=F",
     
     "WTI Crude oil" : "CL=F",
     "Brent oil" : "BZ=F",
-    "Natural gas" : "NG=F"
+    "Natural gas" : "NG=F",
+    "PL=F" : "PL=F"
 }
 
 stock_map_money = {
+    "달러인덱스" : "DX",
     "USD/KRW" : "USD/KRW",
+    "EUR/KRW" : "EUR/KRW",
+    "GBP/KRW" : "GBP/KRW",
+    "JPY/KRW" : "JPY/KRW",
+    "CNY/KRW" : "CNY/KRW",
+    "CHF/KRW" : "CHF/KRW",
+
     "USD/EUR" : "USD/EUR",
     "USD/CNY" : "USD/CNY",
-    
-    "CNY/KRW" : "CNY/KRW",
     "EUR/CNY" : "EUR/CNY",
 }
 
 stock_map_coin = {
     "BTC/KRW" : "BTC/KRW",
     "ETH/KRW" : "ETH/KRW",
+    "XRP/KRW" : "XRP/KRW",
+    "SOL/KRW" : "SOL/KRW",
+    "ETC/KRW" : "ETC/KRW",
+    "TRX/KRW" : "TRX/KRW",
     "BTC/USD" : "BTC/USD",
     "ETH/USD" : "ETH/USD",
 }
@@ -358,6 +382,7 @@ market_options = {
     "NASDAQ": stock_map_nasdaq,
     "Currency" : stock_map_money,
     "Crypto Currency" : stock_map_coin,
+    "Spot" : stock_map_spot,
     "Futures" : stock_map_futures
 }
 
