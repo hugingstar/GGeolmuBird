@@ -36,7 +36,6 @@ stock_map_spot = {
     "Copper" : "HG",
     "NI" : "NI",
     "PL" : "PL"
-
 }
 
 stock_map_futures = {
@@ -52,6 +51,7 @@ stock_map_futures = {
 }
 
 stock_map_money = {
+    "달러인덱스" : "DX-Y.NYB",
     "USD/KRW" : "USD/KRW",
     "EUR/KRW" : "EUR/KRW",
     "JPY/KRW" : "JPY/KRW",
