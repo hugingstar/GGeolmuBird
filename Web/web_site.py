@@ -232,7 +232,7 @@ def add_dmi(data, window=14, adx_threshold=25, adxr_window=None):
 def calculate_indicators(data):
 
     # Setting values
-    # RSI
+    # RSI Divergence
     price_label_rsi = "MA5"
     rsi_label = "RSI9"
     rsi_rollback = 90
@@ -240,13 +240,19 @@ def calculate_indicators(data):
     rsi_label_hidden = "RSI9"
     rsi_hidden_rollback = 180
 
-    # CCI
+    # CCI Divergence
     price_label_cci = "MA5"
     cci_label = "CCI9"
     cci_rollback = 90
     price_label_cci_hidden = "MA5"
     cci_label_hidden = "CCI9"
     cci_hidden_rollback = 180
+
+    # Oversell Overbuy
+    rsi_overbuy_label = "RSI3"
+    rsi_oversell_label = "RSI3"
+    cci_overbuy_label = "CCI3"
+    cci_oversell_label = "CCI3"
 
     # 가격차이
     data['Close_diff_first'] = data['Close'].diff()
@@ -294,9 +300,11 @@ def calculate_indicators(data):
     # RSI rate
     data['RSI_rate_first'] = data['RSI'].pct_change() * 100 # 1 행 전
     data['RSI_rate_second'] = data['RSI'].pct_change(2) * 100 # 2 행 전
+    
 
-    data["RSI_Signal"] = np.where(data["RSI6"] >= 70, 1,
-                            np.where(data["RSI6"] <= 30, -1, 0))
+    # RSI Sell point
+    data["RSI_Signal"] = np.where(data[rsi_overbuy_label] >= 70, 1,
+                            np.where(data[rsi_oversell_label] <= 30, -1, 0))
 
     # RSI Divergence rolling
     rsi_bull, rsi_bear = divergence_rolling(
@@ -325,8 +333,10 @@ def calculate_indicators(data):
     # CCI rate
     data['CCI_rate_first'] = data['CCI'].pct_change() * 100 # 1 행 전
     data['CCI_rate_second'] = data['CCI'].pct_change(2) * 100 # 2 행 전
-    data["CCI_Signal"] = np.where(data["CCI"] >= 100, 1,
-                            np.where(data["CCI"] <= -100, -1, 0))
+    
+    # CCI Oversell Overbuy
+    data["CCI_Signal"] = np.where(data[cci_overbuy_label] >= 100, 1,
+                            np.where(data[cci_oversell_label] <= -100, -1, 0))
     
     # CCI Divergence rolling
     cci_bull, cci_bear = divergence_rolling(
@@ -454,12 +464,10 @@ def set_slider_font_size(label_font_size='23px', value_font_size='23px'):
 
 set_slider_font_size(label_font_size='30px', value_font_size='16px')
 
-# 기본 기간 설정
+# Default data range
 end_date = dt.date.today()
 default_start_date = end_date - dt.timedelta(days=365 * 2) # 2년치 데이터
-
-
-# st.slider를 이용한 날짜 범위 선택
+# Slider : Data range
 date_range = st.sidebar.slider(
     "조회 기간을 선택하세요:",
     min_value=dt.date(2000, 1, 1),
@@ -467,8 +475,6 @@ date_range = st.sidebar.slider(
     value=(default_start_date, end_date),
     format="YYYY-MM-DD"
 )
-
-
 start_date = date_range[0]
 end_date = date_range[1]
 
