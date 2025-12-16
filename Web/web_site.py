@@ -295,8 +295,8 @@ def calculate_indicators(data):
     data['RSI_rate_first'] = data['RSI'].pct_change() * 100 # 1 행 전
     data['RSI_rate_second'] = data['RSI'].pct_change(2) * 100 # 2 행 전
 
-    data["RSI_Signal"] = np.where(data["RSI"] >= 70, 1,
-                            np.where(data["RSI"] <= 30, -1, 0))
+    data["RSI_Signal"] = np.where(data["RSI6"] >= 70, 1,
+                            np.where(data["RSI6"] <= 30, -1, 0))
 
     # RSI Divergence rolling
     rsi_bull, rsi_bear = divergence_rolling(
