@@ -52,7 +52,6 @@ stock_map_futures = {
 }
 
 stock_map_money = {
-    "달러인덱스" : "DX",
     "USD/KRW" : "USD/KRW",
     "EUR/KRW" : "EUR/KRW",
     "JPY/KRW" : "JPY/KRW",
