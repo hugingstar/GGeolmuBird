@@ -525,6 +525,9 @@ if not data_df.empty:
     rsi_bull_div_signals = data_df_filtered[data_df_filtered['RSI_BullDiv'] == 1].copy()
     cci_bull_div_signals = data_df_filtered[data_df_filtered['CCI_BullDiv'] == 1].copy()
 
+    rsi_bear_div_signals = data_df_filtered[data_df_filtered['RSI_BearDiv'] == 1].copy()
+    cci_bear_div_signals = data_df_filtered[data_df_filtered['CCI_BearDiv'] == 1].copy()
+
     sell_signals = data_df_filtered[data_df_filtered['Sell_Signal'] == 1].copy()
 
     rsi_hidden_bull_signals = data_df_filtered[data_df_filtered['RSI_Hidden_BullDiv'] == 1].copy()
@@ -619,6 +622,18 @@ if not data_df.empty:
                     ),
         
         go.Scatter(
+            x=rsi_bear_div_signals.index, 
+            y=rsi_bear_div_signals['Close'], # 종가 그래프 위에 표시
+            mode='markers', 
+            name='Bear(R)', 
+            marker=dict(color='slateblue', size=20, symbol='triangle-down'),
+            hovertemplate = 
+                    '<b>Date:</b> %{x|%Y-%m-%d}<br>' +
+                    '<b>Close:</b> %{y:,.0f}<br>' +
+                    '<b>Signal:</b> Bear signal<extra></extra>'
+                    ),
+
+        go.Scatter(
             x=rsi_hidden_bull_signals.index, 
             y=rsi_hidden_bull_signals['Close'], # 종가 그래프 위에 표시
             mode='markers', 
@@ -653,6 +668,18 @@ if not data_df.empty:
                     '<b>Date:</b> %{x|%Y-%m-%d}<br>' +
                     '<b>Close:</b> %{y:,.0f}<br>' +
                     '<b>Signal:</b> Bull signal<extra></extra>'
+                    ),
+
+        go.Scatter(
+            x=cci_bear_div_signals.index, 
+            y=cci_bear_div_signals['Close'], # 종가 그래프 위에 표시
+            mode='markers', 
+            name='Bear(C)', 
+            marker=dict(color='olivedrab', size=20, symbol='triangle-down'),
+            hovertemplate = 
+                    '<b>Date:</b> %{x|%Y-%m-%d}<br>' +
+                    '<b>Close:</b> %{y:,.0f}<br>' +
+                    '<b>Signal:</b> Bear signal<extra></extra>'
                     ),
         
         go.Scatter(
