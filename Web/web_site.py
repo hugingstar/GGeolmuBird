@@ -233,18 +233,18 @@ def calculate_indicators(data):
 
     # Setting values
     # RSI Divergence
-    price_label_rsi = "MA3"
+    price_label_rsi = "MA4"
     rsi_label = "RSI"
     rsi_rollback = 90
-    price_label_rsi_hidden = "MA3"
+    price_label_rsi_hidden = "MA4"
     rsi_label_hidden = "RSI"
     rsi_hidden_rollback = 180
 
     # CCI Divergence
-    price_label_cci = "MA3"
+    price_label_cci = "MA4"
     cci_label = "CCI"
     cci_rollback = 90
-    price_label_cci_hidden = "MA3"
+    price_label_cci_hidden = "MA4"
     cci_label_hidden = "CCI"
     cci_hidden_rollback = 180
 
