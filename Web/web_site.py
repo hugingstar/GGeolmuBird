@@ -707,6 +707,15 @@ if not data_df.empty:
                     '<b>Close:</b> %{y:,.0f} KRW<br>' +
                     '<b>Signal:</b> Hidden bear<extra></extra>'
                     ),
+        
+        go.Bar(
+            x=data_df_filtered.index, 
+            y=data_df_filtered['Volume'], 
+            name='Volume', 
+            marker_color='grey', 
+            opacity=0.5,
+            yaxis='y2'  # 주가와 단위가 다르므로 보조축 사용
+        ),
     ])
 
     fig_price.update_layout(
@@ -722,7 +731,7 @@ if not data_df.empty:
                 b=10  # Bottom margin (하단 X축 제목, RangeSlider, 그리고 범례 공간)
             ),
 
-        # <<-- [수정 2] 폰트 크기 설정
+        # 폰트 크기 설정
         font=dict(
             family="Arial, sans-serif",  # 폰트 종류 설정
             size=20,                     # 기본 폰트 크기 설정
