@@ -74,10 +74,11 @@ stock_map_coin = {
 
 def divergence(price, rsi, lookback):
 
-    up_div_price = [0.01, 0.15] # 가격 저점 상승률 하한/상한
-    up_div_rsi = [0.01, 0.15] # RSI 저점 상승률 하한/상한
-    down_div_price = [0.03, 0.15] # 가격 고점 상승률 하한/상한
-    down_div_rsi = [-0.03, -0.15] # RSI 고점 하락률 하한/상한
+    bottom_div_price = [-0.15, -0.03] # 가격 저점 하락
+    bottom_div_rsi = [0.03, 0.15] # RSI 저점 상승
+
+    top_div_price = [0.03, 0.15] # 가격 고점 상승
+    top_div_rsi = [-0.15, -0.03] # RSI 고점 하락
 
     def local_peaks(s):  # 로컬 고점
         return (s.shift(1) < s) & (s.shift(-1) < s)
@@ -93,30 +94,33 @@ def divergence(price, rsi, lookback):
     bull_div = pd.Series(0, index=p.index)
     bear_div = pd.Series(0, index=p.index)
 
+    #trough
     if len(trough_idx) >= 2:
         for a, b in zip(trough_idx[:-1], trough_idx[1:]):
             price_LL_pct = (p[b] - p[a]) / p[a]
             rsi_LL_pct = (r[b] - r[a]) / r[a]
-            if ((up_div_price[0] <= price_LL_pct <= up_div_price[1]) and
-                (up_div_rsi[0]   <= rsi_LL_pct <= up_div_rsi[1])):
+            if ((bottom_div_price[0] <= price_LL_pct <= bottom_div_price[1]) and # 가격 저점 하락
+                (bottom_div_rsi[0] <= rsi_LL_pct <= bottom_div_rsi[1])): # RSI 저점 상승
                 bull_div[b] = 1
 
+    #Peak
     if len(peak_idx) >= 2:
         for a, b in zip(peak_idx[:-1], peak_idx[1:]):
             price_HH_pct = (p[b] - p[a]) / p[a]
             rsi_HH_pct = (r[b] - r[a]) / r[a]
-            if ((down_div_price[0] <= price_HH_pct <= down_div_price[1]) and
-                (down_div_rsi[1]   <= rsi_HH_pct  <= down_div_rsi[0])):  # 주의: 음수 범위
+            if ((top_div_price[0] <= price_HH_pct <= top_div_price[1]) and # 가격 고점 상승
+                (top_div_rsi[0] <= rsi_HH_pct  <= top_div_rsi[1])): # RSI 고점 하락
                 bear_div[b] = 1
 
     return bull_div, bear_div
 
 def hidden_divergence(price, rsi, lookback):
 
-    up_hide_price = [0.03, 0.15]
-    up_hide_rsi = [-0.15, -0.03]
-    down_hide_price = [-0.03, -0.15]
-    down_hide_rsi = [0.03, 0.15]
+    bottom_hide_price = [0.03, 0.15]
+    bottom_hide_rsi = [-0.15, -0.03]
+
+    top_hide_price = [-0.15, -0.03]
+    top_hide_rsi = [0.03, 0.15]
 
     def local_peaks(s):  # 로컬 고점
         return (s.shift(1) < s) & (s.shift(-1) < s)
@@ -136,16 +140,16 @@ def hidden_divergence(price, rsi, lookback):
         for a, b in zip(trough_idx[:-1], trough_idx[1:]):
             price_LL_pct = (p[b] - p[a]) / p[a]
             rsi_LL_pct = (r[b] - r[a]) / r[a]
-            if ((up_hide_price[0] <= price_LL_pct <= up_hide_price[1]) and
-                (up_hide_rsi[0]  <= rsi_LL_pct <= up_hide_rsi[1])):  # rsi 하락 → 부호 주의
+            if ((bottom_hide_price[0] <= price_LL_pct <= bottom_hide_price[1]) and
+                (bottom_hide_rsi[0] <= rsi_LL_pct <= up_hide_rsi[1])):  # rsi 하락 → 부호 주의
                 hidden_bull[b] = 1
 
     if len(peak_idx) >= 2:
         for a, b in zip(peak_idx[:-1], peak_idx[1:]):
             price_HH_pct = (p[b] - p[a]) / p[a]
             rsi_HH_pct = (r[b] - r[a]) / r[a]
-            if ((down_hide_price[1] <= price_HH_pct <= down_hide_price[0]) and  # 음수 범위
-                (down_hide_rsi[0]  <= rsi_HH_pct <= down_hide_rsi[1])):
+            if ((top_hide_price[0] <= price_HH_pct <= top_hide_price[1]) and  # 음수 범위
+                (top_hide_rsi[0]  <= rsi_HH_pct <= top_hide_rsi[1])):
                 hidden_bear[b] = 1
 
     return hidden_bull, hidden_bear
