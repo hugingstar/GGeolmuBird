@@ -141,7 +141,7 @@ def hidden_divergence(price, rsi, lookback):
             price_LL_pct = (p[b] - p[a]) / p[a]
             rsi_LL_pct = (r[b] - r[a]) / r[a]
             if ((bottom_hide_price[0] <= price_LL_pct <= bottom_hide_price[1]) and
-                (bottom_hide_rsi[0] <= rsi_LL_pct <= up_hide_rsi[1])):  # rsi 하락 → 부호 주의
+                (bottom_hide_rsi[0] <= rsi_LL_pct <= bottom_hide_rsi[1])):  # rsi 하락 → 부호 주의
                 hidden_bull[b] = 1
 
     if len(peak_idx) >= 2:
