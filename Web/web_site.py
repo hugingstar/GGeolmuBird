@@ -242,10 +242,10 @@ def calculate_indicators(data):
 
     # CCI Divergence
     price_label_cci = "MA5"
-    cci_label = "CCI3"
+    cci_label = "CCI"
     cci_rollback = 90
     price_label_cci_hidden = "MA5"
-    cci_label_hidden = "CCI3"
+    cci_label_hidden = "CCI"
     cci_hidden_rollback = 180
 
     # Oversell Overbuy
