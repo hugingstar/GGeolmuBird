@@ -538,7 +538,7 @@ if not data_df.empty:
     cci_hidden_bull_signals = data_df_filtered[data_df_filtered['CCI_Hidden_BullDiv'] == 1].copy()
     cci_hidden_bear_signals = data_df_filtered[data_df_filtered['CCI_Hidden_BearDiv'] == 1].copy()
     
-    # 2. Line Chart
+    # (1, 1) Line Chart
     fig_price = go.Figure(data=[
         go.Scatter(
             x=data_df_filtered.index, 
@@ -752,15 +752,14 @@ if not data_df.empty:
     )
     st.plotly_chart(fig_price, use_container_width=True)
 
-    # Volume
+    # (2, 1) Volume
     fig_price = go.Figure(data=[
     go.Bar(
             x=data_df_filtered.index, 
             y=data_df_filtered['Volume'], 
             name='Volume', 
             marker_color='grey', 
-            opacity=0.5,
-            yaxis='y2'  # 주가와 단위가 다르므로 보조축 사용
+            opacity=0.8,
         ),
     ])
 
@@ -808,8 +807,7 @@ if not data_df.empty:
     st.plotly_chart(fig_price, use_container_width=True)
 
 
-    # Binary indicator
-
+    # (3, 1) Binary indicator
     fig_price = go.Figure(data=[
         go.Scatter(
             x=data_df_filtered.index, 
