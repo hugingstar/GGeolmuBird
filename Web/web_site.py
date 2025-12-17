@@ -271,8 +271,16 @@ def calculate_indicators(data):
     data['OBV'] = data['obv_change'].cumsum()
 
     # Moving average
+    data["MA2"] = data["Close"].rolling(window=2).mean()
+    data["MA3"] = data["Close"].rolling(window=3).mean()
+    data["MA4"] = data["Close"].rolling(window=4).mean()
     data["MA5"] = data["Close"].rolling(window=5).mean()
-    data["MA10"] = data["Close"].rolling(window=5).mean()
+    data["MA6"] = data["Close"].rolling(window=6).mean()
+    data["MA7"] = data["Close"].rolling(window=7).mean()
+    data["MA8"] = data["Close"].rolling(window=8).mean()
+    data["MA9"] = data["Close"].rolling(window=9).mean()
+    data["MA10"] = data["Close"].rolling(window=10).mean()
+    data["MA30"] = data["Close"].rolling(window=30).mean()
     data["MA50"] = data["Close"].rolling(window=50).mean()
     data["MA60"] = data["Close"].rolling(window=60).mean()
     data["MA120"] = data["Close"].rolling(window=120).mean()
@@ -301,7 +309,6 @@ def calculate_indicators(data):
     data['RSI_rate_first'] = data['RSI'].pct_change() * 100 # 1 행 전
     data['RSI_rate_second'] = data['RSI'].pct_change(2) * 100 # 2 행 전
     
-
     # RSI Sell point
     data["RSI_Signal"] = np.where(data[rsi_overbuy_label] >= 70, 1,
                             np.where(data[rsi_oversell_label] <= 30, -1, 0))
@@ -380,6 +387,7 @@ def load_data(ticker, start_date, end_date):
     """지정된 기간의 주식 데이터를 가져옵니다. """
     try:
         df = fdr.DataReader(f"{ticker}", start=start_date, end=end_date)
+        df = df.interpolate(method=linear)
         return df
     except Exception as e:
         st.error(f"데이터 로딩 중 오류 발생: {e}")
