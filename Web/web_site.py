@@ -707,7 +707,6 @@ if not data_df.empty:
                     '<b>Close:</b> %{y:,.0f} KRW<br>' +
                     '<b>Signal:</b> Hidden bear<extra></extra>'
                     ),
-        
     ])
 
     fig_price.update_layout(
@@ -753,6 +752,60 @@ if not data_df.empty:
     )
     st.plotly_chart(fig_price, use_container_width=True)
 
+    # Volume
+    fig_price = go.Figure(data=[
+    go.Bar(
+            x=data_df_filtered.index, 
+            y=data_df_filtered['Volume'], 
+            name='Volume', 
+            marker_color='grey', 
+            opacity=0.5,
+            yaxis='y2'  # 주가와 단위가 다르므로 보조축 사용
+        ),
+    ])
+
+    fig_price.update_layout(
+        yaxis_title="Volume",
+        height=300,
+        xaxis_rangeslider_visible=False,
+        
+        # 여백
+        margin=dict(
+                l=20,  # Left margin (좌측 Y축 제목/레이블 공간)
+                r=20,  # Right margin
+                t=10,  # Top margin (상단 제목 공간)
+                b=10  # Bottom margin (하단 X축 제목, RangeSlider, 그리고 범례 공간)
+            ),
+
+
+        # 폰트 크기 설정
+        font=dict(
+            family="Arial, sans-serif",  # 폰트 종류 설정
+            size=20,                     # 기본 폰트 크기 설정
+            color="black"
+        ),
+        # 축 제목 폰트 크기 설정
+        xaxis=dict(title=dict(font=dict(size=20)),
+        tickfont=dict(size=17)
+        ),
+        yaxis=dict(title=dict(font=dict(size=20)),
+        tickfont=dict(size=17)
+        ),
+
+        legend=dict(
+        font=dict(size=18),
+        # 오른쪽 상단에 배치 (x=1, y=1)
+        x=0,
+        y=1.4,
+        orientation="h",
+        # 범례 상자의 오른쪽 상단 모서리를 (1, 1) 좌표에 고정
+        xanchor='left',
+        yanchor='top')
+
+        # 제목 폰트 크기 설정 (만약 fig_price에 차트 제목을 추가했다면 사용)
+        # title=dict(font=dict(size=20)) 
+    )
+    st.plotly_chart(fig_price, use_container_width=True)
 
     # Binary indicator
 
@@ -806,7 +859,7 @@ if not data_df.empty:
             ),
 
 
-        # <<-- [수정 2] 폰트 크기 설정
+        # 폰트 크기 설정
         font=dict(
             family="Arial, sans-serif",  # 폰트 종류 설정
             size=20,                     # 기본 폰트 크기 설정
@@ -910,7 +963,7 @@ if not data_df.empty:
 
     col3, col4 = st.columns(2)
 
-    # --- 3열: MACD ---
+    # --- MACD ---
     with col3:
         st.markdown("#### MACD (Moving Average Convergence Divergence)")
         fig_macd = go.Figure(data=[
