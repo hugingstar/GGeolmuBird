@@ -675,7 +675,7 @@ if not data_df.empty:
             y=cci_bear_div_signals['Close'], # 종가 그래프 위에 표시
             mode='markers', 
             name='Bear(C)', 
-            marker=dict(color='olivedrab', size=20, symbol='triangle-down'),
+            marker=dict(color='darkgreen', size=20, symbol='triangle-down'),
             hovertemplate = 
                     '<b>Date:</b> %{x|%Y-%m-%d}<br>' +
                     '<b>Close:</b> %{y:,.0f}<br>' +
