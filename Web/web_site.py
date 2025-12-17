@@ -234,18 +234,18 @@ def calculate_indicators(data):
     # Setting values
     # RSI Divergence
     price_label_rsi = "MA5"
-    rsi_label = "RSI9"
+    rsi_label = "RSI14"
     rsi_rollback = 90
     price_label_rsi_hidden = "MA5"
-    rsi_label_hidden = "RSI9"
+    rsi_label_hidden = "RSI14"
     rsi_hidden_rollback = 180
 
     # CCI Divergence
     price_label_cci = "MA5"
-    cci_label = "CCI9"
+    cci_label = "CCI14"
     cci_rollback = 90
     price_label_cci_hidden = "MA5"
-    cci_label_hidden = "CCI9"
+    cci_label_hidden = "CCI14"
     cci_hidden_rollback = 180
 
     # Oversell Overbuy
@@ -280,6 +280,7 @@ def calculate_indicators(data):
     data["MA8"] = data["Close"].rolling(window=8).mean()
     data["MA9"] = data["Close"].rolling(window=9).mean()
     data["MA10"] = data["Close"].rolling(window=10).mean()
+    data["MA14"] = data["Close"].rolling(window=14).mean()
     data["MA30"] = data["Close"].rolling(window=30).mean()
     data["MA50"] = data["Close"].rolling(window=50).mean()
     data["MA60"] = data["Close"].rolling(window=60).mean()
@@ -304,6 +305,7 @@ def calculate_indicators(data):
     data["RSI7"] = data['RSI'].rolling(window=7).mean()
     data["RSI8"] = data['RSI'].rolling(window=8).mean()
     data["RSI9"] = data['RSI'].rolling(window=9).mean()
+    data["RSI14"] = data['RSI'].rolling(window=14).mean()
 
     # RSI rate
     data['RSI_rate_first'] = data['RSI'].pct_change() * 100 # 1 행 전
@@ -336,6 +338,7 @@ def calculate_indicators(data):
     data["CCI7"] = data['CCI'].rolling(window=7).mean()
     data["CCI8"] = data['CCI'].rolling(window=8).mean()
     data["CCI9"] = data['CCI'].rolling(window=9).mean()
+    data["CCI14"] = data['CCI'].rolling(window=14).mean()
 
     # CCI rate
     data['CCI_rate_first'] = data['CCI'].pct_change() * 100 # 1 행 전
