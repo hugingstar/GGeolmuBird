@@ -1040,60 +1040,60 @@ if not data_df.empty:
         st.plotly_chart(fig_obv, use_container_width=True)
 
     # --- 데이터 확인 (선택 사항) ---
-    st.markdown("---")
+    # st.markdown("---")
     # Bull
-    st.subheader("Bull Signals")
-    if st.checkbox('CCI'):
-        st.dataframe(cci_bull_div_signals.tail(10),
-        width=1900, # 예시로 1500px 너비를 지정
-        height=1000   # 높이는 90개 행을 보기에 적절한 값으로 설정 (선택 사항)
-        )
+    # st.subheader("Bull Signals")
+    # if st.checkbox('CCI'):
+    #     st.dataframe(cci_bull_div_signals.tail(10),
+    #     width=1900, # 예시로 1500px 너비를 지정
+    #     height=1000   # 높이는 90개 행을 보기에 적절한 값으로 설정 (선택 사항)
+    #     )
 
-    if st.checkbox('RSI'):
-        st.dataframe(rsi_bull_div_signals.tail(10),
-        width=1900, # 예시로 1500px 너비를 지정
-        height=1000   # 높이는 90개 행을 보기에 적절한 값으로 설정 (선택 사항)
-        )
+    # if st.checkbox('RSI'):
+    #     st.dataframe(rsi_bull_div_signals.tail(10),
+    #     width=1900, # 예시로 1500px 너비를 지정
+    #     height=1000   # 높이는 90개 행을 보기에 적절한 값으로 설정 (선택 사항)
+    #     )
 
-    if st.checkbox('CCI Hidden'):
-        st.dataframe(cci_hidden_bull_signals.tail(10),
-        width=1900, # 예시로 1500px 너비를 지정
-        height=1000   # 높이는 90개 행을 보기에 적절한 값으로 설정 (선택 사항)
-        )
+    # if st.checkbox('CCI Hidden'):
+    #     st.dataframe(cci_hidden_bull_signals.tail(10),
+    #     width=1900, # 예시로 1500px 너비를 지정
+    #     height=1000   # 높이는 90개 행을 보기에 적절한 값으로 설정 (선택 사항)
+    #     )
 
-    if st.checkbox('RSI Hidden'):
-        st.dataframe(rsi_hidden_bull_signals.tail(10),
-        width=1900, # 예시로 1500px 너비를 지정
-        height=1000   # 높이는 90개 행을 보기에 적절한 값으로 설정 (선택 사항)
-        )
+    # if st.checkbox('RSI Hidden'):
+    #     st.dataframe(rsi_hidden_bull_signals.tail(10),
+    #     width=1900, # 예시로 1500px 너비를 지정
+    #     height=1000   # 높이는 90개 행을 보기에 적절한 값으로 설정 (선택 사항)
+    #     )
 
     # Bear signals
-    st.markdown("---")
-    st.subheader("Bear Signals")
+    # st.markdown("---")
+    # st.subheader("Bear Signals")
 
-    if st.checkbox('CCI'):
-        st.dataframe(cci_bear_div_signals.tail(10),
-        width=1900, # 예시로 1500px 너비를 지정
-        height=1000   # 높이는 90개 행을 보기에 적절한 값으로 설정 (선택 사항)
-        )
+    # if st.checkbox('CCI'):
+    #     st.dataframe(cci_bear_div_signals.tail(10),
+    #     width=1900, # 예시로 1500px 너비를 지정
+    #     height=1000   # 높이는 90개 행을 보기에 적절한 값으로 설정 (선택 사항)
+    #     )
 
-    if st.checkbox('RSI'):
-        st.dataframe(rsi_bear_div_signals.tail(10),
-        width=1900, # 예시로 1500px 너비를 지정
-        height=1000   # 높이는 90개 행을 보기에 적절한 값으로 설정 (선택 사항)
-        )
+    # if st.checkbox('RSI'):
+    #     st.dataframe(rsi_bear_div_signals.tail(10),
+    #     width=1900, # 예시로 1500px 너비를 지정
+    #     height=1000   # 높이는 90개 행을 보기에 적절한 값으로 설정 (선택 사항)
+    #     )
 
-    if st.checkbox('CCI Hidden'):
-        st.dataframe(cci_hidden_bear_signals.tail(10),
-        width=1900, # 예시로 1500px 너비를 지정
-        height=1000   # 높이는 90개 행을 보기에 적절한 값으로 설정 (선택 사항)
-        )
+    # if st.checkbox('CCI Hidden'):
+    #     st.dataframe(cci_hidden_bear_signals.tail(10),
+    #     width=1900, # 예시로 1500px 너비를 지정
+    #     height=1000   # 높이는 90개 행을 보기에 적절한 값으로 설정 (선택 사항)
+    #     )
 
-    if st.checkbox('RSI Hidden'):
-        st.dataframe(rsi_hidden_bear_signals.tail(10),
-        width=1900, # 예시로 1500px 너비를 지정
-        height=1000   # 높이는 90개 행을 보기에 적절한 값으로 설정 (선택 사항)
-        )
+    # if st.checkbox('RSI Hidden'):
+    #     st.dataframe(rsi_hidden_bear_signals.tail(10),
+    #     width=1900, # 예시로 1500px 너비를 지정
+    #     height=1000   # 높이는 90개 행을 보기에 적절한 값으로 설정 (선택 사항)
+    #     )
 
 else:
     st.warning("주식 데이터를 불러오지 못했습니다. 종목 코드 또는 기간을 확인해 주세요.")
