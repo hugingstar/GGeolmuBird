@@ -234,10 +234,10 @@ def calculate_indicators(data):
     # Setting values
     # RSI Divergence
     price_label_rsi = "MA5"
-    rsi_label = "RSI3"
+    rsi_label = "RSI"
     rsi_rollback = 90
     price_label_rsi_hidden = "MA5"
-    rsi_label_hidden = "RSI3"
+    rsi_label_hidden = "RSI"
     rsi_hidden_rollback = 180
 
     # CCI Divergence
@@ -249,10 +249,10 @@ def calculate_indicators(data):
     cci_hidden_rollback = 180
 
     # Oversell Overbuy
-    rsi_overbuy_label = "RSI9"
-    rsi_oversell_label = "RSI9"
-    cci_overbuy_label = "CCI9"
-    cci_oversell_label = "CCI9"
+    rsi_overbuy_label = "RSI"
+    rsi_oversell_label = "RSI"
+    cci_overbuy_label = "CCI"
+    cci_oversell_label = "CCI"
 
     # 가격차이
     data['Close_diff_first'] = data['Close'].diff()
