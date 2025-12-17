@@ -387,7 +387,7 @@ def load_data(ticker, start_date, end_date):
     """지정된 기간의 주식 데이터를 가져옵니다. """
     try:
         df = fdr.DataReader(f"{ticker}", start=start_date, end=end_date)
-        df = df.interpolate(method=linear)
+        df = df.interpolate(method="linear")
         return df
     except Exception as e:
         st.error(f"데이터 로딩 중 오류 발생: {e}")
