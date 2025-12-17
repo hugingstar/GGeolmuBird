@@ -708,14 +708,6 @@ if not data_df.empty:
                     '<b>Signal:</b> Hidden bear<extra></extra>'
                     ),
         
-        go.Bar(
-            x=data_df_filtered.index, 
-            y=data_df_filtered['Volume'], 
-            name='Volume', 
-            marker_color='grey', 
-            opacity=0.5,
-            yaxis='y2'  # 주가와 단위가 다르므로 보조축 사용
-        ),
     ])
 
     fig_price.update_layout(
