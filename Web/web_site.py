@@ -74,11 +74,11 @@ stock_map_coin = {
 
 def divergence(price, rsi, lookback):
 
-    bottom_div_price = [-0.15, -0.03] # 가격 저점 하락
-    bottom_div_rsi = [0.03, 0.15] # RSI 저점 상승
+    bottom_div_price = [-0.15, -0.01] # 가격 저점 하락
+    bottom_div_rsi = [0.01, 0.15] # RSI 저점 상승
 
-    top_div_price = [0.03, 0.15] # 가격 고점 상승
-    top_div_rsi = [-0.15, -0.03] # RSI 고점 하락
+    top_div_price = [0.01, 0.15] # 가격 고점 상승
+    top_div_rsi = [-0.15, -0.01] # RSI 고점 하락
 
     def local_peaks(s):  # 로컬 고점
         return (s.shift(1) < s) & (s.shift(-1) < s)
@@ -116,11 +116,11 @@ def divergence(price, rsi, lookback):
 
 def hidden_divergence(price, rsi, lookback):
 
-    bottom_hide_price = [0.03, 0.15]
-    bottom_hide_rsi = [-0.15, -0.03]
+    bottom_hide_price = [0.01, 0.15]
+    bottom_hide_rsi = [-0.15, -0.01]
 
-    top_hide_price = [-0.15, -0.03]
-    top_hide_rsi = [0.03, 0.15]
+    top_hide_price = [-0.15, -0.01]
+    top_hide_rsi = [0.01, 0.15]
 
     def local_peaks(s):  # 로컬 고점
         return (s.shift(1) < s) & (s.shift(-1) < s)
