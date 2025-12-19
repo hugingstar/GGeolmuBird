@@ -495,7 +495,7 @@ end_date = date_range[1]
 # 4.ID
 ID_label = "GGeolmu bird"
 Tier_label = "Silver"
-State = "안샀음😠"
+State = "안샀음😠\n This bird is ont of the famous bird in South Korea."
 image_path = "Web/photo/ggeolmujpjp.jpg"
 
 st.sidebar.image(
