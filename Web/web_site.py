@@ -128,7 +128,7 @@ def hidden_divergence(price, rsi, lookback):
     p = price.tail(lookback)
     r = rsi.reindex(p.index)
 
-    trough_idx = p[local_troughs(p)].index
+    trough_irsi_HH_pctdx = p[local_troughs(p)].index
     peak_idx = p[local_peaks(p)].index
 
     hidden_bull = pd.Series(0, index=p.index)
@@ -1096,7 +1096,7 @@ if not data_df.empty:
 
     # --- 데이터 확인 (선택 사항) ---
     # st.markdown("---")
-    # Bull
+    # BullF
     # st.subheader("Bull Signals")
     # if st.checkbox('CCI'):
     #     st.dataframe(cci_bull_div_signals.tail(10),
