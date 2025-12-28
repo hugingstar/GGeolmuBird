@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ title }}</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        .container { display: flex; height: 100vh; }
+        .sidebar {
+            width: 300px;
+            background-color: #f4f4f4;
+            border-right: 1px solid #ddd;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .sidebar img {
+            width: 100%; height: auto; border-radius: 10px;
+            margin-bottom: 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .main-content { flex: 1; padding: 40px; background-color: white; overflow-y: auto; }
+        
+        /* 차트 감싸는 박스 설정 */
+        .chart-box {
+            width: 100%;
+            max-width: 900px; /* 너무 퍼지지 않게 제한 */
+            background: #fff;
+            border: 1px solid #eee;
+            border-radius: 12px;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        h1 { color: #333; }
+        p { line-height: 1.6; color: #666; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h3>GGeolmu bird</h3>
+            <img src="/static/my_image.jpg" alt="Bird Image">
+            <p>{{ sidebar_text }}</p> 
+        </div>
+
+        <div class="main-content">
+            <h1>{{ title }}</h1> 
+            <hr><br>
+            <p>서버에서 생성한 <b>가상 데이터프레임</b>을 반응형 차트로 렌더링했습니다.</p>
+            
+            <div class="chart-box">
+                {{ plot_div | safe }}
+            </div>
+
+            <p style="margin-top: 20px;">
+                차트 우측 상단의 도구바를 이용해 이미지를 다운로드하거나 줌(Zoom) 기능을 사용할 수 있습니다.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
