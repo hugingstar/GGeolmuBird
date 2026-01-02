@@ -128,7 +128,7 @@ def hidden_divergence(price, rsi, lookback):
     p = price.tail(lookback)
     r = rsi.reindex(p.index)
 
-    trough_irsi_HH_pctdx = p[local_troughs(p)].index
+    trough_idx = p[local_troughs(p)].index
     peak_idx = p[local_peaks(p)].index
 
     hidden_bull = pd.Series(0, index=p.index)
