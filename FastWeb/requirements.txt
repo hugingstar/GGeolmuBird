@@ -1,9 +1,0 @@
-streamlit
-finance-datareader
-pandas
-numpy
-plotly
-ta
-fastapi
-uvicorn
-ninja2
