@@ -1,0 +1,3757 @@
+﻿id,Name,Symbol
+1,NVIDIA Corp,NVDA
+2,Apple Inc,AAPL
+3,Microsoft Corp,MSFT
+4,Amazon.com Inc,AMZN
+5,Alphabet Inc Class A,GOOGL
+6,Broadcom Inc,AVGO
+7,Meta Platforms Inc,META
+8,Alphabet Inc Class C,GOOG
+9,Tesla Inc,TSLA
+10,Netflix Inc,NFLX
+11,Palantir Technologies Inc,PLTR
+12,Costco Wholesale Corp,COST
+13,ASML Holding NV ADR,ASML
+14,Advanced Micro Devices Inc,AMD
+15,Cisco Systems Inc,CSCO
+16,Micron Technology Inc,MU
+17,AstraZeneca PLC ADR,AZN
+18,T-Mobile US Inc,TMUS
+19,Applovin Corp,APP
+20,Lam Research Corp,LRCX
+21,Shopify Inc,SHOP
+22,Intuitive Surgical Inc,ISRG
+23,PDD Holdings Inc ADR,PDD
+24,Linde PLC,LIN
+25,PepsiCo Inc,PEP
+26,Applied Materials Inc,AMAT
+27,Qualcomm Inc,QCOM
+28,Intuit Inc,INTU
+29,Intel Corp,INTC
+30,Amgen Inc,AMGN
+31,Arm Holdings PLC ADR,ARM
+32,KLA Corp,KLAC
+33,Booking Holdings Inc,BKNG
+34,Gilead Sciences Inc,GILD
+35,Texas Instruments Inc,TXN
+36,Palo Alto Networks Inc,PANW
+37,Adobe Inc,ADBE
+38,CrowdStrike Holdings Inc,CRWD
+39,Honeywell International Inc,HON
+40,Sanofi SA ADR,SNY
+41,Interactive Brokers Group Inc,IBKR
+42,Analog Devices Inc,ADI
+43,Robinhood Markets Inc,HOOD
+44,Constellation Energy Corp,CEG
+45,MercadoLibre Inc,MELI
+46,Vertex Pharmaceuticals Inc,VRTX
+47,Automatic Data Processing Inc,ADP
+48,Comcast Corp,CMCSA
+49,CME Group Inc,CME
+50,Starbucks Corp,SBUX
+51,Cadence Design Systems Inc,CDNS
+52,NetEase Inc ADR,NTES
+53,DoorDash Inc,DASH
+54,Marvell Technology Inc,MRVL
+55,O'Reilly Automotive Inc,ORLY
+56,Equinix Inc,EQIX
+57,Coinbase Global Inc,COIN
+58,Marriott International Inc,MAR
+59,Cintas Corp,CTAS
+60,Synopsys Inc,SNPS
+61,Airbnb Inc,ABNB
+62,Mondelez International Inc,MDLZ
+63,Strategy Inc,MSTR
+64,Regeneron Pharmaceuticals Inc,REGN
+65,Datadog Inc,DDOG
+66,CSX Corp,CSX
+67,Monster Beverage Corp,MNST
+68,American Electric Power Company Inc,AEP
+69,Autodesk Inc,ADSK
+70,PayPal Holdings Inc,PYPL
+71,Thomson Reuters Corp,TRI
+72,Fortinet Inc,FTNT
+73,Workday Inc,WDAY
+74,Seagate Technology Holdings PLC,STX
+75,Alnylam Pharmaceuticals Inc,ALNY
+76,IDEXX Laboratories Inc,IDXX
+77,Western Digital Corp,WDC
+78,Warner Bros Discovery Inc,WBD
+79,CoreWeave Inc,CRWV
+80,Ross Stores Inc,ROST
+81,argenx SE ADR,ARGX
+82,NXP Semiconductors NV,NXPI
+83,Paccar Inc,PCAR
+84,JD.Com Inc ADR,JD
+85,Zscaler Inc,ZS
+86,Electronic Arts Inc,EA
+87,Nasdaq Inc,NDAQ
+88,Roper Technologies Inc,ROP
+89,Xcel Energy Inc,XEL
+90,Ferrovial SE,FER
+91,Fastenal Co,FAST
+92,Baker Hughes Co,BKR
+93,Take-Two Interactive Software Inc,TTWO
+94,Axon Enterprise Inc,AXON
+95,Exelon Corp,EXC
+96,Monolithic Power Systems Inc,MPWR
+97,Trip.com Group Ltd ADR,TCOM
+98,Baidu Inc ADR,BIDU
+99,Symbotic Inc,SYM
+100,Atlassian Corp,TEAM
+101,Diamondback Energy Inc,FANG
+102,Coca-Cola Europacific Partners PLC,CCEP
+103,Paychex Inc,PAYX
+104,Insmed Inc,INSM
+105,Copart Inc,CPRT
+106,eBay Inc,EBAY
+107,BeOne Medicines AG ADR,ONC
+108,Keurig Dr Pepper Inc,KDP
+109,Cognizant Technology Solutions Corp,CTSH
+110,GE Healthcare Technologies Inc,GEHC
+111,Kimberly-Clark Corp,KMB
+112,Ryanair Holdings PLC ADR,RYAAY
+113,SoFi Technologies Inc,SOFI
+114,Arch Capital Group Ltd,ACGL
+115,Microchip Technology Inc,MCHP
+116,United Airlines Holdings Inc,UAL
+117,Willis Towers Watson PLC,WTW
+118,Sandisk Corp,SNDK
+119,Telefonaktiebolaget LM Ericsson ADR,ERIC
+120,LPL Financial Holdings Inc,LPLA
+121,Verisk Analytics Inc,VRSK
+122,First Solar Inc,FSLR
+123,Teradyne Inc,TER
+124,MongoDB Inc,MDB
+125,Old Dominion Freight Line Inc,ODFL
+126,CoStar Group Inc,CSGP
+127,Charter Communications Inc,CHTR
+128,Credo Technology Group Holding Ltd,CRDO
+129,Tractor Supply Co,TSCO
+130,Fifth Third Bancorp,FITB
+131,Kraft Heinz Co,KHC
+132,Astera Labs Inc,ALAB
+133,Nebius Group NV,NBIS
+134,Natera Inc,NTRA
+135,Expedia Group Inc,EXPE
+136,Vodafone Group PLC ADR,VOD
+137,Expand Energy Corp,EXE
+138,Cyberark Software Ltd,CYBR
+139,Cincinnati Financial Corp,CINF
+140,Biontech SE ADR,BNTX
+141,Zoom Communications Inc,ZM
+142,Northern Trust Corp,NTRS
+143,Huntington Bancshares Inc,HBAN
+144,Rocket Lab Corp,RKLB
+145,Super Micro Computer Inc,SMCI
+146,Royalty Pharma PLC,RPRX
+147,Flex Ltd,FLEX
+148,Liberty Media Formula One Ord Shs Series C,FWONK
+149,Grab Holdings Ltd,GRAB
+150,Biogen Inc,BIIB
+151,Ulta Beauty Inc,ULTA
+152,Tradeweb Markets Inc,TW
+153,Insulet Corp,PODD
+154,First Citizens BancShares Inc (Delaware),FCNCA
+155,NetApp Inc,NTAP
+156,Dexcom Inc,DXCM
+157,Trade Desk Inc,TTD
+158,Steel Dynamics Inc,STLD
+159,AST SpaceMobile Inc,ASTS
+160,T Rowe Price Group Inc,TROW
+161,VeriSign  Inc,VRSN
+162,Affirm Holdings Inc,AFRM
+163,Li Auto Inc ADR,LI
+164,Elbit Systems Ltd,ESLT
+165,Check Point Software Technologies Ltd,CHKP
+166,PTC Inc,PTC
+167,Dollar Tree Inc,DLTR
+168,SBA Communications Corp,SBAC
+169,Incyte Corp,INCY
+170,SS&C Technologies Holdings Inc,SSNC
+171,EchoStar Corp,SATS
+172,TPG Inc,TPG
+173,ON Semiconductor Corp,ON
+174,United Therapeutics Corp,UTHR
+175,Caseys General Stores Inc,CASY
+176,Lululemon Athletica Inc,LULU
+177,Logitech International SA,LOGI
+178,GlobalFoundries Inc,GFS
+179,Carlyle Group Inc,CG
+180,IREN Ltd,IREN
+181,Trimble Inc,TRMB
+182,Rivian Automotive Inc,RIVN
+183,Nutanix Inc,NTNX
+184,Illumina Inc,ILMN
+185,CDW Corp,CDW
+186,Principal Financial Group Inc,PFG
+187,Genmab A/S ADR,GMAB
+188,Talen Energy Corp,TLN
+189,CH Robinson Worldwide Inc,CHRW
+190,Futu Holdings Ltd ADR,FUTU
+191,Evergy Inc,EVRG
+192,Alliant Energy Corp,LNT
+193,Lumentum Holdings Inc,LITE
+194,Medpace Holdings Inc,MEDP
+195,FTAI Aviation Ltd,FTAI
+196,Hologic Inc,HOLX
+197,AeroVironment Inc,AVAV
+198,Paramount Skydance Corp,PSKY
+199,J B Hunt Transport Services Inc,JBHT
+200,Woodward Inc,WWD
+201,Nextracker Inc,NXT
+202,Gen Digital Inc,GEN
+203,Warner Music Group Corp,WMG
+204,Roku Inc,ROKU
+205,Neurocrine Biosciences Inc,NBIX
+206,Fermi Inc,FRMI
+207,Okta Inc,OKTA
+208,Erie Indemnity Co,ERIE
+209,Royal Gold Inc,RGLD
+210,Ares Capital Corp,ARCC
+211,F5 Inc,FFIV
+212,Bentley Systems Inc,BSY
+213,East West Bancorp Inc,EWBC
+214,Roivant Sciences Ltd,ROIV
+215,DocuSign Inc,DOCU
+216,Fox Corp Class B,FOX
+217,Draftkings Inc,DKNG
+218,Summit Therapeutics Inc,SMMT
+219,Cooper Companies Inc,COO
+220,Fox Corp Class A,FOXA
+221,Kaspi.kz AO ADR,KSPI
+222,Domino's Pizza Inc,DPZ
+223,Zillow Group Inc Class C,Z
+224,Viper Energy Inc,VNOM
+225,Zebra Technologies Corp,ZBRA
+226,Entegris Inc,ENTG
+227,Nordson Corp,NDSN
+228,Tempus AI Inc,TEM
+229,Wynn Resorts Ltd,WYNN
+230,Exact Sciences Corp,EXAS
+231,Regency Centers Corp,REG
+232,Gaming and Leisure Properties Inc,GLPI
+233,Lincoln Electric Holdings Inc,LECO
+234,MACOM Technology Solutions Holdings Inc,MTSI
+235,H World Group Ltd ADR,HTHT
+236,Kratos Defense and Security Solutions Inc,KTOS
+237,ICON PLC,ICLR
+238,Lamar Advertising Co,LAMR
+239,Ascendis Pharma A/S ADR,ASND
+240,Guardant Health Inc,GH
+241,BridgeBio Pharma Inc,BBIO
+242,Ionis Pharmaceuticals Inc,IONS
+243,Sterling Infrastructure Inc,STRL
+244,Galaxy Digital Inc,GLXY
+245,Host Hotels & Resorts Inc,HST
+246,Revolution Medicines Inc,RVMD
+247,Jack Henry & Associates Inc,JKHY
+248,Bilibili Inc ADR,BILI
+249,Viatris Inc,VTRS
+250,Celsius Holdings Inc,CELH
+251,Coca-Cola Consolidated Inc,COKE
+252,Plains All American Pipeline Units,PAA
+253,Rambus Inc,RMBS
+254,Rigetti Computing Inc,RGTI
+255,SailPoint Inc,SAIL
+256,Madrigal Pharmaceuticals Inc,MDGL
+257,AGNC Investment Corp,AGNC
+258,Exelixis Inc,EXEL
+259,Hasbro Inc,HAS
+260,Texas Roadhouse Inc,TXRH
+261,Ensign Group Inc,ENSG
+262,Manhattan Associates Inc,MANH
+263,Skyworks Solutions Inc,SWKS
+264,Akamai Technologies Inc,AKAM
+265,MKS Inc,MKSI
+266,Avidity Biosciences Inc,RNA
+267,Mobileye Global Inc,MBLY
+268,SEI Investments Co,SEIC
+269,Pegasystems Inc,PEGA
+270,BioMarin Pharmaceutical Inc,BMRN
+271,XP Inc,XP
+272,InterDigital Inc,IDCC
+273,Align Technology Inc,ALGN
+274,Moderna Inc,MRNA
+275,Frontier Communications Parent Inc,FYBR
+276,News Corp Class A,NWSA
+277,Tower Semiconductor Ltd,TSEM
+278,Leonardo DRS Inc,DRS
+279,Sanmina Corp,SANM
+280,monday.com Ltd,MNDY
+281,Nova Ltd,NVMI
+282,Pool Corp,POOL
+283,Maplebear Inc,CART
+284,Amdocs Ltd,DOX
+285,Open Text Corp,OTEX
+286,Bio-Techne Corp,TECH
+287,Appfolio Inc,APPF
+288,Campbell's Co,CPB
+289,Duolingo Inc,DUOL
+290,SiTime Corp,SITM
+291,Kanzhun Ltd ADR,BZ
+292,Morningstar Inc,MORN
+293,Pilgrims Pride Corp,PPC
+294,Applied Digital Corp,APLD
+295,Amkor Technology Inc,AMKR
+296,American Airlines Group Inc,AAL
+297,Wintrust Financial Corp,WTFC
+298,Smithfield Foods Inc,SFD
+299,Metsera Inc,MTSR
+300,Cipher Mining Inc,CIFR
+301,ServiceTitan Inc,TTAN
+302,Lattice Semiconductor Corp,LSCC
+303,Lyft Inc,LYFT
+304,Tetra Tech Inc,TTEK
+305,Freedom Holding Corp,FRHC
+306,APA Corp (US),APA
+307,Netskope Inc,NTSK
+308,Five Below Inc,FIVE
+309,Advanced Energy Industries Inc,AEIS
+310,Henry Schein Inc,HSIC
+311,Aurora Innovation Inc,AUR
+312,Lineage Inc,LINE
+313,Repligen Corp,RGEN
+314,Aaon Inc,AAON
+315,Jazz Pharmaceuticals PLC,JAZZ
+316,UMB Financial Corp,UMBF
+317,Qorvo Inc,QRVO
+318,Old National Bancorp,ONB
+319,Halozyme Therapeutics Inc,HALO
+320,Healthequity Inc,HQY
+321,Millicom International Cellular SA,TIGO
+322,VinFast Auto Ltd,VFS
+323,Confluent Inc,CFLT
+324,Columbia Banking System Inc,COLB
+325,IES Holdings Inc,IESC
+326,Nice Ltd ADR,NICE
+327,Dropbox Inc,DBX
+328,Masimo Corp,MASI
+329,Match Group Inc,MTCH
+330,Corcept Therapeutics Inc,CORT
+331,LKQ Corp,LKQ
+332,Abivax SA ADR,ABVX
+333,Grupo Financiero Galicia SA ADR,GGAL
+334,Figure Technology Solutions Inc,FIGR
+335,GitLab Inc,GTLB
+336,Sprouts Farmers Market Inc,SFM
+337,Zions Bancorporation NA,ZION
+338,Popular Inc,BPOP
+339,Ollie's Bargain Outlet Holdings Inc,OLLI
+340,Paylocity Holding Corp,PCTY
+341,Wix.Com Ltd,WIX
+342,MakeMyTrip Ltd,MMYT
+343,Colliers International Group Inc,CIGI
+344,Cytokinetics Inc,CYTK
+345,StepStone Group Inc,STEP
+346,Saia Inc,SAIA
+347,Sirius XM Holdings Inc,SIRI
+348,Merus NV,MRUS
+349,Descartes Systems Group Inc,DSGX
+350,Firstcash Holdings Inc,FCFS
+351,Solstice Advanced Materials Inc,SOLS
+352,Commerce Bancshares Inc,CBSH
+353,Hamilton Lane Inc,HLNE
+354,Life360 Inc,LIF
+355,TTM Technologies Inc,TTMI
+356,FirstService Corp,FSV
+357,Axsome Therapeutics Inc,AXSM
+358,Nuvalent Inc,NUVL
+359,Caris Life Sciences Inc,CAI
+360,Waystar Holding Corp,WAY
+361,Sportradar Group AG,SRAD
+362,QMMM Holdings Ltd,QMMM
+363,Wingstop Inc,WING
+364,GDS Holdings Ltd ADR,GDS
+365,Churchill Downs Inc,CHDN
+366,BOK Financial Corp,BOKF
+367,Chime Financial Inc,CHYM
+368,Cognex Corp,CGNX
+369,Pinnacle Financial Partners Inc,PNFP
+370,Rhythm Pharmaceuticals Inc,RYTM
+371,Regencell Bioscience Holdings Ltd,RGC
+372,Light & Wonder Inc,LNW
+373,Riot Platforms Inc,RIOT
+374,Universal Display Corp,OLED
+375,Core Scientific Inc,CORZ
+376,Construction Partners Inc,ROAD
+377,Liberty Broadband Corp Series C,LBRDK
+378,Marketaxess Holdings Inc,MKTX
+379,Exlservice Holdings Inc,EXLS
+380,Globalstar Inc,GSAT
+381,RadNet Inc,RDNT
+382,Semtech Corp,SMTC
+383,Global-E Online Ltd,GLBE
+384,Valley National Bancorp,VLY
+385,Cirrus Logic Inc,CRUS
+386,Middleby Corp,MIDD
+387,MARA Holdings Inc,MARA
+388,Littelfuse Inc,LFUS
+389,Legend Biotech Corp ADR,LEGN
+390,Bruker Corp,BRKR
+391,Brightspring Health Services Inc,BTSG
+392,Terawulf Inc,WULF
+393,PTC Therapeutics Inc,PTCT
+394,Red Rock Resorts Inc,RRR
+395,Lucid Group Inc,LCID
+396,Mattel Inc,MAT
+397,SoundHound AI Inc,SOUN
+398,Krystal Biotech Inc,KRYS
+399,Nexstar Media Group Inc,NXST
+400,iRhythm Technologies Inc,IRTC
+401,Urban Outfitters Inc,URBN
+402,Casella Waste Systems Inc,CWST
+403,Jfrog Ltd,FROG
+404,Commvault Systems Inc,CVLT
+405,Camtek Ltd,CAMT
+406,Icahn Enterprises Units,IEP
+407,Arrowhead Pharmaceuticals Inc,ARWR
+408,Vaxcyte Inc,PCVX
+409,SLM Corp,SLM
+410,Enact Holdings Inc,ACT
+411,Ufp Industries Inc,UFPI
+412,Liberty Live Group Series C,LLYVK
+413,Atour Lifestyle Holdings Ltd ADR,ATAT
+414,News Corp Class B,NWS
+415,TG Therapeutics Inc,TGTX
+416,Qualys Inc,QLYS
+417,Alkermes Plc,ALKS
+418,Reynolds Consumer Products Inc,REYN
+419,ACI Worldwide Inc,ACIW
+420,Pony AI Inc ADR,PONY
+421,CRISPR Therapeutics AG,CRSP
+422,Merit Medical Systems Inc,MMSI
+423,StoneCo Ltd,STNE
+424,Weatherford International PLC,WFRD
+425,United Bankshares Inc,UBSI
+426,Arcellx Inc,ACLX
+427,Impinj Inc,PI
+428,Gentex Corp,GNTX
+429,Allegro Microsystems Inc,ALGM
+430,Protagonist Therapeutics Inc,PTGX
+431,Bank Ozk,OZK
+432,Balchem Corp,BCPC
+433,CCC Intelligent Solutions Holdings Inc,CCC
+434,Opendoor Technologies Inc,OPEN
+435,Avis Budget Group Inc,CAR
+436,Chord Energy Corp,CHRD
+437,Itron Inc,ITRI
+438,Hancock Whitney Corp,HWC
+439,OSI Systems Inc,OSIS
+440,Viasat Inc,VSAT
+441,Webull Corp,BULL
+442,Sunrun Inc,RUN
+443,Marzetti Co,MZTI
+444,Sabra Health Care REIT Inc,SBRA
+445,Grand Canyon Education Inc,LOPE
+446,Selective Insurance Group Inc,SIGI
+447,OneStream Inc,OS
+448,Hut 8 Corp,HUT
+449,Credit Acceptance Corp,CACC
+450,BRP Inc,DOOO
+451,Sotera Health Co,SHC
+452,Mercury Systems Inc,MRCY
+453,Powell Industries Inc,POWL
+454,Enlight Renewable Energy Ltd,ENLT
+455,Bitdeer Technologies Group,BTDR
+456,StoneX Group Inc,SNEX
+457,Laureate Education Inc,LAUR
+458,Cavco Industries Inc,CVCO
+459,Grupo Aeroportuario del Centro Norte SAB de CV ADR,OMAB
+460,Navan Inc,NAVN
+461,Eos Energy Enterprises Inc,EOSE
+462,First Financial Bankshares Inc,FFIN
+463,Landstar System Inc,LSTR
+464,Kymera Therapeutics Inc,KYMR
+465,Phillips Edison & Co Inc,PECO
+466,CleanSpark Inc,CLSK
+467,Akero Therapeutics Inc,AKRO
+468,Praxis Precision Medicines Inc,PRAX
+469,Bgc Group Inc,BGC
+470,Option Care Health Inc,OPCH
+471,Silicon Laboratories Inc,SLAB
+472,Transmedics Group Inc,TMDX
+473,Cal-Maine Foods Inc,CALM
+474,Franklin Electric Co Inc,FELE
+475,Viking Therapeutics Inc,VKTX
+476,FormFactor Inc,FORM
+477,NewAmsterdam Pharma Company NV,NAMS
+478,International Bancshares Corp,IBOC
+479,Eastern Bankshares Inc,EBC
+480,Science Applications International Corp,SAIC
+481,Inter & Co Inc,INTR
+482,Crinetics Pharmaceuticals Inc,CRNX
+483,Immunovant Inc,IMVT
+484,American Bitcoin Corp,ABTC
+485,Victory Capital Holdings Inc,VCTR
+486,VSE Corp,VSEC
+487,Ligand Pharmaceuticals Inc,LGND
+488,Enphase Energy Inc,ENPH
+489,Crocs Inc,CROX
+490,Varonis Systems Inc,VRNS
+491,SSR Mining Inc,SSRM
+492,Golar LNG Ltd,GLNG
+493,GeneDx Holdings Corp,WGS
+494,Dlocal Ltd,DLO
+495,Indivior PLC,INDV
+496,Vicor Corp,VICR
+497,Dorman Products Inc,DORM
+498,Viavi Solutions Inc,VIAV
+499,Caesars Entertainment Inc,CZR
+500,Zillow Group Inc Class A,ZG
+501,Belite Bio Inc ADR,BLTE
+502,SkyWest Inc,SKYW
+503,NorthWestern Energy Group Inc,NWE
+504,Plexus Corp,PLXS
+505,Ambarella Inc,AMBA
+506,Texas Capital Bancshares Inc,TCBI
+507,CorVel Corp,CRVL
+508,Legence Corp,LGN
+509,Novanta Inc,NOVT
+510,Avnet Inc,AVT
+511,TFS Financial Corp,TFSL
+512,IPG Photonics Corp,IPGP
+513,Brighthouse Financial Inc,BHF
+514,Trump Media & Technology Group Corp,DJT
+515,Cellebrite DI Ltd,CLBT
+516,Upstart Holdings Inc,UPST
+517,Golub Capital BDC Inc,GBDC
+518,Amneal Pharmaceuticals Inc,AMRX
+519,Apogee Therapeutics Inc,APGE
+520,Verra Mobility Corp,VRRM
+521,ACADIA Pharmaceuticals Inc,ACAD
+522,Lantheus Holdings Inc,LNTH
+523,PriceSmart Inc,PSMT
+524,MYR Group Inc,MYRG
+525,Fluence Energy Inc,FLNC
+526,BancFirst Corp,BANF
+527,CommScope Holding Company Inc,COMM
+528,Exponent Inc,EXPO
+529,Frontdoor Inc,FTDR
+530,WillScot Holdings Corp,WSC
+531,Kingsoft Cloud Holdings Ltd ADR,KC
+532,Agilysys Inc,AGYS
+533,Otter Tail Corp,OTTR
+534,BlackLine Inc,BL
+535,Diginex Ltd,DGNX
+536,Mirum Pharmaceuticals Inc,MIRM
+537,Patrick Industries Inc,PATK
+538,Independent Bank Corp (Massachusetts),INDB
+539,Plains GP Holdings Limited Partner Interests Units Class A,PAGP
+540,Hesai Group ADR,HSAI
+541,Garrett Motion Inc,GTX
+542,Telix Pharmaceuticals Ltd ADR,TLX
+543,ADMA Biologics Inc,ADMA
+544,Zoominfo Technologies Inc,GTM
+545,Alignment Healthcare Inc,ALHC
+546,Veracyte Inc,VCYT
+547,CarGurus Inc,CARG
+548,Melco Resorts & Entertainment Ltd ADR,MLCO
+549,United States Lime & Minerals Inc,USLM
+550,First Interstate Bancsystem Inc,FIBK
+551,Tenable Holdings Inc,TENB
+552,Silicon Motion Technology Corp ADR,SIMO
+553,Pattern Group Inc,PTRN
+554,ICU Medical Inc,ICUI
+555,Cathay General Bancorp,CATY
+556,Xometry Inc,XMTR
+557,Intapp Inc,INTA
+558,Palomar Holdings Inc,PLMR
+559,Celcuity Inc,CELC
+560,Fulton Financial Corp,FULT
+561,Alliance Resource Partners Units,ARLP
+562,Potlatchdeltic Corp,PCH
+563,Polibeli Group Ltd,PLBL
+564,VEON Ltd ADR,VEON
+565,Arcutis Biotherapeutics Inc,ARQT
+566,Centessa Pharmaceuticals PLC ADR,CNTA
+567,Academy Sports and Outdoors Inc,ASO
+568,National Beverage Corp,FIZZ
+569,Baldwin Insurance Group Inc,BWIN
+570,Freshworks Inc,FRSH
+571,MGE Energy Inc,MGEE
+572,Mechanics Bancorp,MCHB
+573,Vertex Inc,VERX
+574,JOYY Inc ADR,JOYY
+575,Qfin Holdings Inc ADR,QFIN
+576,SPS Commerce Inc,SPSC
+577,Euronet Worldwide Inc,EEFT
+578,Braze Inc,BRZE
+579,CG Oncology Inc,CGON
+580,Disc Medicine Inc,IRON
+581,Kyivstar Group Ltd,KYIV
+582,Ascentage Pharma Group International ADR,AAPG
+583,First Hawaiian Inc,FHB
+584,Dave Inc,DAVE
+585,Calamos Strategic Total Return Closed Fund,CSQ
+586,Newmark Group Inc,NMRK
+587,Seacoast Banking Corporation of Florida,SBCF
+588,Ultragenyx Pharmaceutical Inc,RARE
+589,Travere Therapeutics Inc,TVTX
+590,Plug Power Inc,PLUG
+591,Xenon Pharmaceuticals Inc,XENE
+592,nCino Inc,NCNO
+593,Quantum Computing Inc,QUBT
+594,Privia Health Group Inc,PRVA
+595,WSFS Financial Corp,WSFS
+596,AvePoint Inc,AVPT
+597,Kiniksa Pharmaceuticals International PLC,KNSA
+598,WesBanco Inc,WSBC
+599,Alphatec Holdings Inc,ATEC
+600,Rush Enterprises Inc Class A,RUSHA
+601,Tarsus Pharmaceuticals Inc,TARS
+602,Grail Inc,GRAL
+603,Heartflow Inc,HTFL
+604,Huron Consulting Group Inc,HURN
+605,Jyong Biotech Ltd,MENS
+606,Appian Corp,APPN
+607,Visteon Corp,VC
+608,Insight Enterprises Inc,NSIT
+609,Firefly Aerospace Inc,FLY
+610,Interparfums Inc,IPAR
+611,Peloton Interactive Inc,PTON
+612,eToro Group Ltd,ETOR
+613,Strategy Variable Rate Perpetual Stretch Prf Shs Series A,STRC
+614,Mineralys Therapeutics Inc,MLYS
+615,Steven Madden Ltd,SHOO
+616,Methanex Corp,MEOH
+617,NMI Holdings Inc,NMIH
+618,Surgery Partners Inc,SGRY
+619,Scholar Rock Holding Corp,SRRK
+620,Amicus Therapeutics Inc,FOLD
+621,Aura Minerals Inc,AUGO
+622,Bancorp Inc,TBBK
+623,Columbia Sportswear Co,COLM
+624,Chagee Holdings Ltd ADR,CHA
+625,Freshpet Inc,FRPT
+626,WeRide Inc ADR,WRD
+627,Blackbaud Inc,BLKB
+628,LivaNova PLC,LIVN
+629,Renew Energy Global PLC,RNW
+630,Century Aluminum Co,CENX
+631,Supernus Pharmaceuticals Inc,SUPN
+632,HUTCHMED (China) Ltd ADR,HCM
+633,VNET Group Inc ADR,VNET
+634,Synaptics Inc,SYNA
+635,Hawkins Inc,HWKN
+636,WD-40 Co,WDFC
+637,Viridian Therapeutics Inc,VRDN
+638,IDEAYA Biosciences Inc,IDYA
+639,McGrath RentCorp,MGRC
+640,Dyne Therapeutics Inc,DYN
+641,TowneBank,TOWN
+642,Weibo Corp ADR,WB
+643,Chefs' Warehouse Inc,CHEF
+644,Zai Lab Ltd ADR,ZLAB
+645,Catalyst Pharmaceuticals Inc,CPRX
+646,Remitly Global Inc,RELY
+647,CVB Financial Corp,CVBF
+648,IAC Inc,IAC
+649,Axcelis Technologies Inc,ACLS
+650,Perpetua Resources Corp,PPTA
+651,Simmons First National Corp,SFNC
+652,Cidara Therapeutics Inc,CDTX
+653,Goosehead Insurance Inc,GSHD
+654,Apellis Pharmaceuticals Inc,APLS
+655,LifeStance Health Group Inc,LFST
+656,Sapiens International Corporation NV,SPNS
+657,Recursion Pharmaceuticals Inc,RXRX
+658,Diodes Inc,DIOD
+659,First Advantage Corp,FA
+660,Patria Investments Ltd,PAX
+661,Vita Coco Company Inc,COCO
+662,Adaptive Biotechnologies Corp,ADPT
+663,Dbv Technologies SA ADR,DBVT
+664,WaFd Inc,WAFD
+665,Alarm.com Holdings Inc,ALRM
+666,Agios Pharmaceuticals Inc,AGIO
+667,Beam Therapeutics Inc,BEAM
+668,Extreme Networks Inc,EXTR
+669,Cheesecake Factory Inc,CAKE
+670,Soleno Therapeutics Inc,SLNO
+671,Marex Group PLC,MRX
+672,First Financial Bancorp,FFBC
+673,Premier Inc,PINC
+674,Driven Brands Holdings Inc,DRVN
+675,Solaredge Technologies Inc,SEDG
+676,Patterson-UTI Energy Inc,PTEN
+677,Oddity Tech Ltd,ODD
+678,Concentrix Corp,CNXC
+679,GCM Grosvenor Inc,GCMG
+680,Ocular Therapeutix Inc,OCUL
+681,Trustmark Corp,TRMK
+682,Formula Systems 1985 Ltd ADR,FORTY
+683,Liberty Media Formula One Ord Shs Series A,FWONA
+684,TMC the metals company Inc,TMC
+685,Onespaworld Holdings Ltd,OSW
+686,Goodyear Tire & Rubber Co,GT
+687,Liquidia Corp,LQDA
+688,Webtoon Entertainment Inc,WBTN
+689,DENTSPLY SIRONA Inc,XRAY
+690,SharpLink Gaming Inc,SBET
+691,Torm PLC,TRMD
+692,Grifols SA ADR,GRFS
+693,Marqeta Inc,MQ
+694,Csg Systems International Inc,CSGS
+695,NBT Bancorp Inc,NBTB
+696,PENN Entertainment Inc,PENN
+697,Magnite Inc,MGNI
+698,Hub Group Inc,HUBG
+699,Denali Therapeutics Inc,DNLI
+700,Addus Homecare Corp,ADUS
+701,Upwork Inc,UPWK
+702,Netscout Systems Inc,NTCT
+703,First Bancorp (North Carolina),FBNC
+704,Immunitybio Inc,IBRX
+705,Slide Insurance Holdings Inc,SLDE
+706,iQIYI Inc ADR,IQ
+707,EverCommerce Inc,EVCM
+708,Liberty Live Group Series A,LLYVA
+709,Bitfarms Ltd,BITF
+710,Star Bulk Carriers Corp,SBLK
+711,First Merchants Corp,FRME
+712,Cogent Biosciences Inc,COGT
+713,Galapagos NV ADR,GLPG
+714,Banner Corp,BANR
+715,Power Integrations Inc,POWI
+716,ANI Pharmaceuticals Inc,ANIP
+717,First Busey Corp,BUSE
+718,Simply Good Foods Co,SMPL
+719,Liberty Media Liberty Braves Ord Shs Series C,BATRK
+720,ACM Research Inc,ACMR
+721,Alkami Technology Inc,ALKT
+722,Kulicke and Soffa Industries Inc,KLIC
+723,Rumble Inc,RUM
+724,Sezzle Inc,SEZL
+725,Sonos Inc,SONO
+726,Enterprise Financial Services Corp,EFSC
+727,Vericel Corp,VCEL
+728,ePlus inc,PLUS
+729,Stock Yards Bancorp Inc,SYBT
+730,Enovix Corp,ENVX
+731,Innodata Inc,INOD
+732,LeMaitre Vascular Inc,LMAT
+733,LegalZoom.com Inc,LZ
+734,Structure Therapeutics Inc ADR,GPCR
+735,Hertz Global Holdings Inc,HTZ
+736,Nano Nuclear Energy Inc,NNE
+737,Perdoceo Education Corp,PRDO
+738,Mesoblast Ltd ADR,MESO
+739,CECO Environmental Corp,CECO
+740,Navitas Semiconductor Corp,NVTS
+741,Establishment Labs Holdings Inc,ESTA
+742,Payoneer Global Inc,PAYO
+743,Gemini Space Station Inc,GEMI
+744,Power Solutions International Inc,PSIX
+745,Acadia Healthcare Company Inc,ACHC
+746,National Vision Holdings Inc,EYE
+747,Liberty Global Ltd Class A,LBTYA
+748,Twist Bioscience Corp,TWST
+749,Skyward Specialty Insurance Group Inc,SKWD
+750,Sarepta Therapeutics Inc,SRPT
+751,UP Fintech Holding Ltd ADR,TIGR
+752,Aurinia Pharmaceuticals Inc,AUPH
+753,Ondas Holdings Inc,ONDS
+754,Avadel Pharmaceuticals PLC,AVDL
+755,Innospec Inc,IOSP
+756,Trupanion Inc,TRUP
+757,Applied Optoelectronics Inc,AAOI
+758,Certara Inc,CERT
+759,Aveanna Healthcare Holdings Inc,AVAH
+760,USA Rare Earth Inc,USAR
+761,Progress Software Corp,PRGS
+762,Edgewise Therapeutics Inc,EWTX
+763,Pagaya Technologies Ltd,PGY
+764,Canadian Solar Inc,CSIQ
+765,Tripadvisor Inc,TRIP
+766,Newegg Commerce Inc,NEGG
+767,Harmony Biosciences Holdings Inc,HRMY
+768,Polestar Automotive Holding UK PLC ADR Class A,PSNY
+769,Iridium Communications Inc,IRDM
+770,Strategic Education Inc,STRA
+771,Gibraltar Industries Inc,ROCK
+772,Veeco Instruments Inc,VECO
+773,MannKind Corp,MNKD
+774,Procept Biorobotics Corp,PRCT
+775,Phibro Animal Health Corp,PAHC
+776,Spyre Therapeutics Inc,SYRE
+777,Purecycle Technologies Inc,PCT
+778,Intuitive Machines Inc,LUNR
+779,Janux Therapeutics Inc,JANX
+780,Hillman Solutions Corp,HLMN
+781,Integral Ad Science Holding Corp,IAS
+782,City Holding Co,CHCO
+783,UFP Technologies Inc,UFPT
+784,Jamf Holding Corp,JAMF
+785,Northwest Bancshares Inc,NWBI
+786,Mister Car Wash Inc,MCW
+787,Uniqure NV,QURE
+788,H2O America,HTO
+789,Calumet Inc,CLMT
+790,Bel Fuse Inc Class B,BELFB
+791,Wendy's Co,WEN
+792,Monarch Casino & Resort Inc,MCRI
+793,Astrana Health Inc,ASTH
+794,Five9 Inc,FIVN
+795,Andersons Inc,ANDE
+796,Flywire Corp,FLYW
+797,American Superconductor Corp,AMSC
+798,Perella Weinberg Partners,PWP
+799,Microchip Technology Dep Shs Repstg 1 20Th Pfd Conv Ser A,MCHPP
+800,J&J Snack Foods Corp,JJSF
+801,Falcon's Beyond Global Inc,FBYD
+802,10X Genomics Inc,TXG
+803,Liberty Global Ltd Class C,LBTYK
+804,Vera Therapeutics Inc,VERA
+805,Omnicell Inc,OMCL
+806,Blue Bird Corp,BLBD
+807,Terns Pharmaceuticals Inc,TERN
+808,SuperX AI Technology Ltd,SUPX
+809,NextNav Inc,NN
+810,Vital Farms Inc,VITL
+811,Columbia Financial Inc,CLBK
+812,Coastal Financial Corp (EVERETT),CCB
+813,Alvotech SA,ALVO
+814,DXP Enterprises Inc,DXPE
+815,Microvast Holdings Inc,MVST
+816,Immunocore Holdings PLC ADR,IMCR
+817,Playtika Holding Corp,PLTK
+818,AtriCure Inc,ATRC
+819,Dianthus Therapeutics Inc,DNTH
+820,NextDecade Corp,NEXT
+821,Progyny Inc,PGNY
+822,JetBlue Airways Corp,JBLU
+823,Celldex Therapeutics Inc,CLDX
+824,eXp World Holdings Inc,EXPI
+825,Cimpress PLC,CMPR
+826,Pathward Financial Inc,CASH
+827,Sionna Therapeutics Inc,SION
+828,Shoals Technologies Group Inc,SHLS
+829,Adeia Inc,ADEA
+830,Werner Enterprises Inc,WERN
+831,Zenas Biopharma Inc,ZBIO
+832,NAPCO Security Technologies Inc,NSSC
+833,Interface Inc,TILE
+834,ICF International Inc,ICFI
+835,BGM Group Ltd,BGM
+836,Atai Beckley NV,ATAI
+837,nLIGHT Inc,LASR
+838,Kaiser Aluminum Corp,KALU
+839,Astronics Corp,ATRO
+840,Winmark Corp,WINA
+841,BioCryst Pharmaceuticals Inc,BCRX
+842,German American Bancorp Inc,GABC
+843,1st Source Corp,SRCE
+844,Lakeland Financial Corp,LKFN
+845,ArcBest Corp,ARCB
+846,S&T Bancorp Inc,STBA
+847,PC Connection Inc,CNXN
+848,Nayax Ltd,NYAX
+849,Central Garden & Pet Co Class A,CENTA
+850,Stagwell Inc,STGW
+851,Trico Bancshares,TCBK
+852,Ouster Inc,OUST
+853,QuidelOrtho Corp,QDEL
+854,Merchants Bancorp,MBIN
+855,Almonty Industries Inc,ALM
+856,Terrestrial Energy Inc,IMSR
+857,Papa John's International Inc,PZZA
+858,Pharvaris NV,PHVS
+859,SS Innovations International Inc,SSII
+860,Ingles Markets Inc,IMKTA
+861,Precigen Inc,PGEN
+862,Himax Technologies Inc ADR,HIMX
+863,Schrodinger Inc,SDGR
+864,Ardelyx Inc,ARDX
+865,Telesat Corp,TSAT
+866,Oxford Lane Capital Corp,OXLC
+867,Oruka Therapeutics Inc,ORKA
+868,Strategy 10 00 Perpetual Strife Prf Shs Series A,STRF
+869,Liberty Latin America Ltd Class C,LILAK
+870,Karooooo Ltd,KARO
+871,Tilray Brands Inc,TLRY
+872,Azenta Inc,AZTA
+873,Nuveen Nasdaq 100 Dynamic Overwrite Fund,QQQX
+874,Abcellera Biologics Inc,ABCL
+875,Immunome Inc,IMNM
+876,Neogenomics Inc,NEO
+877,Kestra Medical Technologies Ltd,KMTS
+878,Clover Health Investments Corp,CLOV
+879,Trevi Therapeutics Inc,TRVI
+880,Zymeworks Inc,ZYME
+881,Hello Group Inc ADR,MOMO
+882,Ziff Davis Inc,ZD
+883,Photronics Inc,PLAB
+884,Kodiak AI Inc,KDK
+885,Amylyx Pharmaceuticals Inc,AMLX
+886,Hope Bancorp Inc,HOPE
+887,Arhaus Inc,ARHS
+888,STAAR Surgical Co,STAA
+889,Afya Ltd,AFYA
+890,Intellia Therapeutics Inc,NTLA
+891,Digi International Inc,DGII
+892,Amplitude Inc,AMPL
+893,Ramaco Resources Inc Class A,METC
+894,Vimeo Inc,VMEO
+895,Newell Brands Inc,NWL
+896,Porch Group Inc,PRCH
+897,Adapthealth Corp,AHCO
+898,Neogen Corp,NEOG
+899,Maze Therapeutics Inc,MAZE
+900,Innoviva Inc,INVA
+901,Maxlinear Inc,MXL
+902,BioLife Solutions Inc,BLFS
+903,TriMas Corp,TRS
+904,Dynavax Technologies Corp,DVAX
+905,Solid Power Inc,SLDP
+906,QCR Holdings Inc,QCRH
+907,Stoke Therapeutics Inc,STOK
+908,Collegium Pharmaceutical Inc,COLL
+909,Republic Bancorp Inc,RBCAA
+910,Xeris Biopharma Holdings Inc,XERS
+911,Upstream Bio Inc,UPB
+912,Array Technologies Inc,ARRY
+913,Syndax Pharmaceuticals Inc,SNDX
+914,Harrow Inc,HROW
+915,Nurix Therapeutics Inc,NRIX
+916,Novocure Ltd,NVCR
+917,Allegiant Travel Co,ALGT
+918,Omada Health Inc,OMDA
+919,Root Inc,ROOT
+920,WAVE Life Sciences Ltd,WVE
+921,Willdan Group Inc,WLDN
+922,Maase Inc,MAAS
+923,RealReal Inc,REAL
+924,Hotel101 Global Holdings Corp,HBNB
+925,Rezolve AI PLC,RZLV
+926,National Energy Services Reunited Corp,NESR
+927,ConnectOne Bancorp Inc,CNOB
+928,Novavax Inc,NVAX
+929,Healthcare Services Group Inc,HCSG
+930,Verint Systems Inc,VRNT
+931,Cogent Communications Holdings Inc,CCOI
+932,Heidrick & Struggles International Inc,HSII
+933,Oric Pharmaceuticals Inc,ORIC
+934,Opera Ltd ADR,OPRA
+935,Iperionx Ltd ADR,IPX
+936,Distribution Solutions Group Inc,DSGR
+937,Strategy 8 00 Perpetual Strike Prf Shs Series A,STRK
+938,Bank First Corp,BFC
+939,CRA International Inc,CRAI
+940,Grocery Outlet Holding Corp,GO
+941,Oaktree Specialty Lending Corp,OCSL
+942,Prospect Capital Corp,PSEC
+943,Ultra Clean Holdings Inc,UCTT
+944,Westamerica Bancorp,WABC
+945,Criteo SA ADR,CRTO
+946,CureVac NV,CVAC
+947,Evolv Technologies Holdings Inc,EVLV
+948,EHang Holdings Ltd ADR,EH
+949,Evotec SE ADR,EVO
+950,Inhibrx Biosciences Inc,INBX
+951,Capital Southwest Corp,CSWC
+952,Rapport Therapeutics Inc,RAPP
+953,Capital Clean Energy Carriers Corp,CCEC
+954,G-III Apparel Group Ltd,GIII
+955,Dime Community Bancshares Inc,DCOM
+956,Harmonic Inc,HLIT
+957,Penguin Solutions Inc,PENG
+958,Navient Corp,NAVI
+959,HIVE Digital Technologies Ltd,HIVE
+960,Dorchester Minerals Units,DMLP
+961,Relay Therapeutics Inc,RLAY
+962,MidCap Financial Investment Corp,MFIC
+963,Amphastar Pharmaceuticals Inc,AMPH
+964,Jefferson Capital Inc,JCAP
+965,Super Hi International Holding Ltd ADR,HDL
+966,Preferred Bank,PFBC
+967,Taskus Inc,TASK
+968,Oculis Holding AG,OCS
+969,Immatics NV,IMTX
+970,Sinclair Inc,SBGI
+971,AxoGen Inc,AXGN
+972,MBX Biosciences Inc,MBX
+973,Beta Bionics Inc,BBNX
+974,Urogen Pharma Ltd,URGN
+975,Mind Medicine (MindMed) Inc,MNMD
+976,Gentherm Inc,THRM
+977,Safety Insurance Group Inc,SAFT
+978,Lotus Technology Inc ADR,LOT
+979,Trinity Capital Inc,TRIN
+980,Taboola.com Ltd,TBLA
+981,Cohu Inc,COHU
+982,PDF Solutions Inc,PDFS
+983,MiMedx Group Inc,MDXG
+984,Enliven Therapeutics Inc,ELVN
+985,Sana Biotechnology Inc,SANA
+986,Tango Therapeutics Inc,TNGX
+987,Diversified Healthcare Trust,DHC
+988,IRadimed Corp,IRMD
+989,Upbound Group Inc,UPBD
+990,Magic Software Enterprises Ltd,MGIC
+991,Taysha Gene Therapies Inc,TSHA
+992,GoodRx Holdings Inc,GDRX
+993,EZCORP Inc,EZPW
+994,Ballard Power Systems Inc,BLDP
+995,Sealsq Corp,LAES
+996,Pulse Biosciences Inc,PLSE
+997,LGI Homes Inc,LGIH
+998,WhiteFiber Inc,WYFI
+999,OPKO Health Inc,OPK
+1000,Critical Metals Corp,CRML
+1001,AnaptysBio Inc,ANAB
+1002,Encore Capital Group Inc,ECPG
+1003,First Watch Restaurant Group Inc,FWRG
+1004,EVgo Inc,EVGO
+1005,Nektar Therapeutics,NKTR
+1006,Astec Industries Inc,ASTE
+1007,OceanFirst Financial Corp,OCFC
+1008,Preformed Line Products Co,PLPC
+1009,Gogo Inc,GOGO
+1010,Fortrea Holdings Inc,FTRE
+1011,Peoples Bancorp Inc,PEBO
+1012,Red Cat Holdings Inc,RCAT
+1013,indie Semiconductor Inc,INDI
+1014,Pharming Group NV ADR,PHAR
+1015,Radware Ltd,RDWR
+1016,Xpel Inc,XPEL
+1017,Xencor Inc,XNCR
+1018,Petco Health and Wellness Company Inc,WOOF
+1019,MillerKnoll Inc,MLKN
+1020,New Mountain Finance Corp,NMFC
+1021,ThredUp Inc,TDUP
+1022,Castle Biosciences Inc,CSTL
+1023,Bit Digital Inc,BTBT
+1024,BridgeBio Oncology Therapeutics Inc,BBOT
+1025,Middlesex Water Co,MSEX
+1026,International General Insurance Holdings Ltd,IGIC
+1027,Strategy 10 00 Perpetual Stride Prf Shs Series A,STRD
+1028,Limbach Holdings Inc,LMB
+1029,Old Second Bancorp Inc,OSBC
+1030,I3 Verticals Inc,IIIV
+1031,Yuanbao Inc ADR,YB
+1032,Community Trust Bancorp Inc,CTBI
+1033,Nanobiotix SA ADR,NBTX
+1034,Cronos Group Inc,CRON
+1035,GigaCloud Technology Inc,GCT
+1036,Rapid7 Inc,RPD
+1037,Daktronics Inc,DAKT
+1038,Firstsun Capital Bancorp,FSUN
+1039,Akso Health Group ADR,AHG
+1040,Better Home & Finance Holding Co,BETR
+1041,Phathom Pharmaceuticals Inc,PHAT
+1042,Uniti Group Inc (Delaware),UNIT
+1043,ProFrac Holding Corp,ACDC
+1044,Ecarx Holdings Inc.,ECX
+1045,Day One Biopharmaceuticals Inc,DAWN
+1046,Churchill Capital Corp X,CCCX
+1047,Calamos Convertible and High Income Closed Fund,CHY
+1048,Fox Factory Holding Corp,FOXF
+1049,EyePoint Pharmaceuticals Inc,EYPT
+1050,Inmode Ltd,INMD
+1051,NerdWallet Inc,NRDS
+1052,Liberty Broadband Corp Series A,LBRDA
+1053,Scansource Inc,SCSC
+1054,Burke & Herbert Financial Services Corp,BHRB
+1055,Pacira Biosciences Inc,PCRX
+1056,Skywater Technology Inc,SKYT
+1057,Tandem Diabetes Care Inc,TNDM
+1058,Barrett Business Services Inc,BBSI
+1059,United Fire Group Inc,UFCS
+1060,Kodiak Sciences Inc,KOD
+1061,EverQuote Inc,EVER
+1062,Frontier Group Holdings Inc,ULCC
+1063,Strive Inc,ASST
+1064,BrightSpring Health Services Units,BTSGU
+1065,Kura Oncology Inc,KURA
+1066,BTQ Technologies Corp,BTQ
+1067,Hallador Energy Co,HNRG
+1068,Verb Technology Company Inc,VERB
+1069,First Mid Bancshares Inc,FMBH
+1070,Calamos Convertible Opportunities and Income Closed Fund,CHI
+1071,Integra Lifesciences Holdings Corp,IART
+1072,Rezolute Inc,RZLT
+1073,Carlyle Secured Lending Inc,CGBD
+1074,Palvella Therapeutics Inc,PVLA
+1075,Bruker 6 375 Mandatory Convertible Preference Shares Ser A,BRKRP
+1076,Allient Inc,ALNT
+1077,Mercurity Fintech Holding Inc,MFH
+1078,Mission Produce Inc,AVO
+1079,Arbutus Biopharma Corp,ABUS
+1080,Aebi Schmidt Holding AG,AEBI
+1081,Beyond Meat Inc,BYND
+1082,Atlanticus Holdings Corp,ATLC
+1083,ASP Isotopes Inc,ASPI
+1084,CorMedix Inc,CRMD
+1085,Willis Lease Finance Corp,WLFC
+1086,ODP Corp,ODP
+1087,Septerna Inc,SEPN
+1088,Univest Financial Corp,UVSP
+1089,Forward Industries Inc,FORD
+1090,Iovance Biotherapeutics Inc,IOVA
+1091,OBOOK Holdings Inc,OWLS
+1092,Amalgamated Financial Corp,AMAL
+1093,GH Research PLC,GHRS
+1094,GCI Liberty Inc Series C,GLIBK
+1095,Red Violet Inc,RDVT
+1096,Great Lakes Dredge & Dock Corp,GLDD
+1097,NETGEAR Inc,NTGR
+1098,Prokidney Corp,PROK
+1099,SLR Investment Corp,SLRC
+1100,Pennant Group Inc,PNTG
+1101,Esquire Financial Holdings Inc,ESQ
+1102,Rush Enterprises Inc Class B,RUSHB
+1103,American Woodmark Corp,AMWD
+1104,Capitol Federal Financial Inc,CFFN
+1105,ARS Pharmaceuticals Inc,SPRY
+1106,Churchill Capital X Units,CCCXU
+1107,Horizon Bancorp Inc,HBNC
+1108,Midwestone Financial Group Inc (IOWA),MOFG
+1109,Gilat Satellite Networks Ltd,GILT
+1110,Stratasys Ltd,SSYS
+1111,Monte Rosa Therapeutics Inc,GLUE
+1112,Marten Transport Ltd,MRTN
+1113,QuinStreet Inc,QNST
+1114,Bicara Therapeutics Inc,BCAX
+1115,John B Sanfilippo & Son Inc,JBSS
+1116,Hanmi Financial Corp,HAFC
+1117,Embecta Corp,EMBC
+1118,Sify Technologies Ltd ADR,SIFY
+1119,Savara Inc,SVRA
+1120,ChipMOS Technologies Inc ADR,IMOS
+1121,Cantaloupe Inc,CTLP
+1122,Ferroglobe PLC,GSM
+1123,CareDx Inc,CDNA
+1124,Latham Group Inc,SWIM
+1125,Real Brokerage Inc,REAX
+1126,Ituran Location and Control Ltd,ITRN
+1127,Energy Recovery Inc,ERII
+1128,Canaan Inc ADR,CAN
+1129,Groupon Inc,GRPN
+1130,Tyra Biosciences Inc,TYRA
+1131,Udemy Inc,UDMY
+1132,Serve Robotics Inc,SERV
+1133,Amerisafe Inc,AMSF
+1134,Vinci Compass Investments Ltd,VINP
+1135,Fidus Investment Corp,FDUS
+1136,D Market Elektronik Hizmetler ve Ticaret AS ADR,HEPS
+1137,Eightco Holdings Inc,ORBS
+1138,Heritage Financial Corp,HFWA
+1139,Theravance Biopharma Inc,TBPH
+1140,Aquestive Therapeutics Inc,AQST
+1141,Arrivent Biopharma Inc,AVBP
+1142,Golden Entertainment Inc,GDEN
+1143,Apogee Enterprises Inc,APOG
+1144,HBT Financial Inc,HBT
+1145,Grid Dynamics Holdings Inc,GDYN
+1146,MoonLake Immunotherapeutics,MLTX
+1147,Maravai LifeSciences Holdings Inc,MRVI
+1148,Richtech Robotics Inc,RR
+1149,Mercantile Bank Corp,MBWM
+1150,HealthStream Inc,HSTM
+1151,Five Star Bancorp,FSBC
+1152,BJ's Restaurants Inc,BJRI
+1153,Prime Medicine Inc,PRME
+1154,Aeva Technologies Inc,AEVA
+1155,Business First Bancshares Inc,BFST
+1156,Lendingtree Inc,TREE
+1157,Sabre Corp,SABR
+1158,NB Bancorp Inc,NBBK
+1159,Valneva SE ADR,VALN
+1160,RAPT Therapeutics Inc,RAPT
+1161,PomDoctor Ltd ADR,POM
+1162,CNB Financial Corp,CCNE
+1163,Northeast Bank,NBN
+1164,Olaplex Holdings Inc,OLPX
+1165,TrustCo Bank Corp NY,TRST
+1166,Lexinfintech Holdings Ltd ADR,LX
+1167,LENZ Therapeutics Inc,LENZ
+1168,Anbio Biotechnology,NNNN
+1169,Matthews International Corp,MATW
+1170,Cresud SACIF y A ADR,CRESY
+1171,Vir Biotechnology Inc,VIR
+1172,Compass Therapeutics Inc.,CMPX
+1173,Aehr Test Systems,AEHR
+1174,CytomX Therapeutics Inc,CTMX
+1175,iHeartMedia Inc,IHRT
+1176,MapLight Therapeutics Inc,MPLT
+1177,Digital Turbine Inc,APPS
+1178,Astria Therapeutics Inc,ATXS
+1179,Docebo Inc,DCBO
+1180,BRBI BR Partners SA ADR,BRBI
+1181,Scholastic Corp,SCHL
+1182,Cracker Barrel Old Country Store Inc,CBRL
+1183,Liquidity Services Inc,LQDT
+1184,Tiptree Inc,TIPT
+1185,Geron Corp,GERN
+1186,Kimball Electronics Inc,KE
+1187,Fulgent Genetics Inc,FLGT
+1188,Streamex Corp,STEX
+1189,Capital City Bank Group Inc,CCBG
+1190,MeiraGTx Holdings PLC,MGTX
+1191,Nutex Health Inc,NUTX
+1192,Black Rock Coffee Bar Inc,BRCB
+1193,Green Plains Inc,GPRE
+1194,Krispy Kreme Inc,DNUT
+1195,Corsair Gaming Inc,CRSR
+1196,Gyre Therapeutics Inc,GYRE
+1197,Lindblad Expeditions Holdings Inc,LIND
+1198,Mid Penn Bancorp Inc,MPB
+1199,Metrocity Bankshares Inc,MCBS
+1200,YD Bio Ltd,YDES
+1201,Replimune Group Inc,REPL
+1202,InnovAge Holding Corp,INNV
+1203,Kura Sushi USA Inc,KRUS
+1204,NioCorp Developments Ltd,NB
+1205,Ventyx Biosciences Inc,VTYX
+1206,Highpeak Energy Inc,HPK
+1207,First Financial Corp,THFF
+1208,Orrstown Financial Services Inc,ORRF
+1209,World Acceptance Corp,WRLD
+1210,Rigel Pharmaceuticals Inc,RIGL
+1211,SI-BONE Inc,SIBN
+1212,AirSculpt Technologies Inc,AIRS
+1213,Lightwave Logic Inc,LWLG
+1214,Sun Country Airlines Holdings Inc,SNCY
+1215,Forward Air Corp (Delaware),FWRD
+1216,Camden National Corp,CAC
+1217,Target Hospitality Corp,TH
+1218,Arteris Inc,AIP
+1219,Thornburg Income Builder Opportunities Trust,TBLD
+1220,ADTRAN Holdings Inc,ADTN
+1221,Great Southern Bancorp Inc,GSBC
+1222,Arvinas Inc,ARVN
+1223,Heritage Commerce Corp,HTBK
+1224,CEVA Inc,CEVA
+1225,Personalis Inc,PSNL
+1226,PowerFleet Inc,AIOT
+1227,Uxin Ltd ADR,UXIN
+1228,Solowin Holdings Ltd,AXG
+1229,Anavex Life Sciences Corp,AVXL
+1230,Erasca Inc,ERAS
+1231,Independent Bank Corp (Michigan),IBCP
+1232,LSI Industries Inc,LYTS
+1233,DeFi Technologies Inc,DEFT
+1234,Hingham Institution For Savings,HIFS
+1235,Adamas Trust Inc,ADAM
+1236,Bioventus Inc,BVS
+1237,A-Mark Precious Metals Inc,AMRK
+1238,Lexeo Therapeutics Inc,LXEO
+1239,California Bancorp,BCAL
+1240,Shenandoah Telecommunications Co,SHEN
+1241,Cognyte Software Ltd,CGNT
+1242,Kornit Digital Ltd,KRNT
+1243,First Community Bankshares Inc,FCBC
+1244,Southern Missouri Bancorp Inc,SMBC
+1245,Ftai Infrastructure Inc,FIP
+1246,Bowman Consulting Group Ltd,BWMN
+1247,Esperion Therapeutics Inc,ESPR
+1248,American Coastal Insurance Corp,ACIC
+1249,Alpha and Omega Semiconductor Ltd,AOSL
+1250,South Plains Financial Inc,SPFI
+1251,Myriad Genetics Inc,MYGN
+1252,Heartland Express Inc,HTLD
+1253,Donegal Group Inc Class A,DGICA
+1254,Hycroft Mining Holding Corporation,HYMC
+1255,Cantor Equity Partners IV Inc,CEPF
+1256,Financial Institutions Inc,FISI
+1257,Calamos Dynamic Convertible And Income Closed Fund,CCD
+1258,SIGA Technologies Inc,SIGA
+1259,Sprout Social Inc,SPT
+1260,Corvus Pharmaceuticals Inc,CRVS
+1261,Opthea Ltd ADR,OPT
+1262,Lightbridge Corp,LTBR
+1263,NWPX Infrastructure Inc,NWPX
+1264,Orthofix Medical Inc,OFIX
+1265,Cytek Biosciences Inc,CTKB
+1266,Ads-Tec Energy PLC,ADSE
+1267,Agnc Invt 1000 Dep Shs Repstg Cum Red Prf Series F,AGNCP
+1268,AlTi Global  Inc,ALTI
+1269,CHS Cumulative Redeemable Pref Shs Class B,CHSCO
+1270,Talkspace Inc,TALK
+1271,Sigma Lithium Corp,SGML
+1272,Regenxbio Inc,RGNX
+1273,Lincoln Educational Services Corp,LINC
+1274,Olema Pharmaceuticals Inc,OLMA
+1275,Stitch Fix Inc,SFIX
+1276,Ribbon Communications Inc,RBBN
+1277,POET Technologies Inc,POET
+1278,American Public Education Inc,APEI
+1279,Gladstone Investment Corp,GAIN
+1280,Kalvista Pharmaceuticals Inc,KALV
+1281,Viant Technology Inc,DSP
+1282,Daily Journal Corp,DJCO
+1283,BitFuFu Inc,FUFU
+1284,Bloomin' Brands Inc,BLMN
+1285,Consolidated Water Co Ltd,CWCO
+1286,Prothena Corporation PLC,PRTA
+1287,Abacus Global Management Inc,ABL
+1288,Transcat Inc,TRNS
+1289,Legacy Housing Corp,LEGH
+1290,TRON Inc,TRON
+1291,Pacific Biosciences of California Inc,PACB
+1292,Absci Corp,ABSI
+1293,Compass Pathways PLC ADR,CMPS
+1294,Seneca Foods Corp Class A,SENEA
+1295,Gossamer Bio Inc,GOSS
+1296,Alerus Financial Corp,ALRS
+1297,Monopar Therapeutics Inc,MNPR
+1298,PRA Group Inc,PRAA
+1299,Shore Bancshares Inc,SHBI
+1300,Tactile Systems Technology Inc,TCMD
+1301,Akebia Therapeutics Inc,AKBA
+1302,Verastem Inc,VSTM
+1303,CHS Cumulative Redeemable Pref Shs Series 4 Class B,CHSCL
+1304,MGP Ingredients Inc,MGPI
+1305,Niagen Bioscience Inc,NAGE
+1306,Washington Trust Bancorp Inc,WASH
+1307,Monro Inc,MNRO
+1308,HarborOne Bancorp Inc,HONE
+1309,Cass Information Systems Inc,CASS
+1310,Lexicon Pharmaceuticals Inc,LXRX
+1311,Ichor Holdings Ltd,ICHR
+1312,Investors Title Co,ITIC
+1313,Clearpoint Neuro Inc,CLPT
+1314,Malibu Boats Inc,MBUU
+1315,Crescent Capital BDC Inc,CCAP
+1316,Gladstone Commercial Corp,GOOD
+1317,Domo Inc,DOMO
+1318,Drugs Made In America Acquisition II Units,DMIIU
+1319,Eton Pharmaceuticals Inc,ETON
+1320,Zevra Therapeutics Inc,ZVRA
+1321,4D Molecular Therapeutics Inc,FDMT
+1322,Hackett Group Inc,HCKT
+1323,Climb Global Solutions Inc,CLMB
+1324,RMR Group Inc,RMR
+1325,Farmers National Banc Corp,FMNB
+1326,Northrim BanCorp Inc,NRIM
+1327,Ibex Ltd,IBEX
+1328,Gevo Inc,GEVO
+1329,Arrow Financial Corp,AROW
+1330,Eagle Bancorp Inc,EGBN
+1331,Flushing Financial Corp,FFIC
+1332,Organogenesis Holdings Inc,ORGO
+1333,Varex Imaging Corp,VREX
+1334,Nexxen International Ltd,NEXN
+1335,LZ Technology Holdings Ltd,LZMH
+1336,Keros Therapeutics Inc,KROS
+1337,CHS Reset Rate Cumulative Redeemable Pref Shs Series 3 Class B,CHSCM
+1338,BlackRock TCP Capital Corp,TCPC
+1339,Clean Energy Fuels Corp,CLNE
+1340,Alumis Inc,ALMS
+1341,Xunlei Ltd ADR,XNET
+1342,Angi Inc,ANGI
+1343,GBank Financial Holdings Inc,GBFH
+1344,Arqit Quantum Inc,ARQQ
+1345,ACNB Corp,ACNB
+1346,Lands End Inc,LE
+1347,AngioDynamics Inc,ANGO
+1348,NovaBridge Biosciences ADR,NBP
+1349,TAT Technologies Ltd,TATT
+1350,Village Super Market Inc,VLGEA
+1351,Karat Packaging Inc,KRT
+1352,Uranium Royalty Corp,UROY
+1353,enCore Energy Corp,EU
+1354,Reservoir Media Inc,RSVR
+1355,American Battery Technology Co,ABAT
+1356,Calamos Global Dynamic Income Closed Fund,CHW
+1357,Telos Corp,TLS
+1358,Agriculture & Natural Solutions Acquisition Corp,ANSC
+1359,Consensus Cloud Solutions Inc,CCSI
+1360,Jiayin Group Inc ADR,JFIN
+1361,Veritone Inc,VERI
+1362,York Water Co,YORW
+1363,Gores Holdings X Inc,GTEN
+1364,Kopin Corp,KOPN
+1365,Evolus Inc,EOLS
+1366,Coincheck Group NV,CNCK
+1367,OneSpan Inc,OSPN
+1368,Shoe Carnival Inc,SCVL
+1369,Capital Bancorp Inc,CBNK
+1370,Oatly Group AB (publ) ADR,OTLY
+1371,Peoples Financial Services Corp,PFIS
+1372,Fifth Third Bancorp Depositary Shares Representing 1/1000th Perp Pref Shs,FITBI
+1373,Bridgewater Bancshares Inc,BWB
+1374,Dave & Buster's Entertainment Inc,PLAY
+1375,Sunopta Inc,STKL
+1376,Unity Bancorp Inc,UNTY
+1377,SNDL Inc,SNDL
+1378,Sohu.com Ltd ADR,SOHU
+1379,Clearfield Inc,CLFD
+1380,Bicycle Therapeutics PLC ADR,BCYC
+1381,Omeros Corp,OMER
+1382,Columbus McKinnon Corp,CMCO
+1383,Peapack-Gladstone Financial Corp,PGC
+1384,Wintrust Financial Depositary Shares Rep 1000 Share 7 875 Fixed Rate Reset Non,WTFCN
+1385,International Money Express Inc,IMXI
+1386,Arko Corp.,ARKO
+1387,Terra Innovatum Global NV,NKLR
+1388,TSS Inc,TSSI
+1389,Helen of Troy Ltd,HELE
+1390,BGIN Blockchain Ltd,BGIN
+1391,ChoiceOne Financial Services Inc,COFS
+1392,Bumble Inc,BMBL
+1393,Brera Holdings PLC,SLMT
+1394,FRP Holdings Inc,FRPH
+1395,Bright Minds Biosciences Inc,DRUG
+1396,M3-Brigade Acquisition VI Corp,MBVI
+1397,Bandwidth Inc,BAND
+1398,Cullinan Therapeutics Inc,CGEM
+1399,Nathan's Famous Inc,NATH
+1400,Greenlight Capital Re Ltd,GLRE
+1401,Liberty Media Liberty Braves Ord Shs  Series A,BATRA
+1402,Mama's Creations Inc,MAMA
+1403,Ocugen Inc,OCGN
+1404,Standard BioTools Inc,LAB
+1405,Red River Bancshares Inc,RRBI
+1406,So-Young International Inc ADR,SY
+1407,Ceribell Inc,CBLL
+1408,DoubleDown Interactive Co Ltd ADR,DDI
+1409,First Business Financial Services Inc,FBIZ
+1410,Cross Country Healthcare Inc,CCRN
+1411,Gladstone Capital Corp,GLAD
+1412,Elevra Lithium Ltd ADR,ELVR
+1413,D Boral ARC Acquisition I Corp,BCAR
+1414,CHS Reset Rate Pref Shs Class B Series 2,CHSCN
+1415,Neuropace Inc,NPCE
+1416,Civista Bancshares Inc,CIVB
+1417,Mitek Systems Inc,MITK
+1418,Home Bancorp Inc,HBCP
+1419,Neumora Therapeutics Inc,NMRA
+1420,Northfield Bancorp Inc,NFBK
+1421,TryHard Holdings Ltd,THH
+1422,Cryoport Inc,CYRX
+1423,PureTech Health PLC ADR,PRTC
+1424,Semler Scientific Inc,SMLR
+1425,Global Indemnity Group LLC,GBLI
+1426,Fulcrum Therapeutics Inc,FULC
+1427,Assembly Biosciences Inc,ASMB
+1428,Bank of Marin Bancorp,BMRC
+1429,Mesa Laboratories Inc,MLAB
+1430,Xoma Royalty Corp,XOMA
+1431,Kearny Financial Corp,KRNY
+1432,Cadiz Inc,CDZI
+1433,OrthoPediatrics Corp,KIDS
+1434,Altimmune Inc,ALT
+1435,Community West Bancshares,CWBC
+1436,Brookfield Property Preferred Pref Shs Class A,BPYPM
+1437,AIRO Group Holdings Inc,AIRO
+1438,AXT Inc,AXTI
+1439,GigCapital7 Units,GIGGU
+1440,Allot Ltd,ALLT
+1441,Johnson Outdoors Inc,JOUT
+1442,Perion Network Ltd,PERI
+1443,GDEV Inc,GDEV
+1444,AGNC Investment DS REP 1/1000 Cumulative Pref Shs Series E,AGNCO
+1445,Gravity Co Ltd ADR,GRVY
+1446,Universal Logistics Holdings Inc,ULH
+1447,K&F Growth Acquisition II Corp,KFII
+1448,Inventiva SA ADR,IVA
+1449,Cerence Inc,CRNC
+1450,Euroseas Ltd,ESEA
+1451,Vasta Platform Ltd,VSTA
+1452,New Fortress Energy Inc,NFE
+1453,Strata Critical Medical Inc,SRTA
+1454,Centurion Acquisition Units Expiry 22nd May 2029,ALFUU
+1455,Datavault AI Inc,DVLT
+1456,New Providence Acquisition Corp III,NPAC
+1457,Byrna Technologies Inc,BYRN
+1458,Treace Medical Concepts Inc,TMCI
+1459,FIRST BANK (Hamilton),FRBA
+1460,Sierra Bancorp,BSRR
+1461,Churchill Capital Corp IX,CCIX
+1462,Design Therapeutics Inc,DSGN
+1463,Advantage Solutions Inc,ADV
+1464,Canopy Growth Corp,CGC
+1465,Calavo Growers Inc,CVGW
+1466,Sinovac Biotech Ltd,SVA
+1467,National Cinemedia Inc,NCMI
+1468,Bank7 Corp,BSVN
+1469,Priority Technology Holdings Inc,PRTH
+1470,Republic Digital Acquisition Co,RDAG
+1471,Air T Funding Alpha Income Pref Shs,AIRTP
+1472,Smith & Wesson Brands Inc,SWBI
+1473,Xerox Holdings Corp,XRX
+1474,Olympic Steel Inc,ZEUS
+1475,eGain Corp,EGAN
+1476,Algoma Steel Group Inc,ASTL
+1477,Wen Acquisition Corp,WENN
+1478,GP-Act III Acquisition Corp,GPAT
+1479,Berto Acquisition Corp,TACO
+1480,Centurion Acquisition Corp,ALF
+1481,Kamada Ltd,KMDA
+1482,Immuneering Corp,IMRX
+1483,Greene County Bancorp Inc,GCBC
+1484,Gores Holdings X Units,GTENU
+1485,Neurogene Inc,NGNE
+1486,Carter Bankshares Inc,CARE
+1487,Westrock Coffee Co,WEST
+1488,Commerce.com Inc,CMRC
+1489,M3-Brigade Acquisition V Corp,MBAV
+1490,Surmodics Inc,SRDX
+1491,Definitive Healthcare Corp,DH
+1492,Titan Machinery Inc,TITN
+1493,Versabank,VBNK
+1494,Phoenix Asia Holdings Ltd,PHOE
+1495,Aduro Clean Technologies Inc,ADUR
+1496,Cantor Equity Partners III Inc,CAEP
+1497,Agriculture Natural Solutions Acquisition Units,ANSCU
+1498,Crane Harbor Acquisition Corp,CHAC
+1499,Lifeway Foods Inc,LWAY
+1500,TWFG Inc,TWFG
+1501,Zumiez Inc,ZUMZ
+1502,American Resources Corp,AREC
+1503,West Bancorporation Inc,WTBA
+1504,Southern First Bancshares Inc,SFST
+1505,Inflection Point Acquisition Corp IV,BACQ
+1506,GigCapital8 Corp,GIW
+1507,Autolus Therapeutics PLC ADR,AUTL
+1508,Industrial Logistics Properties Trust,ILPT
+1509,Galectin Therapeutics Inc,GALT
+1510,Portillos Inc,PTLO
+1511,Vine Hill Capital Investment Units,VCICU
+1512,Cohen Circle Acquisition Corp II,CCII
+1513,Huntington Bancshares 4.500 Depositary Shares Rep Perp Prf Shs Series H,HBANP
+1514,Siddhi Acquisition Corp,SDHI
+1515,Blaize Holdings Inc,BZAI
+1516,Simulations Plus Inc,SLP
+1517,Oncology Institute Inc,TOI
+1518,Quantum-Si Inc,QSI
+1519,Tectonic Therapeutic Inc,TECX
+1520,Diamond Hill Investment Group Inc,DHIL
+1521,M3 Brigade Acquisition VI Units,MBVIU
+1522,Matrix Service Co,MTRX
+1523,Inflection Point Acquisition IV Unit,BACQU
+1524,Titan Acquisition Corp,TACH
+1525,Rimini Street Inc,RMNI
+1526,Rxsight Inc,RXST
+1527,TechTarget Inc,TTGT
+1528,GigCapital7 Corp,GIG
+1529,AGNC Investment 8 75 Fixed Rate Cumulative Redeemable Prf Shs Series H,AGNCZ
+1530,Central Garden & Pet Co,CENT
+1531,Inflection Point Acquisition Corp III,IPCX
+1532,OptimizeRx Corp,OPRX
+1533,Runway Growth Finance Corp,RWAY
+1534,Conduent Inc,CNDT
+1535,Arch Capital Group Depositary Shares Rep1000 Non Cumu Pref Shs Series G,ACGLN
+1536,Opal Fuels Inc,OPAL
+1537,Charming Medical Ltd,MCTA
+1538,Ponce Financial Group Inc,PDLB
+1539,Rocket Pharmaceuticals Inc,RCKT
+1540,Cartesian Growth Corp III,CGCT
+1541,Rackspace Technology Inc,RXT
+1542,Apex Treasury Units,APXTU
+1543,Backblaze Inc,BLZE
+1544,Lesaka Technologies Inc,LSAK
+1545,Cantor Equity Partners II Inc,CEPT
+1546,LB Pharmaceuticals Inc,LBRX
+1547,Columbus Circle Capital I Corp,BRR
+1548,Gladstone Land Corp,LAND
+1549,CHS 8 Cumulative Redeemable Pref Shs,CHSCP
+1550,Smart Share Global Ltd ADR,EM
+1551,Kochav Defense Acquisition Corp,KCHV
+1552,Innoviz Technologies Ltd,INVZ
+1553,AC Immune SA,ACIU
+1554,LightPath Technologies Inc,LPTH
+1555,Materialise NV ADR,MTLS
+1556,Drugs Made In America Acquisition Corp,DMAA
+1557,HCM III Acquisition Corp,HCMA
+1558,Acacia Research Corp,ACTG
+1559,Service Properties Trust,SVC
+1560,Midland States Bancorp Inc,MSBI
+1561,Talon Capital Corp,TLNC
+1562,Lyell Immunopharma Inc,LYEL
+1563,Nabors Energy Transition II Units,NETDU
+1564,Value Line Inc,VALU
+1565,WW International Inc,WW
+1566,Bankwell Financial Group Inc,BWFG
+1567,Renatus Tactical Acquisition I Corp,RTAC
+1568,Oyster Enterprises II Acquisition Corp,OYSE
+1569,Orange County Bancorp Inc,OBT
+1570,Crane Harbor Acquisition Units,CHACU
+1571,Citizens & Northern Corp,CZNC
+1572,PubMatic Inc,PUBM
+1573,Anterix Inc,ATEX
+1574,Repay Holdings Corp,RPAY
+1575,Nano Dimension Ltd ADR,NNDM
+1576,Aura Biosciences Inc,AURA
+1577,Voyager Acquisition Units,VACHU
+1578,Bold Eagle Acquisition Corp,BEAG
+1579,Geospace Technologies Corp,GEOS
+1580,Village Farms International Inc,VFF
+1581,Motorcar Parts of America Inc,MPAA
+1582,MVB Financial Corp,MVBF
+1583,Farmers & Merchants Bancorp Inc,FMAO
+1584,Ironwood Pharmaceuticals Inc,IRWD
+1585,Pioneer Bancorp Inc,PBFS
+1586,Voyager Acquisition Corp,VACH
+1587,Annexon Inc,ANNX
+1588,SM Acquisition Units,SIMAU
+1589,Liberty Latin America Ltd Class A,LILA
+1590,Agnc Invt 1000 DS Repstg Pref Shs Series C,AGNCN
+1591,Huntington Bancshares Dep Shs Repstg 1 40Th Int Non Cum Perp Prf Depositary,HBANL
+1592,AerSale Corp,ASLE
+1593,Mastercraft Boat Holdings Inc,MCFT
+1594,Commercial BancGroup Inc,CBK
+1595,Texas Ventures Acquisition III Corp,TVA
+1596,Solid Biosciences Inc,SLDB
+1597,Brighthouse Financial 1000 DS Repstg Non Cum Pfd Ser C,BHFAN
+1598,ProCap Acquisition Corp,PCAP
+1599,Amarin Corporation PLC ADR,AMRN
+1600,Lionheart Holdings,CUB
+1601,Rich Sparkle Holdings Ltd,ANPA
+1602,Fifth Era Acquisition Corp I,FERA
+1603,Citi Trends Inc,CTRN
+1604,Umb Finl Corp Dep Shs Repstg 1 400Th Perp Pfd Ser B,UMBFO
+1605,National Research Corp,NRC
+1606,SIM Acquisition I Corp,SIMA
+1607,Mountain Lake Acquisition Corp,MLAC
+1608,Vine Hill Capital Investment Corp,VCIC
+1609,Alpha Tau Medical Ltd,DRTS
+1610,Armada Acquisition Corp II,XRPN
+1611,Blue Water Acquisition Corp III,BLUW
+1612,Frequency Electronics Inc,FEIM
+1613,New Providence Acquisition III Units,NPACU
+1614,Invivyd Inc,IVVD
+1615,Spring Valley Acquisition Corp III,SVAC
+1616,RBB Bancorp,RBB
+1617,Pangaea Logistics Solutions Ltd,PANL
+1618,SOPHiA GENETICS SA,SOPH
+1619,DiaMedica Therapeutics Inc,DMAC
+1620,Contineum Therapeutics Inc,CTNM
+1621,WEN Acquisition Units,WENNU
+1622,Roman DBDR Acquisition Corp II,DRDB
+1623,Alliance Entertainment Holding Corp,AENT
+1624,Republic Digital Acquisition Units,RDAGU
+1625,Pioneer Acquisition I Corp,PACH
+1626,Concrete Pumping Holdings Inc,BBCP
+1627,SBC Medical Group Holdings Inc,SBC
+1628,Sagimet Biosciences Inc,SGMT
+1629,Northern Trust DS Representing 1 1000th Non Cumulative Perpetual Pref Shs,NTRSO
+1630,Gorilla Technology Group Inc,GRRR
+1631,Oxley Bridge Acquisition Ltd,OBA
+1632,USCB Financial Holdings Inc,USCB
+1633,Archimedes Tech SPAC Partners II Units,ATIIU
+1634,Perimeter Acquisition I Corp,PMTR
+1635,Sizzle Acquisition Corp II,SZZL
+1636,Denny's Corp,DENN
+1637,Cal Redwood Acquisition Corp,CRAQ
+1638,M3 Brigade Acquisition V Units,MBAVU
+1639,Carlsmed Inc,CARL
+1640,MicroVision Inc,MVIS
+1641,Digi Power X Inc,DGXX
+1642,Aldel Financial II Units,ALDFU
+1643,Aldel Financial II Inc,ALDF
+1644,Benitec Biopharma Inc,BNTC
+1645,Agora Inc ADR,API
+1646,AMC Networks Inc,AMCX
+1647,NVE Corp,NVEC
+1648,Kindly MD Inc,NAKA
+1649,Andretti Acquisition Corp. II,POLE
+1650,Berto Acquisition Units,TACOU
+1651,Platinum Analytics Cayman Ltd,PLTS
+1652,El Pollo Loco Holdings Inc,LOCO
+1653,Launch One Acquisition Units,LPAAU
+1654,BTC Development Corp,BDCI
+1655,GP Act III Acquisition Units,GPATU
+1656,enGene Holdings Inc,ENGN
+1657,K and F Growth Acquisition Ii Units,KFIIU
+1658,Archimedes Tech SPAC Partners II Co,ATII
+1659,Kyverna Therapeutics Inc,KYTX
+1660,X4 Pharmaceuticals Inc,XFOR
+1661,First Citizens Bancshares 40 DS Rep 1 Non Cumulative Perpetual Pref Shs Series A,FCNCP
+1662,Churchill Capital IX Units,CCIXU
+1663,Korro Bio Inc,KRRO
+1664,Artesian Resources Corp,ARTNA
+1665,Delcath Systems Inc,DCTH
+1666,NIU Technologies ADR,NIU
+1667,Silence Therapeutics PLC ADR,SLN
+1668,Trailblazer Acquisition Corp,BLZR
+1669,PCB Bancorp,PCB
+1670,LightWave Acquisition Corp,LWAC
+1671,Launch One Acquisition Corp,LPAA
+1672,SLM Floating Rate Non Cumulative Pref Shs Series B,SLMBP
+1673,G Willi Food International Ltd,WILC
+1674,Artius II Acquisition Inc,AACB
+1675,Enanta Pharmaceuticals Inc,ENTA
+1676,Jack in the Box Inc,JACK
+1677,Launch Two Acquisition Corp,LPBB
+1678,BayCom Corp,BCML
+1679,Thryv Holdings Inc,THRY
+1680,Aviat Networks Inc,AVNW
+1681,Kelly Services Inc Class A,KELYA
+1682,D Boral ARC Acquisition I Units,BCARU
+1683,Etoiles Capital Group Co Ltd,EFTY
+1684,Calamos Long Short Equity Dynamic Income Trust Closed Fund,CPZ
+1685,OTG Acquisition I Corp,OTGA
+1686,Larimar Therapeutics Inc,LRMR
+1687,Brainsway Ltd ADR,BWAY
+1688,Brighthouse Financial 1000 DS Representing 6 6 Non Cumulative Pref Shs Series A,BHFAP
+1689,Live Oak Acquisition Corp V,LOKV
+1690,Turtle Beach Corp,TBCH
+1691,Titan Acquisition Units,TACHU
+1692,Bel Fuse Inc Class A,BELFA
+1693,Highview Merger Corp,HVMC
+1694,WEYCO Group Inc,WEYS
+1695,Horizon Technology Finance Corp,HRZN
+1696,Siddhi Acquisition Units,SDHIU
+1697,HomesToLife Ltd,HTLM
+1698,Isabella Bank Corp,ISBA
+1699,Hudson Technologies Inc,HDSN
+1700,Jade Biosciences Inc,JBIO
+1701,PepGen Inc,PEPG
+1702,Aldeyra Therapeutics Inc,ALDX
+1703,TruBridge Inc,TBRG
+1704,Bold Eagle Acquisition Units,BEAGU
+1705,Airjoule Technologies Corp,AIRJ
+1706,Plumas Bancorp,PLBC
+1707,Capricor Therapeutics Inc,CAPR
+1708,FS Bancorp Inc,FSBW
+1709,NewHold Investment Corp III,NHIC
+1710,Brighthouse Financial 1000 Depositary Shares Representing 1 Pref Series B,BHFAO
+1711,Cartesian Growth III Units,CGCTU
+1712,Renatus Tactical Acquisition I Units,RTACU
+1713,Trailblazer Acquisition Units,BLZRU
+1714,Strattec Security Corp,STRT
+1715,L B Foster Co,FSTR
+1716,Palladyne AI Corp,PDYN
+1717,A Paradise Acquisition Corp,APAD
+1718,CN Healthy Food Tech Group Corp,UCFI
+1719,Eupraxia Pharmaceuticals Inc,EPRX
+1720,Blue Acquisition Corp,BACC
+1721,908 Devices Inc,MASS
+1722,First Bancorp Inc,FNLC
+1723,Tile Shop Holdings Inc,TTSH
+1724,Acrh Cap Group 1000 Dep Shs Repstg Non Cumulative Pref Shs Series F,ACGLO
+1725,Mereo BioPharma Group PLC ADR,MREO
+1726,Waterstone Financial Inc,WSBF
+1727,Global Water Resources Inc,GWRS
+1728,Avidbank Holdings Inc,AVBH
+1729,Omega Flex Inc,OFLX
+1730,Paysign Inc,PAYS
+1731,Information Services Group Inc,III
+1732,Park Ohio Holdings Corp,PKOH
+1733,Northeast Community Bancorp Inc,NECB
+1734,Rani Therapeutics Holdings Inc,RANI
+1735,Alpha Technology Group Ltd,ATGL
+1736,Kochav Defense Acquisition Units,KCHVU
+1737,Inflection Point Acquisition III Units,IPCXU
+1738,CSLM Digital Asset Acquisition III Corp Ltd,KOYN
+1739,Axiom Intelligence Acquisition Corp 1,AXIN
+1740,Spok Holdings Inc,SPOK
+1741,NI Holdings Inc,NODK
+1742,Cohen Circle Acquisition II Units,CCIIU
+1743,Thayer Ventures Acquisition II Corp,TVAI
+1744,8x8 Inc,EGHT
+1745,Rekor Systems Inc,REKR
+1746,LINKBANCORP Inc,LNKB
+1747,Hennessy Capital Investment Corp VII,HVII
+1748,Middlefield Banc Corp,MBCN
+1749,Armada Acquisition II Units,XRPNU
+1750,Candel Therapeutics Inc,CADL
+1751,Blue Water Acquisition III Units,BLUWU
+1752,Cerus Corp,CERS
+1753,Texas Ventures Acquisition III Units,TVACU
+1754,ETHZilla Corp,ETHZ
+1755,BTC Development Units,BDCIU
+1756,MarketWise Inc,MKTW
+1757,GoPro Inc,GPRO
+1758,ioneer Ltd ADR,IONR
+1759,NewtekOne Inc,NEWT
+1760,BIOAGE Labs Inc,BIOA
+1761,Procap Acquisition Units A,PCAPU
+1762,Columbus Circle Capital I Units,BRRWU
+1763,Oyster Enterprises II Acquisition Units,OYSEU
+1764,Brilliant Earth Group Inc,BRLT
+1765,Cantor Equity Partners I Inc,CEPO
+1766,John Marshall Bancorp Inc,JMSB
+1767,Gigcapital8 Units,GIWWU
+1768,Talon Capital Units,TLNCU
+1769,Citizens Financial Services Inc,CZFS
+1770,Perimeter Acquisition I Units,PMTRU
+1771,Chicago Atlantic Real Estate Finance Inc,REFI
+1772,HCM III Acquisition Units,HCMAU
+1773,Antalpha Platform Holding Co,ANTA
+1774,Vox Royalty Corp,VOXR
+1775,Sight Sciences Inc,SGHT
+1776,Entrada Therapeutics Inc,TRDA
+1777,Empery Digital Inc,EMPD
+1778,Primis Financial Corp,FRST
+1779,CVRx Inc,CVRX
+1780,HomeStreet Inc,HMST
+1781,Mountain Lake Acquisition Units,MLACU
+1782,AudioCodes Ltd,AUDC
+1783,Pure Cycle Corp,PCYO
+1784,Vanda Pharmaceuticals Inc,VNDA
+1785,Oaktree Acquisition Corp III,OACC
+1786,Honest Company Inc,HNST
+1787,ATN International Inc,ATNI
+1788,Codere Online Luxembourg SA,CDRO
+1789,Pioneer Acquisition I Units,PACHU
+1790,GSR IV Acquisition Corp,GSRF
+1791,Aeluma Inc,ALMU
+1792,Timberland Bancorp Inc,TSBK
+1793,Vendome Acquisition Corp I,VNME
+1794,Atea Pharmaceuticals Inc,AVIR
+1795,Oxley Bridge Acquisition Units,OBAWU
+1796,Alpha Teknova Inc,TKNO
+1797,GSI Technology Inc,GSIT
+1798,Berry Corporation (Bry),BRY
+1799,Cricut Inc,CRCT
+1800,Finwise Bancorp,FINW
+1801,SuRo Capital Corp,SSSS
+1802,Forafric Global PLC,AFRI
+1803,Texas Capital Bancshares Depositary Shares 5 75 Non Cum Pref Shs Series B,TCBIO
+1804,Plum Acquisition Corp. IV,PLMK
+1805,High Tide Inc,HITI
+1806,Fidelity D&D Bancorp Inc,FDBC
+1807,NOVONIX Ltd ADR,NVX
+1808,Pyxis Oncology Inc,PYXS
+1809,FACT II Acquisition Corp,FACT
+1810,Parke Bancorp Inc,PKBK
+1811,StealthGas Inc,GASS
+1812,Newbury Street II Acquisition Corp,NTWO
+1813,Limoneira Co,LMNR
+1814,Fuelcell Energy Inc,FCEL
+1815,Andretti Acquisition II Units,POLEU
+1816,Alico Inc,ALCO
+1817,Drugs Made In America Acquisition Units,DMAAU
+1818,Sanara Medtech Inc,SMTI
+1819,Lifecore Biomedical Inc,LFCR
+1820,GSR IV Acquisition Units,GSRFU
+1821,Fifth Era Acquisition I Units,FERAU
+1822,Norwood Financial Corp,NWFL
+1823,Aurora Cannabis Inc,ACB
+1824,Puma Biotechnology Inc,PBYI
+1825,Cal Redwood Acquisition Units,CRAQU
+1826,Aclaris Therapeutics Inc,ACRS
+1827,Eledon Pharmaceuticals Inc,ELDN
+1828,Roman DBDR Acquisition II Units,DRDBU
+1829,Launch Two Acquisition Units,LPBBU
+1830,Lionheart Holdings Units,CUBWU
+1831,OTG Acquisition I Units,OTGAU
+1832,James River Group Holdings Ltd,JRVR
+1833,DeFi Development Corp,DFDV
+1834,CSLM Digital Asset Acquisition III Units,KOYNU
+1835,OneWater Marine Inc,ONEW
+1836,Sprott Focus Trust,FUND
+1837,Sizzle Acquisition II Units,SZZLU
+1838,Yorkville Acquisition Corp,MCGA
+1839,Immutep Ltd ADR,IMMP
+1840,Live Oak Acquisition V Units,LOKVU
+1841,Gambling.com Group Ltd,GAMB
+1842,Chemung Financial Corp,CHMG
+1843,Achieve Life Sciences Inc,ACHV
+1844,Humacyte Inc,HUMA
+1845,Editas Medicine Inc,EDIT
+1846,Range Capital Acquisition II Units,RNGTU
+1847,TOYO Co.  Ltd,TOYO
+1848,Western New England Bancorp Inc,WNEB
+1849,Highview Merger Units,HVMCU
+1850,Real Asset Acquisition Corp,RAAQ
+1851,Nature's Sunshine Products Inc,NATR
+1852,QuantaSing Group Ltd ADR,QSG
+1853,Spring Valley Acquisition III Units,SVACU
+1854,CEA Industries Inc,BNC
+1855,Pitanium Ltd,PTNM
+1856,FB Bancorp Inc,FBLA
+1857,Viemed Healthcare Inc,VMD
+1858,Solarius Capital Acquisition Corp,SOCA
+1859,Digital Asset Acquisition Corp,DAAQ
+1860,McKinley Acquisition Corp,MKLY
+1861,LifeMD Inc,LFMD
+1862,Oak Valley Bancorp,OVLY
+1863,Exagen Inc,XGN
+1864,Perma-Fix Environmental Services Inc,PESI
+1865,Waton Financial Ltd,WTF
+1866,BingEx Ltd ADR,FLX
+1867,Electrovaya Inc,ELVA
+1868,A2Z Cust2Mate Solutions Corp,AZ
+1869,Wesbanco Depositary Shs Each Repstg 1 40Th In Sh Of Fxd Rate Rst Non Cumulatv,WSBCO
+1870,Nova Minerals Ltd ADR,NVA
+1871,Voyager Therapeutics Inc,VYGR
+1872,Globa Terra Acquisition Corp,GTERA
+1873,Bank OZK 4 625 Non Cumulative Perpetual Pref Shs Series A,OZKAP
+1874,Montauk Renewables Inc,MNTK
+1875,One and one Green Technologies.INC,YDDL
+1876,Allogene Therapeutics Inc,ALLO
+1877,ProQR Therapeutics NV,PRQR
+1878,Artius II Acquisition Units,AACBU
+1879,Quanterix Corp,QTRX
+1880,Investar Holding Corp,ISTR
+1881,Mediwound Ltd,MDWD
+1882,AGNC Investment 1000 DS Rep 6.875 Fixed to Floating Cumulative Redeemable Pref,AGNCM
+1883,Twin Disc Inc,TWIN
+1884,Medallion Financial Corp,MFIN
+1885,MDxHealth SA,MDXH
+1886,First United Corp,FUNC
+1887,Chicago Atlantic BDC Inc,LIEN
+1888,Translational Development Acquisition Corp,TDAC
+1889,Dynamix Corp,ETHM
+1890,Melar Acquisition Corp I,MACI
+1891,OMS Energy Technologies Inc,OMSE
+1892,Provident Bancorp Inc (Maryland),PVBC
+1893,Lightwave Acquisition Units,LWACU
+1894,Cabaletta Bio Inc,CABA
+1895,Black Diamond Therapeutics Inc,BDTX
+1896,Asure Software Inc,ASUR
+1897,Cellectis SA ADR,CLLS
+1898,Pinnacle Finl Partners 40 DS Rep Ord Shs Series B,PNFPP
+1899,SANUWAVE Health Inc,SNWV
+1900,Zura Bio Ltd,ZURA
+1901,XMax Inc,NVFY
+1902,Foghorn Therapeutics Inc,FHTX
+1903,Perma-Pipe International Holdings Inc,PPIH
+1904,Arcturus Therapeutics Holdings Inc,ARCT
+1905,CapsoVision Inc,CV
+1906,C&F Financial Corp,CFFI
+1907,Kaltura Inc,KLTR
+1908,Stellar V Capital Corp,SVCC
+1909,1RT Acquisition Corp,ONCH
+1910,Rocky Brands Inc,RCKY
+1911,PAMT Corp,PAMT
+1912,Princeton Bancorp Inc,BPRN
+1913,HUHUTECH International Group Inc,HUHU
+1914,Keen Vision Acquisition Units,KVACU
+1915,Fennec Pharmaceuticals Inc,FENC
+1916,Immersion Corp,IMMR
+1917,First Busey Corp Dep Shs Repstg 1 40Th Int Non Cum Perp Pfd Depositary Shares,BUSEP
+1918,Waldencast PLC,WALD
+1919,FVCBankcorp Inc,FVCB
+1920,CURRENC Group Inc,CURR
+1921,First Western Financial Inc,MYFW
+1922,C4 Therapeutics Inc,CCCC
+1923,Palisade Bio Inc,PALI
+1924,Vuzix Corp,VUZI
+1925,Tenaya Therapeutics Inc,TNYA
+1926,Primeenergy Resources Corp,PNRG
+1927,LCNB Corp,LCNB
+1928,AleAnna Inc,ANNA
+1929,CuriosityStream Inc,CURI
+1930,TriSalus Life Sciences Inc,TLSI
+1931,Newhold Investment III Units,NHICU
+1932,Inspired Entertainment Inc,INSE
+1933,Trivago NV ADR,TRVG
+1934,Blue Acquisition Units,BACCU
+1935,Cantor Equity Partners Inc,CEP
+1936,1-800-Flowers.Com Inc,FLWS
+1937,Solesence Inc,SLSN
+1938,RGC Resources Inc,RGCO
+1939,Hawthorn Bancshares Inc,HWBK
+1940,Abeona Therapeutics Inc,ABEO
+1941,Solana Co,HSDT
+1942,Merchants Bancorp Ind Dep Shs Repstg 1 40Th Int Perp Prf Shs Ser E,MBINL
+1943,Twin Hospitality Group Inc,TWNP
+1944,Aardvark Therapeutics Inc,AARD
+1945,Satellogic Inc,SATL
+1946,Tiziana Life Sciences Ltd,TLSA
+1947,ALT5 Sigma Corp,ALTS
+1948,Good Works Acquisition Corp,GWACU
+1949,GCL Global Holdings Ltd,GCL
+1950,Axiom Intelligence Acquisition 1 Units,AXINU
+1951,A Paradise Acquisition Units,APADU
+1952,Tucows Inc,TCX
+1953,GD Culture Group Ltd,GDC
+1954,Plum Acquisition IV Units,PLMKU
+1955,Thayer Ventures Acquisition II Units,TVAIU
+1956,Cantor Equity Partners V Inc,CEPV
+1957,Ceragon Networks Ltd,CRNT
+1958,Inseego Corp,INSG
+1959,Willow Lane Acquisition Corp,WLAC
+1960,Virginia National Bankshares Corp,VABK
+1961,Outset Medical Inc,OM
+1962,US Gold Corp,USAU
+1963,SCHMID Group NV,SHMD
+1964,Gesher Acquisition II Corp,GSHR
+1965,Kingstone Companies Inc,KINS
+1966,Aptera Motors Corp,SEV
+1967,Duos Technologies Group Inc,DUOT
+1968,Blue Gold Ltd,BGL
+1969,Security National Financial Corp,SNFCA
+1970,Health Catalyst Inc,HCAT
+1971,RCI Hospitality Holdings Inc,RICK
+1972,EGH Acquisition Corp,EGHA
+1973,Crexendo Inc,CXDO
+1974,Oportun Financial Corp,OPRT
+1975,First National Corp,FXNC
+1976,First Savings Financial Group Inc,FSFG
+1977,Dune Acquisition Corp II,IPOD
+1978,Franklin Financial Services Corp,FRAF
+1979,Orchestra Biomed Holdings Inc,OBIO
+1980,First Community Corp (South Carolina),FCCO
+1981,Radcom Ltd,RDCM
+1982,Hennessy Capital Investment VII Units,HVIIU
+1983,Oaktree Acquisition III Units,OACCU
+1984,Dynamix III Units,DNMXU
+1985,European Wax Center Inc,EWCZ
+1986,Fifth Third Bancorp 1000 DS Representing Preferred Series K,FITBO
+1987,Avalo Therapeutics Inc,AVTX
+1988,Vendome Acquisition I Units,VNMEU
+1989,Murano Global Investments Plc,MRNO
+1990,SUI Group Holdings Ltd,SUIG
+1991,SWK Holdings Corp,SWKH
+1992,Heron Therapeutics Inc,HRTX
+1993,Genelux Corp,GNLX
+1994,Nano-X Imaging Ltd,NNOX
+1995,Viomi Technology Co Ltd ADR,VIOT
+1996,SunCar Technology Group Inc,SDA
+1997,Wafd Depositary Shares,WAFDP
+1998,Fifth Third Bancorp 40 Depository Shares representing Non Cum Series A Pref,FITBP
+1999,Tonix Pharmaceuticals Holding Corp,TNXP
+2000,Gladstone Land 6 00 Cumulative Redeemable Preferred Stock Series C,LANDP
+2001,Lantronix Inc,LTRX
+2002,Everspin Technologies Inc,MRAM
+2003,Caribou Biosciences Inc,CRBU
+2004,Organigram Global Inc,OGI
+2005,OmniAb Inc,OABI
+2006,Genfit SA ADR,GNFT
+2007,Douyu International Holdings Ltd ADR,DOYU
+2008,Smith-Midland Corp,SMID
+2009,Cartesian Therapeutics Inc,RNAC
+2010,FIGX Capital Acquisition Corp,FIGX
+2011,TrueCar Inc,TRUE
+2012,Imperial Petroleum Inc,IMPP
+2013,OP Bancorp,OPBK
+2014,Upexi Inc,UPXI
+2015,Soluna Holdings Inc,SLNH
+2016,Innventure Inc,INV
+2017,Bitcoin Depot Inc,BTM
+2018,Proficient Auto Logistics Inc,PAL
+2019,NextNRG Inc,NXXT
+2020,Fact II Acquisition Units,FACTU
+2021,Lovesac Co,LOVE
+2022,Relmada Therapeutics Inc,RLMD
+2023,Inogen Inc,INGN
+2024,Nautilus Biotechnology Inc,NAUT
+2025,Eagle Financial Services Inc,EFSI
+2026,Open Lending Corp,LPRO
+2027,Outdoor Holding Company,POWW
+2028,Newbury Street II Acquisition Units,NTWOU
+2029,JAKKS Pacific Inc,JAKK
+2030,NeOnc Technologies Holdings Inc,NTHI
+2031,National Bankshares Inc,NKSH
+2032,Ton Strategy Co,TONX
+2033,Nyxoah SA,NYXH
+2034,Ames National Corp,ATLO
+2035,Consumer Portfolio Services Inc,CPSS
+2036,Yorkville Acquisition Units,MCGAU
+2037,Journey Medical Corp,DERM
+2038,Insight Molecular Diagnostics Inc,IMDX
+2039,Freightos Ltd,CRGO
+2040,Utah Medical Products Inc,UTMD
+2041,Adamas 7 875 Fixed to Floating Rate Cumulative Redeemable Prf Shs Series E,ADAMM
+2042,Flexsteel Industries Inc,FLXS
+2043,Digital Asset Acquisition Units,DAAQU
+2044,Globa Terra Acquisition Units,GTERU
+2045,Codexis Inc,CDXS
+2046,Solarius Capital Acquisition Units,SOCAU
+2047,Real Asset Acquisition Units,RAAQU
+2048,KORU Medical Systems Inc,KRMD
+2049,1RT Acquisition Units,ONCHU
+2050,Crescent Biopharma Inc,CBIO
+2051,E W Scripps Co,SSP
+2052,Digimarc Corp,DMRC
+2053,Dynamix Units,ETHMU
+2054,Coherus Oncology Inc,CHRS
+2055,Translational Development Acquisition Units,TDACU
+2056,First Citizens BancShares 5 625 Non Cumulative Perpetual Prf Shs Series C,FCNCO
+2057,SKYX Platforms Corp,SKYX
+2058,Seanergy Maritime Holdings Corp,SHIP
+2059,NIP Group Inc ADR,NIPG
+2060,Children's Place Inc,PLCE
+2061,Corbus Pharmaceuticals Holdings Inc,CRBP
+2062,Spark I Acquisition Units,SPKLU
+2063,Energy Services Of America Corp,ESOA
+2064,Profound Medical Corp,PROF
+2065,FitLife Brands Inc,FTLF
+2066,Arbe Robotics Ltd,ARBE
+2067,Draganfly Inc,DPRO
+2068,Liberty Broadband Cum Redeemable Prf Shs Series A,LBRDP
+2069,Above Food Ingredients Inc,ABVE
+2070,Arq Inc,ARQ
+2071,Brighthouse Financial DS rep 1 1 000 4 625 Cum Prf Shs Series D,BHFAM
+2072,Mckinley Acquisition Units,MKLYU
+2073,Linkhome Holdings Inc,LHAI
+2074,NusaTrip Inc,NUTR
+2075,Prenetics Global Ltd,PRE
+2076,Galata Acquisition II Units,LATAU
+2077,Seneca Foods Corp Class B,SENEB
+2078,Melar Acquisition I Units Exp 10th June 2029,MACIU
+2079,Neuronetics Inc,STIM
+2080,Molecular Partners AG ADR,MOLN
+2081,Robot Consulting Co Ltd ADR,LAWR
+2082,OraSure Technologies Inc,OSUR
+2083,Starz Entertainment Corp,STRZ
+2084,Baozun Inc ADR,BZUN
+2085,America's CAR-MART Inc,CRMT
+2086,Faraday Future Intelligent Electric Inc,FFAI
+2087,Sellas Life Sciences Group Inc,SLS
+2088,Willow Lane Acquisition Units,WLACU
+2089,Roma Green Finance Ltd,ROMA
+2090,Range Capital Acquisition Corp,RANG
+2091,Meridian Corp,MRBK
+2092,AudioEye Inc,AEYE
+2093,Silvercrest Asset Management Group Inc,SAMG
+2094,Funko Inc,FNKO
+2095,Ohio Valley Banc Corp,OVBC
+2096,Blue Foundry Bancorp,BLFY
+2097,Ramaco Resources Inc Class B,METCB
+2098,WhiteHorse Finance Inc,WHF
+2099,Dogness International Corp,DOGZ
+2100,United Security Bancshares,UBFO
+2101,Innate Pharma SA ADR,IPHA
+2102,China SXT Pharmaceuticals Inc,SXTC
+2103,Amber International Holding Ltd ADR,AMBR
+2104,Stellar V Capital Units,SVCCU
+2105,Protara Therapeutics Inc,TARA
+2106,Tavia Acquisition Corp,TAVI
+2107,Beauty Health Co,SKIN
+2108,R C M Technologies Inc,RCMT
+2109,Yimutian Inc ADR,YMT
+2110,Alchemy Investments Acquisition Units,ALCYU
+2111,EGH Acquisition Units,EGHAU
+2112,CPI Card Group Inc,PMTS
+2113,Huntington Bancshares Dep Shs Rep 1 1000 Prf Shs Series I,HBANM
+2114,Peoples Bancorp of North Carolina Inc,PEBK
+2115,Sangoma Technologies Corp,SANG
+2116,Tigo Energy Inc,TYGO
+2117,BV Financial Inc,BVFL
+2118,CB Financial Services Inc,CBFV
+2119,NMP Acquisition Corp,NMP
+2120,Escalade Inc,ESCA
+2121,JFB Construction Holdings,JFB
+2122,Hanover Bancorp Inc,HNVR
+2123,Robo.ai Inc,AIIO
+2124,FreightCar America Inc,RAIL
+2125,ESGL Holdings Ltd,ESGL
+2126,BCP Investment Corp,BCIC
+2127,FIGX Capital Acquisition Units,FIGXU
+2128,Merchants Bancorp 40 DS Rep Perp Prf Shs Series C,MBINN
+2129,Blink Charging Co,BLNK
+2130,Health In Tech Inc,HIT
+2131,VisionWave Holdings Inc,VWAV
+2132,Fulton Financial 1 40th DS Cum Prf Shs Series A,FULTP
+2133,X3 Holdings Co Ltd,XTKG
+2134,Emmis Acquisition Corp,EMIS
+2135,New Era Energy & Digital Inc,NUAI
+2136,MaxsMaking Inc,MAMK
+2137,MaxCyte Inc,MXCT
+2138,B Riley Financial Inc,RILY
+2139,Davis Commodities Ltd,DTCK
+2140,Citizens Community Bancorp Inc,CZWI
+2141,Brookfield Ppty Partners 5 750 Cum Red Perp Series 3 Class A,BPYPN
+2142,RideNow Group Inc,RDNW
+2143,First Internet Bancorp,INBK
+2144,Innovative Solutions and Support Inc,ISSC
+2145,WM Technology Inc,MAPS
+2146,Lake Superior Acquisition Corp,LKSP
+2147,Nabors Energy Transition Corp II,NETD
+2148,Anteris Technologies Global Corp,AVR
+2149,Silver Pegasus Acquisition Corp,SPEG
+2150,Maywood Acquisition Corp,MAYA
+2151,Gesher Acquisition II Units,GSHRU
+2152,OneConstruction Group Ltd,ONEG
+2153,Valley National Bancorp 8 250 Fixed Rate Reset Non Cumulative 8.250,VLYPN
+2154,Oxford Square Capital Corp,OXSQ
+2155,Stratus Properties Inc,STRS
+2156,Bioharvest Sciences Inc,BHST
+2157,Compugen Ltd,CGEN
+2158,Lakeland Industries Inc,LAKE
+2159,TTEC Holdings Inc,TTEC
+2160,Insight Digital Partners II Units,DYORU
+2161,Lavoro Ltd,LVRO
+2162,Resources Connection Inc,RGP
+2163,Cardiff Oncology Inc,CRDF
+2164,ZJK Industrial Co Ltd,ZJK
+2165,Landmark Bancorp Inc,LARK
+2166,Comstock Holding Companies Inc,CHCI
+2167,ArrowMark Financial Corp,BANX
+2168,Friedman Industries Inc,FRD
+2169,Wesbanco DS Representing 1/40Th Perp Pfd Series A,WSBCP
+2170,ECB Bancorp Inc,ECBK
+2171,Taylor Devices Inc,TAYD
+2172,Fold Holdings Inc,FLD
+2173,First Capital Inc,FCAP
+2174,Richardson Electronics Ltd,RELL
+2175,CF Bankshares Inc,CFBK
+2176,Silvaco Group Inc,SVCO
+2177,Brookfield Ppty Partners 6 375 Cum Red Perp Pfd Unit Class A,BPYPO
+2178,Harvard Ave Acquisition Units,HAVAU
+2179,Elicio Therapeutics Inc,ELTX
+2180,Dune Acquisition II Units,IPODU
+2181,RF Acquisition Corp II,RFAI
+2182,Indigo Acquisition Corp,INAC
+2183,Masterbeef Group,MB
+2184,TROOPS Inc,TROO
+2185,CareCloud Inc,CCLD
+2186,Lucid Diagnostics Inc,LUCD
+2187,AGNC Invt Dep Shs Repstg 1 1000Th Pref Shs Series G,AGNCL
+2188,Kestrel Group Ltd,KG
+2189,Cognition Therapeutics Inc,CGTX
+2190,Milestone Pharmaceuticals Inc,MIST
+2191,Expensify Inc,EXFY
+2192,Youlife Group Inc ADR,YOUL
+2193,Arrive AI Inc,ARAI
+2194,CTW Cayman,CTW
+2195,Nuvectis Pharma Inc,NVCT
+2196,Kolibri Global Energy Inc,KGEI
+2197,BTCS Inc,BTCS
+2198,Empro Group Inc,EMPG
+2199,Scage Future ADR,SCAG
+2200,Alps Group Inc,ALPS
+2201,Fractyl Health Inc,GUTS
+2202,Finward Bancorp,FNWD
+2203,Forrester Research Inc,FORR
+2204,Verde Clean Fuels Inc,VGAS
+2205,Atlantic International Corp,ATLN
+2206,Monroe Capital Corp,MRCC
+2207,Cassava Sciences Inc,SAVA
+2208,Superior Group of Companies Inc,SGC
+2209,Actuate Therapeutics Inc,ACTU
+2210,Liberty Global Ltd Class B,LBTYB
+2211,Forte Biosciences Inc,FBRX
+2212,Entera Bio Ltd,ENTX
+2213,Selective Ins Group DS Repstg 1 1000 Interest 4.60% Non Cum Pref Shs Series B,SIGIP
+2214,Anika Therapeutics Inc,ANIK
+2215,Biote Corp,BTMD
+2216,NeoVolta Inc,NEOV
+2217,Nkarta Inc,NKTX
+2218,Airship AI Holdings Inc,AISP
+2219,Mobile Infrastructure Corp,BEEP
+2220,BankFinancial Corp,BFIN
+2221,Merchants Depository Shares Rep 1 40Th  Int Share of 8 25 Fixed Rate Reset Non,MBINM
+2222,Sangamo Therapeutics Inc,SGMO
+2223,Playboy Inc,PLBY
+2224,Accuray Inc,ARAY
+2225,Golden Matrix Group Inc,GMGI
+2226,LENSAR Inc,LNSR
+2227,SunPower Inc,SPWR
+2228,MainStreet Bancshares Inc,MNSB
+2229,Richmond Mutual Bancorporation Inc,RMBI
+2230,Spero Therapeutics Inc,SPRO
+2231,Aimei Health Technology Units,AFJKU
+2232,Seven Hills Realty Trust,SEVN
+2233,Fg Nexus Inc,FGNX
+2234,ZenaTech Inc,ZENA
+2235,Anixa Biosciences Inc,ANIX
+2236,PureCycle Technologies Unit,PCTTU
+2237,Aimei Health Technology Co Ltd,AFJK
+2238,Massimo Group,MAMO
+2239,BCB Bancorp Inc,BCBP
+2240,Climb Bio Inc,CLYM
+2241,Popular Capital Trust II 6 125 Cumulative Monthly Income Pref Shs,BPOPM
+2242,Adamas 8 00 Fixed Floating Rate Cumulative Redeemable Pref Shs Series D,ADAMN
+2243,Burning Rock Biotech Ltd ADR,BNR
+2244,OFS Credit Company Inc,OCCI
+2245,Alector Inc,ALEC
+2246,Range Capital Acquisition Units,RANGU
+2247,SB Financial Group Inc,SBFG
+2248,Eagle Bancorp Montana Inc,EBMT
+2249,One Stop Systems Inc,OSS
+2250,Chenghe Acquisition III Units,CHECU
+2251,Vor Biopharma Inc,VOR
+2252,SR Bancorp Inc,SRBK
+2253,US GoldMining Inc,USGO
+2254,RF Acquisition II Units,RFAIU
+2255,Rent the Runway Inc,RENT
+2256,Opus Genetics Inc,IRD
+2257,DMC Global Inc,BOOM
+2258,Adamas 6 875 Fixed To Floating Rate Cumulative Redeemable Pref Shs Series F,ADAML
+2259,Bassett Furniture Industries Inc,BSET
+2260,China Automotive Systems Inc,CAAS
+2261,Apyx Medical Corp,APYX
+2262,Incannex Healthcare Inc,IXHL
+2263,Hf Foods Group Inc,HFFG
+2264,Gulf Island Fabrication Inc,GIFI
+2265,1stdibs.Com Inc,DIBS
+2266,Mercer International Inc,MERC
+2267,Ambitions Enterprise Management Co LLC,AHMA
+2268,Scilex Holding Co,SCLX
+2269,Seres Therapeutics Inc,MCRB
+2270,TuHURA Biosciences Inc,HURA
+2271,Clarus Corp,CLAR
+2272,Shattuck Labs Inc,STTK
+2273,GCI Liberty Inc Series A,GLIBA
+2274,Tavia Acquisition Units,TAVIU
+2275,NMP Acquisition Units,NMPAU
+2276,Sunrise Realty Trust Inc,SUNS
+2277,Old National Bancorp 40 Depositary Shs Rep 1 Pref Shs Series C,ONBPO
+2278,Joint Corp,JYNT
+2279,Agenus Inc,AGEN
+2280,Nano Labs Ltd,NA
+2281,Pelican Acquisition Corp,PELI
+2282,Rapid Micro Biosystems Inc,RPID
+2283,Vroom Inc,VRM
+2284,Eastern Company,EML
+2285,Seer Inc,SEER
+2286,FTC Solar Inc,FTCI
+2287,Lake Superior Acquisition Units,LKSPU
+2288,Citius Oncology Inc,CTOR
+2289,Vistagen Therapeutics Inc,VTGN
+2290,Fate Therapeutics Inc,FATE
+2291,Silver Pegasus Acquisition Units,SPEGU
+2292,Inovio Pharmaceuticals Inc,INO
+2293,Bowen Acquisition Units,BOWNU
+2294,LaFayette Acquisition Units,LAFAU
+2295,Alpha Cognition Inc,ACOG
+2296,Turn Therapeutics Inc,TTRX
+2297,Perceptive Capital Solutions Corp,PCSC
+2298,Hongli Group Inc,HLP
+2299,Gladstone Land 6 00 Cum Redmabe Prf Shs Series B,LANDO
+2300,Quartzsea Acquisition Units,QSEAU
+2301,Hirequest Inc,HQI
+2302,eHealth Inc,EHTH
+2303,Indigo Acquisition Units,INACU
+2304,Quicklogic Corp,QUIK
+2305,Coya Therapeutics Inc,COYA
+2306,Quantumsphere Acquisition Units,QUMSU
+2307,Valley National 6 25 Fixed to Floating Rate Non Cumulative Perpetual Pref Shs,VLYPP
+2308,Quartzsea Acquisition Corp,QSEA
+2309,Ascent Industries Co,ACNT
+2310,Kewaunee Scientific Corp,KEQU
+2311,DT Cloud Acquisition Units,DYCQU
+2312,Acumen Pharmaceuticals Inc,ABOS
+2313,Calamos Global Total Return Closed Fund,CGO
+2314,Nomadar Corp,NOMA
+2315,Reitar Logtech Holdings Ltd,RITR
+2316,Sound Financial Bancorp Inc,SFBC
+2317,Ultralife Corp,ULBI
+2318,EUDA Health Holdings Ltd,EUDA
+2319,Charlton Aria Acquisition Corp,CHAR
+2320,Greenwich Lifesciences Inc,GLSI
+2321,Wrap Technologies Inc,WRAP
+2322,Quantumsphere Acquisition Corp,QUMS
+2323,Affinity Bancshares Inc,AFBI
+2324,Riverview Bancorp Inc,RVSB
+2325,Pantages Capital Acquisition Corp,PGAC
+2326,eXoZymes Inc,EXOZ
+2327,Dragonfly Energy Holdings Corp,DFLI
+2328,Hovnanian Enterprises 1000 Depositary Shares Representing 1 7.625% Pref Shs,HOVNP
+2329,Charlton Aria Acquisition Units,CHARU
+2330,The9 Ltd ADR,NCTY
+2331,Aemetis Inc,AMTX
+2332,Optex Systems Holdings Inc,OPXS
+2333,Bogota Financial Corp,BSBK
+2334,CSP Inc,CSPI
+2335,Inhibikase Therapeutics Inc,IKT
+2336,Connectone Bancorp New Depositary Shs Rep A 1 40Th Non Cm Perp Pref Shs Series A,CNOBP
+2337,Midland Sts Bancorp Depositary Shs Repstg 1 40Th Perp Pfd Series A,MSBIP
+2338,Brookfield Property Partners 6 50 Cumulative Redeemable Perpetual Preferred,BPYPP
+2339,Roadzen Inc,RDZN
+2340,KVH Industries Inc,KVHI
+2341,Alto Ingredients Inc,ALTO
+2342,AsiaStrategy,SORA
+2343,MicroAlgo Inc,MLGO
+2344,Vivid Seats Inc,SEAT
+2345,Safe Pro Group Inc,SPAI
+2346,Sleep Number Corp,SNBR
+2347,Old National Bancorp 40 Depositary Shares Rep 1 Pref Shs Series A,ONBPP
+2348,Regency Centers 6 25 Series A Cumulative Redeemable Preferred Stock Series A,REGCP
+2349,Genasys Inc,GNSS
+2350,Lake Shore Bancorp Inc,LSBK
+2351,Rhinebeck Bancorp Inc,RBKB
+2352,K Wave Media Ltd,KWM
+2353,Microbot Medical Inc,MBOT
+2354,Quantum Corp,QMCO
+2355,Applied Therapeutics Inc,APLT
+2356,Virco Mfg Corp,VIRC
+2357,Metalpha Technology Holding Ltd,MATH
+2358,Keen Vision Acquisition Corp,KVAC
+2359,Black Hawk Acquisition Units,BKHAU
+2360,Siebert Financial Corp,SIEB
+2361,Surrozen Inc,SRZN
+2362,FTAI Aviation 8 25 Fixed Rate Reset Cumulative Perpetual Pref Shs Series C,FTAIN
+2363,CO2 Energy Transition Units,NOEMU
+2364,Patriot National Bancorp Inc,PNBK
+2365,XCF Global Inc,SAFX
+2366,Gaia Inc,GAIA
+2367,Hurco Companies Inc,HURC
+2368,Agencia Comercial Spirits Ltd,AGCC
+2369,Pro-Dex Inc,PDEX
+2370,Magyar Bancorp Inc,MGYR
+2371,Alarum Technologies Ltd ADR,ALAR
+2372,Great Elm Capital Corp,GECC
+2373,Anfield Energy Inc,AEC
+2374,Atossa Therapeutics Inc,ATOS
+2375,Senstar Technologies Corp,SNT
+2376,Union Bankshares Inc,UNB
+2377,A SPAC III Acquisition Units,ASPCU
+2378,DocGo Inc,DCGO
+2379,Altisource Portfolio Solutions SA,ASPS
+2380,Bioceres Crop Solutions Corp,BIOX
+2381,5E Advanced Materials Inc,FEAM
+2382,Odyssey Marine Exploration Inc,OMEX
+2383,Adicet Bio Inc,ACET
+2384,VisionSys AI Inc ADR,VSA
+2385,FG Merger II Corp,FGMC
+2386,Martin Midstream Partners Units,MMLP
+2387,Sera Prognostics Inc,SERA
+2388,Anebulo Pharmaceuticals Inc,ANEB
+2389,Mount Logan Capital Inc,MLCI
+2390,Epsilon Energy Ltd,EPSN
+2391,Estrella Immunopharma Inc,ESLA
+2392,Helport AI Ltd,HPAI
+2393,SoundThinking Inc,SSTI
+2394,Wisekey International Holding AG ADR,WKEY
+2395,Lianhe Sowell International Group Ltd,LHSW
+2396,Instil Bio Inc,TIL
+2397,Duluth Holdings Inc,DLTH
+2398,ChampionsGate Acquisition Corp,CHPG
+2399,Gohealth Inc,GOCO
+2400,Amtech Systems Inc,ASYS
+2401,Cardiol Therapeutics Inc,CRDL
+2402,Sharps Technology Inc,STSS
+2403,Zhengye Biotechnology Holding Ltd,ZYBT
+2404,Research Solutions Inc,RSSS
+2405,Regency Centers 5 875 Series B Cumulative Redeemable Preferred Stock Series B,REGCO
+2406,Hooker Furnishings Corp,HOFT
+2407,Dime Community Bancshares Cumulative Perpetual Pref Shs Series A,DCOMP
+2408,Provident Financial Holdings Inc,PROV
+2409,Quipt Home Medical Corp,QIPT
+2410,Valley National 5.50% Fixed to Floating Rate Non Cum Perp Pref Shs Series B,VLYPO
+2411,Israel Acquisitions Units,ISRLU
+2412,Coda Octopus Group Inc,CODA
+2413,Mind Technology Inc,MIND
+2414,Quetta Acquisition Units,QETAU
+2415,Immix Biopharma Inc,IMMX
+2416,Whitehawk Therapeutics Inc,WHWK
+2417,OKYO Pharma Ltd,OKYO
+2418,Oncolytics Biotech Inc,ONCY
+2419,Context Therapeutics Inc,CNTX
+2420,CO2 Energy Transition Corp,NOEM
+2421,Skyline Builders Group Holding Ltd,SKBL
+2422,Maywood Acquisition Units,MAYAU
+2423,Spark I Acquisition Corp,SPKL
+2424,Mammoth Energy Services Inc,TUSK
+2425,Hyperfine Inc,HYPR
+2426,Fossil Group Inc,FOSL
+2427,Via Renewables 8.75 Fixed to Floating Cumulative Redeemable Perpetual Pref Shs,VIASP
+2428,VirnetX Holding Corp,VHC
+2429,Hain Celestial Group Inc,HAIN
+2430,DT Cloud Star Acquisition Corp,DTSQ
+2431,Triller Group Inc,ILLR
+2432,PLAYSTUDIOS Inc,MYPS
+2433,NCS Multistage Holdings Inc,NCSM
+2434,Gauzy Ltd,GAUZ
+2435,Champions Oncology Inc,CSBR
+2436,Epsium Enterprise Ltd,EPSM
+2437,Full House Resorts Inc,FLL
+2438,Kandi Technologies Group Inc,KNDI
+2439,Ovid Therapeutics Inc,OVID
+2440,Alset Inc,AEI
+2441,Intchains Group Ltd ADR,ICG
+2442,DT Cloud Star Acquisition Units,DTSQU
+2443,Horizon Space Acquisition II Corp,HSPT
+2444,Flag Ship Acquisition Units,FSHPU
+2445,Adverum Biotechnologies Inc,ADVM
+2446,Pelican Acquisition Units,PELIU
+2447,Pliant Therapeutics Inc,PLRX
+2448,Zooz Strategy Ltd,ZOOZ
+2449,ImageneBio Inc,IMA
+2450,Zentalis Pharmaceuticals Inc,ZNTL
+2451,Ispire Technology Inc,ISPR
+2452,Largo Inc,LGO
+2453,Fonar Corp,FONR
+2454,Star Holdings,STHO
+2455,Clene Inc,CLNN
+2456,Tuniu Corp ADR,TOUR
+2457,A SPAC III Acquisition Corp,ASPC
+2458,Smart Sand Inc,SND
+2459,New Horizon Aircraft Ltd,HOVR
+2460,Identiv Inc,INVE
+2461,Agrify Corp,AGFY
+2462,AEye Inc,LIDR
+2463,Auburn National Bancorporation Inc,AUBN
+2464,Prairie Operating Co,PROP
+2465,Connect Biopharma Holdings Ltd,CNTB
+2466,Tevogen Bio Holdings Inc,TVGN
+2467,Lakeshore Acquisition III Units,LCCCU
+2468,Biomea Fusion Inc,BMEA
+2469,GEN Restaurant Group Inc,GENK
+2470,RedCloud Holdings PLC,RCT
+2471,AVITA Medical Inc,RCEL
+2472,Velo3D Inc,VELO
+2473,Lakeshore Acquisition III Corp,LCCC
+2474,CAMP4 Therapeutics Corp,CAMP
+2475,Leishen Energy Holding Co Ltd,LSE
+2476,TH International Ltd,THCH
+2477,Winchester Bancorp Inc,WSBK
+2478,Bridger Aerospace Group Holdings Inc,BAER
+2479,Oak Woods Acquisiton Units,OAKUU
+2480,Sol Gel Technologies Ltd,SLGL
+2481,Comtech Telecommunications Corp,CMTL
+2482,Karyopharm Therapeutics Inc,KPTI
+2483,Pantages Capital Acquisition Units,PGACU
+2484,Texxon Holding Ltd,NPT
+2485,Kalaris Therapeutics Inc,KLRS
+2486,Origin Investment I Units,ORIQU
+2487,Stabilis Solutions Inc,SLNG
+2488,CCH Holdings Ltd,CCHH
+2489,Bayview Acquisition Units,BAYAU
+2490,Oramed Pharmaceuticals Inc,ORMP
+2491,Origin Investment Corp I,ORIQ
+2492,Zentek Ltd,ZTEK
+2493,First Guaranty Bancshares Inc,FGBI
+2494,DLH Holdings Corp,DLHC
+2495,Vivani Medical Inc,VANI
+2496,Atlas Lithium Corp,ATLX
+2497,IF Bancorp Inc,IROQ
+2498,First Cobalt Corp,ELBM
+2499,FG Merger II Units,FGMCU
+2500,Red Robin Gourmet Burgers Inc,RRGB
+2501,Silicom Ltd,SILC
+2502,Oxford Lane Capital 6 25 Series 2027 Pref Shs,OXLCP
+2503,MacroGenics Inc,MGNX
+2504,LifeVantage Corp,LFVN
+2505,Julong Holding Ltd,JLHL
+2506,Donegal Group Inc Class B,DGICB
+2507,Quince Therapeutics Inc,QNCX
+2508,Precision BioSciences Inc,DTIL
+2509,NN Inc,NNBR
+2510,Yatra Online Inc,YTRA
+2511,PhenixFIN Corp,PFX
+2512,XCHG Ltd ADR,XCH
+2513,Nukkleus Inc,NUKK
+2514,Horizon Space Acquisition I Units,HSPOU
+2515,FingerMotion Inc,FNGR
+2516,Artiva Biotherapeutics Inc,ARTV
+2517,Mega Fortune Co Ltd,MGRT
+2518,Namib Minerals,NAMM
+2519,Ucloudlink Group Inc ADR,UCL
+2520,American Outdoor Brands Inc,AOUT
+2521,First Northwest Bancorp,FNWB
+2522,IZEA Worldwide Inc,IZEA
+2523,YHN Acquisition I Units,YHNAU
+2524,Metagenomi Inc,MGX
+2525,Atara Biotherapeutics Inc,ATRA
+2526,Smart Logistics Global Ltd,SLGB
+2527,Intellicheck Inc,IDN
+2528,GrowGeneration Corp,GRWG
+2529,Cayson Acquisition Corp,CAPN
+2530,Great Elm Group Inc,GEG
+2531,Travelzoo,TZOO
+2532,Syntec Optics Holdings Inc,OPTX
+2533,InspireMD Inc,NSPR
+2534,Zeo Energy Corp,ZEO
+2535,Atomera Inc,ATOM
+2536,Columbus Acquisition Corp,COLA
+2537,YHN Acquisition I Ltd,YHNA
+2538,vTv Therapeutics Inc,VTVT
+2539,NexMetals Mining Corp,NEXM
+2540,InflaRx NV,IFRX
+2541,Canterbury Park Holding Corp,CPHC
+2542,Sportsmans Warehouse Holdings Inc,SPWH
+2543,Hang Feng Technology Innovation Co Ltd,FOFO
+2544,Gladstone Commercial 6 00 Cum Red Prf Shs Series G,GOODO
+2545,Santech Holdings Ltd ADR,STEC
+2546,Sutro Biopharma Inc,STRO
+2547,CBAK Energy Technology Inc,CBAT
+2548,Bluemount Holdings Ltd,BMHL
+2549,Future Vision II Acquisition Units,FVNNU
+2550,Future Vision II Acquisition Corp,FVN
+2551,Cheche Group Inc,CCG
+2552,Rising Dragon Acquisition Corp,RDAC
+2553,Ribbon Acquisition Corp,RIBB
+2554,Israel Acquisitions Corp,ISRL
+2555,Unicycive Therapeutics Inc,UNCY
+2556,Luminar Technologies Inc,LAZR
+2557,Rising Dragon Acquisition Units,RDACU
+2558,United Homes Group Inc,UHG
+2559,Starry Sea Acquisition Units,SSEAU
+2560,MindWalk Holdings Corp,HYFT
+2561,InterGroup Corp,INTG
+2562,Saga Communications Inc,SGA
+2563,UY Scuti Acquisition Corp,UYSC
+2564,Cambium Networks Corp,CMBM
+2565,Borealis Foods Inc,BRLS
+2566,Mediaco Holding Inc,MDIA
+2567,AlphaTime Acquisition Units,ATMCU
+2568,RYTHM Inc,RYM
+2569,Medallion Bank Fixed Rate Reset Non Cumulative Perpetual Pref Shs Series G,MBNKO
+2570,Equillium Inc,EQ
+2571,Beyondspring Inc,BYSI
+2572,Origin Materials Inc,ORGN
+2573,RF Industries Ltd,RFIL
+2574,Lixiang Education Holding Co Ltd ADR,LXEH
+2575,BUUU Group Ltd,BUUU
+2576,J W Mays Inc,MAYS
+2577,Sol Strategies Inc,STKE
+2578,Bank of the James,BOTJ
+2579,Championsgate Acquisition Units,CHPGU
+2580,Northern Technologies International Corp,NTIC
+2581,Interlink Electronics Inc,LINK
+2582,Shimmick Corp,SHIM
+2583,Heritage Distilling Holding Company Inc,IPST
+2584,Planet Image International Ltd,YIBO
+2585,Prelude Therapeutics Inc,PRLD
+2586,Hennessy Advisors Inc,HNNA
+2587,Heidmar Maritime Holdings Corp,HMR
+2588,Starry Sea Acquisition Corp,SSEA
+2589,First US Bancshares Inc,FUSB
+2590,Purple Innovation Inc,PRPL
+2591,Teads Holding Co,TEAD
+2592,Adagene Inc ADR,ADAG
+2593,aTyr Pharma Inc,ATYR
+2594,InterCure Ltd,INCR
+2595,Tectonic Financial 9.00 Fixed to Floating Non-Cumulative Perpetual Pref Shs,TECTP
+2596,Eltek Ltd,ELTK
+2597,Aureus Greenway Holdings Inc,AGH
+2598,SHENGFENG DEVELOPMENT Ltd,SFWL
+2599,Fortress Biotech Inc,FBIO
+2600,BEST SPAC I Acquistion Corp,BSAA
+2601,Wintergreen Acquisition Units,WTGUU
+2602,United Bancorp Inc,UBCP
+2603,Edap Tms SA ADR,EDAP
+2604,Solidion Technology Inc,STI
+2605,Wintergreen Acquisition Corp,WTG
+2606,Pulmonx Corp,LUNG
+2607,Loop Industries Inc,LOOP
+2608,Fifth District Bancorp Inc,FDSB
+2609,Assertio Holdings Inc,ASRT
+2610,XBiotech Inc,XBIT
+2611,iRobot Corp,IRBT
+2612,Repare Therapeutics Inc,RPTX
+2613,Aether Holdings Inc,ATHR
+2614,Marchex Inc,MCHX
+2615,Pathfinder Bancorp Inc (MARYLAND),PBHC
+2616,Drilling Tools International Corp,DTI
+2617,National Healthcare 7 375 Pref Shs Series A,NHPAP
+2618,Sono-Tek Corp,SOTK
+2619,Dominari Holdings Inc,DOMH
+2620,Summit State Bank,SSBI
+2621,U-BX Technology Ltd,UBXG
+2622,Regis Corp,RGS
+2623,Plus Therapeutics Inc,PSTV
+2624,Zenvia Inc,ZENV
+2625,Laser Photonics Corp,LASE
+2626,MMTEC Inc,MTC
+2627,Advanced Flower Capital Inc,AFCG
+2628,Wellgistics Health Inc,WGRX
+2629,Immunic Inc,IMUX
+2630,Lifetime Brands Inc,LCUT
+2631,Miluna Acquisition Units,MMTXU
+2632,Bridgford Foods Corp,BRID
+2633,ABVC Biopharma Inc,ABVC
+2634,AstroNova Inc,ALOT
+2635,OFS Capital Corp,OFS
+2636,MediciNova Inc,MNOV
+2637,Mobilicom Ltd ADR,MOB
+2638,Gladstone Coml Pref Shs Series E,GOODN
+2639,FTAI Aviation Fixed Rate Reset Cum Perp Pfd Series D,FTAIM
+2640,Gain Therapeutics Inc,GANX
+2641,Cardlytics Inc,CDLX
+2642,Cibus Inc,CBUS
+2643,Optical Cable Corp,OCC
+2644,Onemednet Corp,ONMD
+2645,Atlanticus Holdings 7.625 Cumulative Perpetual Pref Shs Series B,ATLCP
+2646,Eureka Acquisition Units,EURKU
+2647,FST Ltd,KBSX
+2648,Forian Inc,FORA
+2649,CervoMed Inc,CRVO
+2650,XBP Global Holdings Inc,XBP
+2651,Coeptis Therapeutics Holdings Inc,COEP
+2652,Spruce Biosciences Inc,SPRB
+2653,Nutriband Inc,NTRB
+2654,Columbus Acquisition Units,COLAU
+2655,PMV Pharmaceuticals Inc,PMVP
+2656,374Water Inc,SCWO
+2657,Core AI Holdings Inc,CHAI
+2658,Thumzup Media Corp,TZUP
+2659,Central Plains Bancshares Inc,CPBI
+2660,Fuel Tech Inc,FTEK
+2661,TScan Therapeutics Inc,TCRX
+2662,Dawson Geophysical Co,DWSN
+2663,Toro Corp,TORO
+2664,Vera Bradley Inc,VRA
+2665,Hitek Global Inc,HKIT
+2666,Lite Strategy Inc,LITS
+2667,Daxor Corp,DXR
+2668,Oak Woods Acquisition Corp,OAKU
+2669,AIFU Inc,AIFU
+2670,Cayson Acquisition Units,CAPNU
+2671,CID HoldCo Inc,DAIC
+2672,Amplitech Group Inc,AMPG
+2673,National Healthcare 7.125 Cumulative Redeemable Perpetual Pref Shs Series B,NHPBP
+2674,Hour Loop Inc,HOUR
+2675,reAlpha Tech Corp,AIRE
+2676,Fusemachines Inc,FUSE
+2677,Where Food Comes From Inc,WFCF
+2678,NRX Pharmaceuticals Inc,NRXP
+2679,Alterity Therapeutics Ltd ADR,ATHE
+2680,ALX Oncology Holdings Inc,ALXO
+2681,Acrivon Therapeutics Inc,ACRV
+2682,LivePerson Inc,LPSN
+2683,Calisa Acquisition Units,ALISU
+2684,PowerBank Corp,SUUN
+2685,Agape ATP Corp,ATPC
+2686,Allbirds Inc,BIRD
+2687,Biodesix Inc,BDSX
+2688,UY Scuti Acquisition Units,UYSCU
+2689,Mink Therapeutics Inc,INKT
+2690,VirTra Inc,VTSI
+2691,One Group Hospitality Inc,STKS
+2692,BuzzFeed Inc,BZFD
+2693,Gamehaus Holdings Inc,GMHS
+2694,High-Trend International Group,HTCO
+2695,CNB FINL Depositary Shs REP 1 40 Prf Series A,CCNEP
+2696,Maxeon Solar Technologies Ltd,MAXN
+2697,GLADSTONE LD Term Pref Shs,LANDM
+2698,Podcastone Inc,PODC
+2699,IB Acquisition Corp,IBAC
+2700,Qurate Retail 8 0 Cumulative Redeemable Pref Shs,QVCGP
+2701,Atlantic American Corp,AAME
+2702,Air T Inc,AIRT
+2703,Happy City Holdings Ltd,HCHL
+2704,Spectral AI Inc,MDAI
+2705,LiveOne Inc,LVO
+2706,StoneBridge Acquisition II Units,APACU
+2707,PolyPid Ltd,PYPD
+2708,Franklin Wireless Corp,FKWL
+2709,Best SPAC I Acquistion Units,BSAAU
+2710,Mesa Air Group Inc,MESA
+2711,CPS Technologies Corp,CPSH
+2712,Beneficient,BENF
+2713,Blue Hat Interactive Entertainment Technology,BHAT
+2714,NSTS Bancorp Inc,NSTS
+2715,Concorde International Group Ltd,CIGL
+2716,Werewolf Therapeutics Inc,HOWL
+2717,Agroz Inc,AGRZ
+2718,Oxford Lane Capital 7 125 Prf Shs Series 2029,OXLCN
+2719,Sensus Healthcare Inc,SRTS
+2720,Catalyst Bancorp Inc,CLST
+2721,P3 Health Partners Inc,PIII
+2722,Synchronoss Technologies Inc,SNCR
+2723,Wheeler Real Estate Investment Trust Cumulative Pref Shs Series D,WHLRD
+2724,Adlai Nortye Ltd ADR,ANL
+2725,ImmuCell Corp,ICCC
+2726,Reviva Pharmaceuticals Holdings Inc,RVPH
+2727,Jinxin Technology Holding Co ADR,NAMI
+2728,Zions Bancorporation DS Representing 1/40th Floating Rate Non Cum Perpetual,ZIONP
+2729,Big Tree Cloud Holdings Ltd,DSY
+2730,Enterprise Finl Svcs DRC Rep Non Cum Perp Pfd Series A,EFSCP
+2731,Energys Group Ltd,ENGS
+2732,Oxford Lane Capital 6 Pref Shs Series 2029,OXLCO
+2733,Manhattan Bridge Capital Inc,LOAN
+2734,Adamas 7 000 Fixed To Floating Rate Cumulative Redeemable Pref Shs Series G,ADAMZ
+2735,MultiSensor AI Holdings Inc,MSAI
+2736,Acco Group Holdings Ltd,ACCL
+2737,Fluent Inc,FLNT
+2738,Grande Group Ltd,GRAN
+2739,Heartbeam Inc,BEAT
+2740,Global Self Storage Inc,SELF
+2741,IO Biotech Inc,IOBT
+2742,Bridgewater Bancshares DS 1 100th Int 5 875 Non Cumu Perpl Prf Shs Series A,BWBBP
+2743,Plutus Financial Group Ltd,PLUT
+2744,Nephros Inc,NEPH
+2745,Cue Biopharma Inc,CUE
+2746,Gogoro Inc,GGR
+2747,YXT.Com Group Holding Ltd ADR,YXT
+2748,Sound Group Inc ADR,SOGP
+2749,Ribbon Acquisition Units,RIBBU
+2750,Soluna Holdings 9.0 Cumulative Perpetual Pref Shs Series A,SLNHP
+2751,Deswell Industries Inc,DSWL
+2752,First Seacoast Bancorp Inc,FSEA
+2753,Flag Ship Acquisition Corp,FSHP
+2754,Research Frontiers Inc,REFR
+2755,MoneyHero Ltd,MNY
+2756,YSX Tech Co Ltd,YSXT
+2757,Upland Software Inc,UPLD
+2758,Talphera Inc,TLPH
+2759,Alchemy Investments Acquisition Corp 1,ALCY
+2760,Elauwit Connection Inc,ELWT
+2761,MicroCloud Hologram Inc,HOLO
+2762,Eureka Acquisition Corp,EURK
+2763,Trailblazer Merger Corporation I,TBMC
+2764,Outlook Therapeutics Inc,OTLK
+2765,GameSquare Holdings Inc,GAME
+2766,Westin Acquisition Units,WSTNU
+2767,9F Inc ADR,JFU
+2768,PB Bankshares Inc,PBBK
+2769,Bragg Gaming Group Inc,BRAG
+2770,Leifras Co Ltd ADR,LFS
+2771,SolarMax Technology Inc,SMXT
+2772,Century Casinos Inc,CNTY
+2773,Medicus Pharma Ltd,MDCX
+2774,Odysight.AI Inc,ODYS
+2775,Petmed Express Inc,PETS
+2776,Destination XL Group Inc,DXLG
+2777,Jasper Therapeutics Inc,JSPR
+2778,Ameriserv Financial Inc,ASRV
+2779,Cineverse Corp,CNVS
+2780,Surgepays Inc,SURG
+2781,Commercial Vehicle Group Inc,CVGI
+2782,Wing Yip Food Holdings Group Ltd ADR,WYHG
+2783,Magnitude International Ltd,MAGH
+2784,Heritage Global Inc,HGBL
+2785,Evaxion A/S ADR,EVAX
+2786,Smart Digital Group Ltd,SDM
+2787,Kaixin Holdings,KXIN
+2788,Aware Inc,AWRE
+2789,Sypris Solutions Inc,SYPR
+2790,Flux Power Holdings Inc,FLUX
+2791,Barinthus Biotherapeutics PLC ADR,BRNS
+2792,Barfresh Food Group Inc,BRFH
+2793,Airgain Inc,AIRG
+2794,Royalty Management Holding Corp,RMCO
+2795,NewtekOne Depositary Shs Non Cumulative Perpetual Pref Shs Series B,NEWTP
+2796,Supercom Ltd,SPCB
+2797,Oriental Culture Holding Ltd,OCG
+2798,Icecure Medical Ltd,ICCM
+2799,Home Federal Bancorp Inc of Louisiana,HFBL
+2800,Broadwind Inc,BWEN
+2801,Senti Biosciences Inc,SNTI
+2802,rYojbaba Co Ltd,RYOJ
+2803,Global Mofy AI Ltd,GMM
+2804,Primech Holdings Ltd,PMEC
+2805,Texas Community Bancshares Inc,TCBS
+2806,Skye Bioscience Inc,SKYE
+2807,ClearSign Technologies Corp,CLIR
+2808,Jupiter Neurosciences Inc,JUNS
+2809,TELA Bio Inc,TELA
+2810,Pop Culture Group Co Ltd,CPOP
+2811,electroCore  Inc.,ECOR
+2812,Century Therapeutics Inc,IPSC
+2813,Black Hawk Acquisition Corp,BKHA
+2814,Katapult Holdings Inc,KPLT
+2815,NetSol Technologies Inc,NTWK
+2816,FatPipe Inc,FATN
+2817,Alpha Modus Holdings Inc,AMOD
+2818,Phunware Inc,PHUN
+2819,Next Technology Holding Inc,NXTT
+2820,Trident Digital Tech Holdings Ltd ADR,TDTH
+2821,Celularity Inc,CELU
+2822,QVC Group Inc Series A,QVCGA
+2823,Cytosorbents Corp,CTSO
+2824,FibroGen Inc,FGEN
+2825,Able View Global Inc,ABLV
+2826,XTI Aerospace Inc,XTIA
+2827,Universal Electronics Inc,UEIC
+2828,Kezar Life Sciences Inc,KZR
+2829,ESH Acquisition Corp,ESHA
+2830,Sotherly Hotels Inc,SOHO
+2831,TransAct Technologies Inc,TACT
+2832,Genenta Science SPA ADR,GNTA
+2833,Carparts.Com Inc,PRTS
+2834,Aligos Therapeutics Inc,ALGS
+2835,Telomir Pharmaceuticals Inc,TELO
+2836,Pioneer Power Solutions Inc,PPSI
+2837,INmune Bio Inc,INMB
+2838,XChange TEC.INC ADR,XHG
+2839,Eco Wave Power Global AB (publ) ADR,WAVE
+2840,Xilio Therapeutics Inc,XLO
+2841,DarioHealth Corp,DRIO
+2842,Koss Corp,KOSS
+2843,Ideal Power Inc,IPWR
+2844,CalciMedica Inc,CALC
+2845,Onkure Therapeutics Inc,OKUR
+2846,Knightscope Inc,KSCP
+2847,LAVA Therapeutics NV,LVTX
+2848,TechPrecision Corp,TPCS
+2849,Tempest Therapeutics Inc,TPST
+2850,Grace Therapeutics  Inc,GRCE
+2851,Radiopharm Theranostics Ltd ADR,RADX
+2852,17 Education & Technology Group Inc ADR,YQ
+2853,Lanzatech Global Inc,LNZA
+2854,Live Ventures Inc,LIVE
+2855,Quetta Acquisition Corp,QETA
+2856,PDS Biotechnology Corp,PDSB
+2857,Rand Capital Corp,RAND
+2858,TOP Financial Group Ltd,TOP
+2859,Jerash Holdings (US) Inc,JRSH
+2860,MOBIX LABS  INC.,MOBX
+2861,Xoma Royalty Depository Shares Series B,XOMAO
+2862,Jin Medical International Ltd,ZJYL
+2863,Herzfeld Credit Income Fund，Inc.,HERZ
+2864,Paranovus Entertainment Technology Ltd,PAVS
+2865,Rave Restaurant Group Inc,RAVE
+2866,Inotiv Inc,NOTV
+2867,Mersana Therapeutics Inc,MRSN
+2868,Elutia Inc,ELUT
+2869,Usio Inc,USIO
+2870,VivoPower International PLC,VVPR
+2871,Recon Technology Ltd,RCON
+2872,Herzfeld Caribbean Basin Fund，Inc.,CUBA
+2873,Australian Oilseeds Holdings Ltd,COOT
+2874,Oceanpal Inc,OP
+2875,Broadway Financial Corp,BYFC
+2876,Hyperion DeFi Inc,HYPD
+2877,TAO Synergies Inc,TAOX
+2878,Investcorp Credit Management BDC Inc,ICMB
+2879,Beam Global,BEEM
+2880,BeLive Holdings,BLIV
+2881,Neonode Inc,NEON
+2882,mF International Limited,MFI
+2883,Bayview Acquisition Corp,BAYA
+2884,Beeline Holdings Inc,BLNE
+2885,Garden Stage Ltd,GSIW
+2886,Pixelworks Inc,PXLW
+2887,Snail Inc,SNAL
+2888,Sunrise New Energy Co Ltd,EPOW
+2889,BOS Better Online Solutions Ltd,BOSC
+2890,Foremost Clean Energy Ltd,FMST
+2891,Rain Enhancement Technologies Holdco Inc,RAIN
+2892,Rein Therapeutics Inc,RNTX
+2893,Bioatla Inc,BCAB
+2894,CIMG Inc,IMG
+2895,Old Market Capital Corp,OMCC
+2896,ATA Creativity Global ADR,AACG
+2897,Wellchange Holdings Co Ltd,WCT
+2898,111 Inc ADR,YI
+2899,Farmer Bros Co,FARM
+2900,Asia Pacific Wire & Cable Corporation Ltd,APWC
+2901,US Energy Corp,USEG
+2902,Fathom Holdings Inc,FTHM
+2903,Tvardi Therapeutics Inc,TVRD
+2904,Veru Inc,VERU
+2905,Stran & Company Inc,SWAG
+2906,Kelly Services Inc Class B,KELYB
+2907,Aurora Mobile Ltd ADR,JG
+2908,Lantern Pharma Inc,LTRN
+2909,EuroDry Ltd,EDRY
+2910,Mural Oncology PLC,MURA
+2911,Ruanyun Edai Technology Inc,RYET
+2912,NeuroOne Medical Technologies Corp,NMTC
+2913,Star Equity Holdings Inc,STRR
+2914,Acorn Energy Inc,ACFN
+2915,Dyadic International Inc,DYAI
+2916,Westport Fuel Systems Inc,WPRT
+2917,RenovoRx Inc,RNXT
+2918,NextTrip Inc,NTRP
+2919,Huize Holding Ltd ADR,HUIZ
+2920,BioXcel Therapeutics Inc,BTAI
+2921,Sidus Space Inc,SIDU
+2922,Orion Energy Systems Inc,OESX
+2923,Rockwell Medical Inc,RMTI
+2924,Mogo Inc,MOGO
+2925,Noodles & Co,NDLS
+2926,BranchOut Food Inc,BOF
+2927,Liminatus Pharma Inc,LIMN
+2928,Comscore Inc,SCOR
+2929,Bayfirst Financial Corp,BAFN
+2930,Digital Brands Group Inc,DBGI
+2931,Intrusion Inc,INTZ
+2932,Caesarstone Ltd,CSTE
+2933,OFS Credit Company 5 25 Prf Shs Series E Due 2026,OCCIN
+2934,Klotho Neurosciences Inc,KLTO
+2935,Vince Holding Corp,VNCE
+2936,CYNGN Inc,CYN
+2937,MDB Capital Holdings LLC,MDBH
+2938,Republic Power Group Ltd,RPGL
+2939,Generation Bio Co,GBIO
+2940,Verrica Pharmaceuticals Inc,VRCA
+2941,AMMO 8 75 Cumulative Redeemable Perpetual Prf Shs Series A,POWWP
+2942,LifeMD 8.875 Cumulative Perpetual Pref Shs Series A,LFMDP
+2943,Femasys Inc,FEMY
+2944,Prestige Wealth Inc,AURE
+2945,Beamr Imaging Ltd,BMR
+2946,Willamette Valley Vineyards Redeemable Pref Shs Series A,WVVIP
+2947,KLX Energy Services Holdings Inc,KLXE
+2948,Stardust Power Inc,SDST
+2949,Bonk Inc,BNKK
+2950,Precipio Inc,PRPO
+2951,CISO Global Inc,CISO
+2952,Brand House Collective Inc,TBHC
+2953,Quantum Biopharma Ltd,QNTM
+2954,Cumberland Pharmaceuticals Inc,CPIX
+2955,Uni-Fuels Holdings Ltd,UFG
+2956,SAB Biotherapeutics Inc,SABS
+2957,Precision Optics Corporation Inc,POCI
+2958,Rectitude Holdings Ltd,RECT
+2959,CareCloud 8 75 Cumulative Redeemable Perpetual Pref Shs Series B,CCLDO
+2960,Zynex Inc,ZYXI
+2961,Nvni Group Ltd,NVNI
+2962,Alphatime Acquisition Corp,ATMC
+2963,Marathon Bancorp Inc,MBBC
+2964,Inspirato Inc,ISPO
+2965,Tenax Therapeutics Inc,TENX
+2966,US Global Investors Inc,GROW
+2967,Key Tronic Corp,KTCC
+2968,WiMi Hologram Cloud Inc,WIMI
+2969,Token Cat Ltd ADR,TC
+2970,Nixxy Inc,NIXX
+2971,Vyome Holdings Inc,HIND
+2972,Authid Inc,AUID
+2973,Scantech AI Systems Inc,STAI
+2974,Eastern International Ltd,ELOG
+2975,Sagtec Global Ltd,SAGT
+2976,AN2 Therapeutics Inc,ANTX
+2977,Pinnacle Food Group Ltd,PFAI
+2978,Premium Catering Holdings Ltd,PC
+2979,Kentucky First Federal Bancorp,KFFB
+2980,Zhibao Technology Inc,ZBAO
+2981,Horizon Space Acquisition I Corp,HSPO
+2982,Semilux International Ltd,SELX
+2983,United-Guardian Inc,UG
+2984,Inspira Technologies Oxy BHN Ltd,IINN
+2985,Beachbody Company Inc,BODI
+2986,Data Storage Corp,DTST
+2987,Sonnet Biotherapeutics Holdings Inc,SONN
+2988,Swvl Holdings Corp,SWVL
+2989,Turbo Energy SA ADR,TURB
+2990,Creative Realities Inc,CREX
+2991,Giftify Inc,GIFT
+2992,Crown Crafts Inc,CRWS
+2993,Focus Universal Inc,FCUV
+2994,Snow Lake Resources Ltd,LITM
+2995,Intensity Therapeutics Inc,INTS
+2996,AlphaTON Capital Corp,ATON
+2997,Cloudastructure Inc,CSAI
+2998,Natural Health Trends Corp,NHTC
+2999,Quest Resource Holding Corp,QRHC
+3000,Zenta Group Co Ltd,ZGM
+3001,Aeries Technology Inc,AERT
+3002,Everbright Digital Holding Ltd,EDHL
+3003,Q32 Bio Inc,QTTB
+3004,Wetouch Technology Inc,WETH
+3005,Tharimmune Inc,THAR
+3006,Glimpse Group Inc,VRAR
+3007,Boundless Bio Inc,BOLD
+3008,Modular Medical Inc,MODD
+3009,Leslie's Inc,LESL
+3010,Reading International Inc Class A,RDI
+3011,MainStreet Bancshares Depositary Shares Representing Pref Shs,MNSBP
+3012,Blackboxstocks Inc,BLBX
+3013,iBio Inc,IBIO
+3014,Iterum Therapeutics PLC,ITRM
+3015,Pyxis Tankers Inc,PXS
+3016,Basel Medical Group Ltd,BMGL
+3017,Ohmyhome Ltd,OMH
+3018,Data I/O Corp,DAIO
+3019,Collplant Biotechnologies Ltd,CLGN
+3020,Future Fintech Group Inc,FTFT
+3021,Baird Medical Investment Holdings Ltd,BDMD
+3022,Veea Inc,VEEA
+3023,Bowen Acquisition Corp,BOWN
+3024,MIRA Pharmaceuticals Inc,MIRA
+3025,Ming Shing Group Holdings Ltd,MSW
+3026,DT Cloud Acquisition Corp,DYCQ
+3027,BancFirst 7.2% Cumulative Pref Shs,BANFP
+3028,REE Automotive Ltd,REE
+3029,Nortech Systems Inc,NSYS
+3030,Exicure Inc,XCUR
+3031,Rallybio Corp,RLYB
+3032,Pluri Inc,PLUR
+3033,Star Equity Holdings 10 Cumulative Perpetual Prf Shs Series A,STRRP
+3034,Intercont (Cayman) Ltd,NCT
+3035,NextCure Inc,NXTC
+3036,MKDWELL Tech Inc,MKDW
+3037,Performance Shipping Inc,PSHG
+3038,Bit Origin Ltd,BTOG
+3039,CLPS Inc,CLPS
+3040,XOMA Royalty 8.625 Cumulative Perpetual Pref Shs Series A,XOMAP
+3041,Ark Restaurants Corp,ARKR
+3042,OFS Credit Company 7 875 Prf Shs Series F,OCCIM
+3043,AiRWA Inc,YYAI
+3044,Ebang International Holdings Inc,EBON
+3045,Neurosense Therapeutics Ltd,NRSN
+3046,Meiwu Technology Co Ltd,WNW
+3047,Armlogi Holding Corp,BTOC
+3048,Lee Enterprises Inc,LEE
+3049,Minerva Neurosciences Inc,NERV
+3050,Xos Inc,XOS
+3051,SPAR Group Inc,SGRP
+3052,Webus International Ltd,WETO
+3053,Sotherly Hotels 8.0% Cumulative Redeemable Perpetual Pref Shs Series B,SOHOB
+3054,Mangoceuticals Inc,MGRX
+3055,SCYNEXIS Inc,SCYX
+3056,Cadrenal Therapeutics Inc,CVKD
+3057,FAT Brands Inc Class A,FAT
+3058,Binah Capital Group Inc,BCG
+3059,CVD Equipment Corp,CVV
+3060,Synergy CHC Corp,SNYR
+3061,Enlivex Therapeutics Ltd,ENLV
+3062,Globus Maritime Ltd,GLBS
+3063,Lixte Biotechnology Holdings Inc,LIXT
+3064,Dare Bioscience Inc,DARE
+3065,Harvard Bioscience Inc,HBIO
+3066,Tian Ruixiang Holdings Ltd,TIRX
+3067,Lexaria Bioscience Corp,LEXX
+3068,Scienture Holdings Inc,SCNX
+3069,Black Titan Corp,BTTC
+3070,CytoMed Therapeutics Ltd,GDTC
+3071,Co-Diagnostics Inc,CODX
+3072,SemiLEDs Corp,LEDS
+3073,Sotherly Hotels Cum Redeemable Perptual 7.875 Pref Shs Series C,SOHOO
+3074,Lunai Bioworks Inc,LNAI
+3075,Megan Holdings Ltd,MGN
+3076,Tandy Leather Factory Inc,TLF
+3077,Simpple Ltd,SPPL
+3078,Fortress Biotech 9 375 Cumulative Redeemable Perpetual Pref Shs Series A,FBIOP
+3079,Foxx Development Holdings Inc,FOXX
+3080,B Riley Financial Depository Shares Series B,RILYL
+3081,Rail Vision Ltd,RVSN
+3082,Leap Therapeutics Inc,LPTX
+3083,Parazero Technologies Ltd,PRZO
+3084,OFS Credit Company 6 125 Prf Series C,OCCIO
+3085,Greenidge Generation Holdings Inc,GREE
+3086,Argo Blockchain PLC ADR,ARBK
+3087,Nexalin Technology Inc,NXL
+3088,UTStarcom Holdings Corp,UTSI
+3089,Moleculin Biotech Inc,MBRX
+3090,Tungray Technologies Inc,TRSG
+3091,Mint Incorporation Ltd,MIMI
+3092,Momentus Inc,MNTS
+3093,Worksport Ltd,WKSP
+3094,Mawson Infrastructure Group Inc,MIGI
+3095,Predictive Oncology Inc,POAI
+3096,Akari Therapeutics PLC ADR,AKTX
+3097,Coffee Holding Co Inc,JVA
+3098,NetClass Technology Inc,NTCL
+3099,Aytu Biopharma Inc,AYTU
+3100,LiqTech International Inc,LIQT
+3101,Mind CTI Ltd,MNDO
+3102,Firefly Neuroscience Inc,AIFF
+3103,Gyrodyne LLC,GYRO
+3104,Nature Wood Group Ltd ADR,NWGL
+3105,Captivision Inc,CAPT
+3106,First Guaranty Bancshares 6.75 Dep Shs Rep Non Cumulative Perpetual Prf Shs,FGBIP
+3107,Adagio Medical Holdings Inc,ADGM
+3108,Scienjoy Holding Corp,SJ
+3109,NextPlat Corp,NXPL
+3110,Clearside Biomedical Inc,CLSD
+3111,ProMIS Neurosciences Inc,PMN
+3112,Lakeside Holdings Ltd,LSH
+3113,Envoy Medical Inc,COCH
+3114,Viewbix Inc,VBIX
+3115,Passage Bio Inc,PASG
+3116,Horizon Space Acquisition II Units,HSPTU
+3117,Cingulate Inc,CING
+3118,CASI Pharmaceuticals Inc,CASI
+3119,MetaVia Inc,MTVA
+3120,Lisata Therapeutics Inc,LSTA
+3121,JBDI Holdings Ltd,JBDI
+3122,Allied Gaming & Entertainment Inc,AGAE
+3123,T Stamp Inc,IDAI
+3124,Cosmos Health Inc,COSM
+3125,HeartCore Enterprises Inc,HTCR
+3126,Harte Hanks Inc,HHS
+3127,Masonglory Ltd,MSGY
+3128,Imperial Petroleum 8.75 Cumulative Redeemable Perpetual Pref Shs Series A,IMPPP
+3129,Euroholdings Ltd,EHLD
+3130,zSpace  Inc.,ZSPC
+3131,Harrison Global Holdings Inc,BLMZ
+3132,eLong Power Holding Ltd,ELPW
+3133,Citius Pharmaceuticals Inc,CTXR
+3134,Real Messenger Corp,RMSG
+3135,Vivakor Inc,VIVK
+3136,Lead Real Estate Co Ltd ADR,LRE
+3137,Nexgel Inc,NXGL
+3138,Kandal M Venture Ltd,FMFC
+3139,Synlogic Inc,SYBX
+3140,Sphere 3D Corp,ANY
+3141,BTC Digital Ltd,BTCT
+3142,K-Tech Solutions Co Ltd,KMRK
+3143,Youxin Technology Ltd,YAAS
+3144,Reading International Inc Class B,RDIB
+3145,NewcelX AG,NCEL
+3146,Dolphin Entertainment Inc,DLPN
+3147,Marwynn Holdings Inc,MWYN
+3148,Curis Inc,CRIS
+3149,Linkage Global Inc,LGCB
+3150,Anghami Inc,ANGH
+3151,FAT Brands 8 25 Cum Prf Shs Series B,FATBP
+3152,FiEE Inc,FIEE
+3153,Briacell Therapeutics Corp,BCTX
+3154,AlphaVest Acquisition Corp,ATMV
+3155,Evoke Pharma Inc,EVOK
+3156,YY Group Holding Ltd,YYGH
+3157,Zhongchao Inc,ZCMD
+3158,Huachen AI Parking Management Technology Holding Co Ltd,HCAI
+3159,Carver Bancorp Inc,CARV
+3160,Nisun International Enterprise Development Group Co Ltd,NISN
+3161,Cuprina Holdings (Cayman) Ltd,CUPR
+3162,SOTHERLY HOTELS Perpetual Pref Shs Series D,SOHON
+3163,Natural Alternatives International Inc,NAII
+3164,TOMI Environmental Solutions Inc,TOMZ
+3165,Castor Maritime Inc,CTRM
+3166,GigaMedia Ltd,GIGM
+3167,Processa Pharmaceuticals Inc,PCSA
+3168,Millennium Group International Holdings Ltd,MGIH
+3169,Callan JMB Inc,CJMB
+3170,Guardforce AI Co Ltd,GFAI
+3171,Vsee Health Inc,VSEE
+3172,iQSTEL Inc,IQST
+3173,Huadi International Group Co.  Ltd.,HUDI
+3174,Trinity Biotech PLC ADR,TRIB
+3175,IRIDEX Corp,IRIX
+3176,Intelligent Protection Management Corp,IPM
+3177,Medalist Diversified Reit Inc,MDRR
+3178,Pulmatrix Inc,PULM
+3179,Vivos Therapeutics Inc,VVOS
+3180,Curanex Pharmaceuticals Inc,CURX
+3181,Delixy Holdings Ltd,DLXY
+3182,Fibrobiologics Inc,FBLG
+3183,Brand Engagement Network Inc,BNAI
+3184,Skycorp Solar Group Ltd,PN
+3185,Mannatech Inc,MTEX
+3186,Hoth Therapeutics Inc,HOTH
+3187,J-Long Group Ltd,JL
+3188,Fundamental Global 8 00 Cumulative Pref Shs,FGNXP
+3189,E-Home Household Service Holdings Ltd,EJH
+3190,Skillful Craftsman Education Technology Ltd,EDTK
+3191,ICZOOM Group Inc,IZM
+3192,Ekso Bionics Holdings Inc,EKSO
+3193,Longeveron Inc,LGVN
+3194,Electro-Sensors Inc,ELSE
+3195,Greenland Technologies Holding Corp,GTEC
+3196,VS Media Holdings Ltd,VSME
+3197,WF Holding Ltd,WFF
+3198,Allarity Therapeutics Inc,ALLR
+3199,Pintec Technology Holdings Ltd ADR,PT
+3200,Mingteng International Corp Inc,MTEN
+3201,Creative Global Technology Holdings Ltd,CGTL
+3202,Workhorse Group Inc,WKHS
+3203,Robin Energy Ltd,RBNE
+3204,Athira Pharma Inc,ATHA
+3205,Nocera Inc,NCRA
+3206,Urban One Inc Class D,UONEK
+3207,SeaStar Medical Holding Corp,ICU
+3208,Hub Cyber Security Ltd,HUBC
+3209,Bionano Genomics Inc,BNGO
+3210,J-Star Holding Co Ltd,YMAT
+3211,Healthcare Triangle Inc,HCTI
+3212,Medirom Healthcare Technologies Inc ADR,MRM
+3213,GeoVax Labs Inc,GOVX
+3214,CTRL Group Ltd,MCTR
+3215,Intelligent Group Ltd,INTJ
+3216,Applied DNA Sciences Inc,BNBX
+3217,Growhub Ltd,TGHL
+3218,ABPRO Holdings Inc,ABP
+3219,Bridgeline Digital Inc,BLIN
+3220,CaliberCos Inc,CWD
+3221,Greenlane Holdings Inc,GNLN
+3222,ZK International Group Co Ltd,ZKIN
+3223,Senestech Inc,SNES
+3224,Presidio Property Trus 9.375 Cumulative Redeemable Perpetual Cumulative,SQFTP
+3225,Decent Holding Inc,DXST
+3226,Brag House Holdings Inc,TBH
+3227,Presurance Holdings Inc,PRHI
+3228,Dreamland Ltd,TDIC
+3229,Datasea Inc,DTSS
+3230,TherapeuticsMD Inc,TXMD
+3231,Apollomics Inc,APLM
+3232,OSR Holdings Inc,OSRH
+3233,Adaptimmune Therapeutics PLC ADR,ADAP
+3234,BioLine RX Ltd ADR,BLRX
+3235,Abits Group Inc,ABTS
+3236,CXApp Inc,CXAI
+3237,Traws Pharma Inc,TRAW
+3238,Willamette Valley Vineyards Inc,WVVI
+3239,Lipocine Inc,LPCN
+3240,Propanc Biopharma Inc,PPCB
+3241,Classover Holdings Inc,KIDZ
+3242,B Riley Financial DS Representing 1/1000 Cum Pref Series A,RILYP
+3243,Energy Focus Inc,EFOI
+3244,GreenPro Capital Corp,GRNQ
+3245,Urban One Inc Class A,UONE
+3246,Ainos Inc,AIMD
+3247,MingZhu Logistics Holdings Ltd,YGMZ
+3248,Good Times Restaurants Inc,GTIM
+3249,Yunhong Green CTI Ltd,YHGJ
+3250,BioCardia Inc,BCDA
+3251,United Maritime Corp,USEA
+3252,SAIHEAT Ltd,SAIH
+3253,Chemomab Therapeutics Ltd ADR,CMMB
+3254,enVVeno Medical Corp,NVNO
+3255,OFA Group,OFAL
+3256,Amesite Inc,AMST
+3257,Hong Kong Pharma Digital Technology Holdings Ltd,HKPD
+3258,Glen Burnie Bancorp,GLBZ
+3259,Taitron Components Inc,TAIT
+3260,Cocrystal Pharma Inc,COCP
+3261,Aspire Biopharma Holdings Inc,ASBP
+3262,Maison Solutions Inc,MSS
+3263,Tokyo Lifestyle Co Ltd ADR,TKLF
+3264,Graphjet Technology,GTI
+3265,Ernexa Therapeutics Inc,ERNA
+3266,LM Funding America Inc,LMFA
+3267,INNEOVA Holdings Ltd,INEO
+3268,CBL International Ltd,BANL
+3269,Eshallgo Inc,EHGO
+3270,Inno Holdings Inc,INHD
+3271,Motorsport Games Inc,MSGM
+3272,Smith Micro Software Inc,SMSI
+3273,Rocky Mountain Chocolate Factory Inc (Delaware),RMCF
+3274,Biofrontera Inc,BFRI
+3275,Ping An Biomedical Co Ltd,PASW
+3276,Li Bang International Corporation Inc,LBGJ
+3277,Ten-League International Holdings Ltd,TLIH
+3278,SINTX Technologies Inc,SINT
+3279,Jianzhi Education Technology Group Co Ltd ADR,JZ
+3280,Kazia Therapeutics Ltd ADR,KZIA
+3281,BioRestorative Therapies Inc,BRTX
+3282,Lulu's Fashion Lounge Holdings Inc,LVLU
+3283,Edesa Biotech Inc,EDSA
+3284,Art's Way Manufacturing Co Inc,ARTW
+3285,Sonim Technologies Inc,SONM
+3286,PS International Group Ltd,PSIG
+3287,Sensei Biotherapeutics Inc,SNSE
+3288,HWH International Inc,HWH
+3289,Ridgetech Inc,RDGT
+3290,Vyne Therapeutics Inc,VYNE
+3291,INLIF Ltd,INLF
+3292,Wheeler Real Estate Investment Trust Series B Conv Prf Shs,WHLRP
+3293,Origin Agritech Ltd,SEED
+3294,Prophase Labs Inc,PRPH
+3295,Educational Development Corp,EDUC
+3296,Immuron Ltd ADR,IMRN
+3297,Xiao-I Corp ADR,AIXI
+3298,Earlyworks Co Ltd ADR,ELWS
+3299,Marker Therapeutics Inc,MRKR
+3300,Intelligent Living Application Group Inc,ILAG
+3301,BioVie Inc,BIVI
+3302,Autozi Internet Technology (Global) Ltd,AZI
+3303,Society Pass Inc,SOPA
+3304,DirectBooking Technology Co Ltd,ZDAI
+3305,Picocela Inc ADR,PCLA
+3306,Aqua Metals Inc,AQMS
+3307,Aptorum Group Ltd,APM
+3308,New Century Logistics (BVI) Ltd,NCEW
+3309,Cellectar Biosciences Inc,CLRB
+3310,TEN Holdings Inc,XHLD
+3311,SmartKem Inc,SMTK
+3312,Wearable Devices Ltd,WLDS
+3313,Maris Tech Ltd,MTEK
+3314,Cenntro Inc (The Corporation),CENN
+3315,Cre8 Enterprise Ltd,CRE
+3316,Professional Diversity Network Inc,IPDN
+3317,Lottery.com Inc,SEGG
+3318,Global Engine Group Holding Ltd,GLE
+3319,TDH Holdings Inc,PETZ
+3320,Gelteq Ltd,GELS
+3321,Tianci International Inc,CIIT
+3322,Soligenix Inc,SNGX
+3323,Elite Express Holding Inc,ETS
+3324,Gaxos.ai Inc.,GXAI
+3325,Jayud Global Logistics Ltd,JYD
+3326,Energous Corp,WATT
+3327,Haoxin Holdings Ltd,HXHX
+3328,VerifyMe Inc,VRME
+3329,iPower Inc,IPW
+3330,Golden Heaven Group Holdings Ltd,GDHG
+3331,AgriFORCE Growing Systems Ltd,AGRI
+3332,ARB IOT Group Ltd,ARBB
+3333,Oxbridge Re Holdings Ltd,OXBR
+3334,Ostin Technology Group Co Ltd,OST
+3335,Hydrofarm Holdings Group Inc,HYFM
+3336,Evogene Ltd,EVGN
+3337,U Power Ltd,UCAR
+3338,Neuphoria Therapeutics Inc,NEUP
+3339,Park Ha Biological Technology Co Ltd,BYAH
+3340,Imunon Inc,IMNN
+3341,Bullfrog AI Holdings Inc,BFRG
+3342,Dogwood Therapeutics Inc,DWTX
+3343,JX Luxventure Group Inc,JXG
+3344,Tenon Medical Inc,TNON
+3345,CCSC Technology International Holdings Ltd,CCTG
+3346,Founder Group Ltd,FGL
+3347,Bt Brands Inc,BTBD
+3348,Samfine Creation Holdings Group Ltd,SFHG
+3349,Reborn Coffee Inc,REBN
+3350,Alzamend Neuro Inc,ALZN
+3351,Fly-E Group Inc,FLYE
+3352,Bolt Projects Holdings Inc,BSLK
+3353,Advanced Biomed Inc,ADVB
+3354,Infobird Co Ltd,IFBD
+3355,Yueda Digital Holding,YDKG
+3356,BioNexus Gene Lab Corp,BGLC
+3357,Ryvyl Inc,RVYL
+3358,TNL Mediagene,TNMG
+3359,FGI Industries Ltd,FGI
+3360,Jewett-Cameron Trading Company Ltd,JCTC
+3361,Beyond Air Inc,XAIR
+3362,Polar Power Inc,POLA
+3363,Fast Track Group,FTRK
+3364,bioAffinity Technologies Inc,BIAF
+3365,Netcapital Inc,NCPL
+3366,Myseum Inc,MYSE
+3367,Bolt Biotherapeutics Inc,BOLT
+3368,Functional Brands Inc,MEHA
+3369,Mustang Bio Inc,MBIO
+3370,36Kr Holdings Inc ADR,KRKR
+3371,Utime Ltd,WTO
+3372,Foresight Autonomous Holdings Ltd ADR,FRSX
+3373,Lobo Technologies Ltd,LOBO
+3374,Sono Group NV,SSM
+3375,Euro Tech Holdings Company Ltd,CLWT
+3376,PAVmed Inc,PAVM
+3377,Marine Petroleum Units,MARPS
+3378,X T L Biopharmaceuticals Ltd ADR,XTLB
+3379,Sky Quarry Inc,SKYQ
+3380,Sunshine Biopharma Inc,SBFM
+3381,Peraso Inc,PRSO
+3382,Beasley Broadcast Group Inc,BBGI
+3383,OLB Group Inc,OLB
+3384,DarkIris Inc,DKI
+3385,22nd Century Group Inc,XXII
+3386,Silexion Therapeutics Corp,SLXN
+3387,Mackenzie Realty Capital Inc,MKZR
+3388,Galaxy Payroll Group Ltd,GLXG
+3389,Pheton Holdings Ltd,PTHL
+3390,Clearone Inc,CLRO
+3391,Socket Mobile Inc,SCKT
+3392,Zeta Network Group,ZNB
+3393,Yunji Inc ADR,YJ
+3394,Strata Skin Sciences Inc,SSKN
+3395,Raytech Holding Ltd,RAY
+3396,Transcode Therapeutics Inc,RNAZ
+3397,Check Cap Ltd,CHEK
+3398,LQR House Inc,YHC
+3399,Click Holdings Limited,CLIK
+3400,Phio Pharmaceuticals Corp,PHIO
+3401,HeartSciences Inc,HSCS
+3402,Aterian Inc,ATER
+3403,Lifeward Ltd,LFWD
+3404,Fenbo Holdings Ltd,FEBO
+3405,Versus Systems Inc,VS
+3406,PTL Ltd,PTLE
+3407,Oblong Inc,OBLG
+3408,Banzai International Inc,BNZI
+3409,N2OFF Inc,NITO
+3410,Addex Therapeutics Ltd ADR,ADXN
+3411,Sow Good Inc,SOWG
+3412,EpicQuest Education Group International Ltd,EEIQ
+3413,Innovation Beverage Group Ltd,IBG
+3414,Fangdd Network Group Ltd,DUO
+3415,Direct Digital Holdings Inc,DRCT
+3416,Presidio Property Trust Inc,SQFT
+3417,Lyra Therapeutics Inc,LYRA
+3418,Nauticus Robotics Inc,KITT
+3419,Kiora Pharmaceuticals Inc,KPRX
+3420,Advent Technologies Holdings Inc,ADN
+3421,Acurx Pharmaceuticals Inc,ACXP
+3422,SU Group Holdings Ltd,SUGP
+3423,Sonder Holdings Inc,SOND
+3424,Profusa Inc,PFSA
+3425,Vestand Inc,VSTD
+3426,ATIF Holdings Ltd,ZBAI
+3427,Avalon Globocare Corp,ALBT
+3428,Galecto Inc,GLTO
+3429,IN8bio Inc,INAB
+3430,Lucas GC Ltd,LGCL
+3431,Carbon Revolution PLC,CREV
+3432,Creative Medical Technology Holdings Inc,CELZ
+3433,Genprex Inc,GNPX
+3434,Bon Natural Life Ltd,BON
+3435,Biomerica Inc,BMRA
+3436,Lendway Inc,LDWY
+3437,STAK Inc,STAK
+3438,Gibo Holdings Ltd,GIBO
+3439,Jet.AI Inc,JTAI
+3440,Mainz Biomed NV,MYNZ
+3441,Meihua International Medical Technologies Co Ltd,MHUA
+3442,Globavend Holdings Ltd,GVH
+3443,Fitness Champs Holdings Ltd,FCHL
+3444,iOThree Ltd,IOTR
+3445,FBS Global Ltd,FBGL
+3446,HCW Biologics Inc,HCWB
+3447,Cheer Holding Inc,CHR
+3448,Adial Pharmaceuticals Inc,ADIL
+3449,Innovative Eyewear Inc,LUCY
+3450,VCI Global Ltd,VCIG
+3451,Intelligent Bio Solutions Inc,INBS
+3452,SHF Holdings Inc,SHFS
+3453,Wah Fu Education Group Ltd,WAFU
+3454,Aprea Therapeutics Inc,APRE
+3455,Entero Therapeutics Inc,ENTO
+3456,NuCana PLC ADR,NCNA
+3457,American Rebel Holdings Inc,AREB
+3458,Fusion Fuel Green PLC,HTOO
+3459,IM Cannabis Corp,IMCC
+3460,Cycurion Inc,CYCU
+3461,Actelis Networks Inc,ASNS
+3462,Purple Biotech Ltd ADR,PPBT
+3463,ENDRA Life Sciences Inc,NDRA
+3464,Onfolio Holdings Inc,ONFO
+3465,Magic Empire Global Ltd,MEGL
+3466,Treasure Global Inc,TGL
+3467,WF International Ltd,WXM
+3468,Galmed Pharmaceuticals Ltd,GLMD
+3469,Clean Energy Technologies Inc,CETY
+3470,Boxlight Corp,BOXL
+3471,Highway Holdings Ltd,HIHO
+3472,Orangekloud Technology Inc,ORKT
+3473,SKK Holdings Ltd,SKK
+3474,707 Cayman Holdings Ltd,JEM
+3475,Moolec Science SA,MLEC
+3476,NaaS Technology Inc ADR,NAAS
+3477,Silo Pharma Inc,SILO
+3478,Cardio Diagnostics Holdings Inc,CDIO
+3479,AGM Group Holdings Inc,AGMH
+3480,Cadiz Depositary Shares,CDZIP
+3481,DevvStream Corp,DEVS
+3482,3 E Network Technology Group Ltd,MASK
+3483,JIADE Ltd,JDZG
+3484,JE Cleantech Holdings Ltd,JCSE
+3485,Powell Max Ltd,PMAX
+3486,Top KingWin Ltd,WAI
+3487,Sonoma Pharmaceuticals Inc,SNOA
+3488,Gulf Resources Inc,GURE
+3489,Xenetic Biosciences Inc,XBIO
+3490,Newton Golf Company Inc,NWTG
+3491,CDT Environmental Technology Investment Holdings Ltd,CDTG
+3492,ZW Data Action Technologies Inc,CNET
+3493,Ensysce Biosciences Inc,ENSC
+3494,Springview Holdings Ltd,SPHL
+3495,Kaival Brands Innovations Group Inc,KAVL
+3496,Polestar Automotive Holding UK PLC ADR Class C,PSNYW
+3497,Jaguar Health Inc,JAGX
+3498,Baiya International Group Inc,BIYA
+3499,Revelation Biosciences Inc,REVB
+3500,Flora Growth Corp,FLGC
+3501,Capstone Holding Corp,CAPS
+3502,Astrotech Corp,ASTC
+3503,Generation Income Properties Inc,GIPR
+3504,Sentage Holdings Inc,SNTG
+3505,Linkers Industries Ltd,LNKS
+3506,Q/C Technologies Inc,QCLS
+3507,PharmaCyte Biotech Inc,PMCB
+3508,Lazydays Holdings Inc,GORV
+3509,Global Interactive Technologies Inc,GITS
+3510,VivoSim Labs Inc,VIVS
+3511,Cyclerion Therapeutics Inc,CYCN
+3512,Sadot Group Inc,SDOT
+3513,Locafy Ltd,LCFY
+3514,Brenmiller Energy Ltd,BNRG
+3515,China Natural Resources Inc,CHNR
+3516,Polyrizon Ltd,PLRZ
+3517,Visionary Holdings Inc,GV
+3518,Inspire Veterinary Partners Inc,IVP
+3519,Alaunos Therapeutics Inc,TCRT
+3520,Addentax Group Corp,ATXG
+3521,Pasithea Therapeutics Corp,KTTA
+3522,CN Energy Group Inc,CNEY
+3523,Algorhythm Holdings Inc,RIME
+3524,60 Degrees Pharmaceuticals Inc,SXTP
+3525,Arcadia Biosciences Inc,RKDA
+3526,Autonomix Medical Inc,AMIX
+3527,GreenPower Motor Company Inc,GP
+3528,Qualigen Therapeutics Inc,QLGN
+3529,Xcel Brands Inc,XELB
+3530,Bio Green Med Solution Inc,BGMS
+3531,GlucoTrack Inc,GCTK
+3532,Quoin Pharmaceuticals Ltd ADR,QNRX
+3533,KALA BIO Inc,KALA
+3534,Jiuzi Holdings Inc,JZXN
+3535,C3is Inc,CISS
+3536,XWELL Inc,XWEL
+3537,Chijet Motor Co Inc,CJET
+3538,Iveda Solutions Inc,IVDA
+3539,Neo-Concept International Group Holdings Ltd,NCI
+3540,Aclarion Inc,ACON
+3541,Aptevo Therapeutics Inc,APVO
+3542,Expion360 Inc,XPON
+3543,Ascent Solar Technologies Inc,ASTI
+3544,InMed Pharmaceuticals Inc,INM
+3545,Golden Sun Technology Group Ltd,GSUN
+3546,Psyence Biomedical Ltd,PBM
+3547,La Rosa Holdings,LRHC
+3548,ReTo Eco-Solutions Inc,RETO
+3549,Scworx Corp,WORX
+3550,Clearmind Medicine Inc,CMND
+3551,Twin Vee PowerCats Co,VEEE
+3552,Creative Media & Community Trust Corporation,CMCT
+3553,Envirotech Vehicles Inc,EVTV
+3554,Vision Marine Technologies Inc,VMAR
+3555,DEFSEC Technologies Inc,DFSC
+3556,GRI Bio Inc,GRI
+3557,Movano Inc,MOVE
+3558,Sunation Energy Inc,SUNE
+3559,Edible Garden AG Inc,EDBL
+3560,Singularity Future Technology Ltd,SGLY
+3561,BIO-Key International Inc,BKYI
+3562,EZGO Technologies Ltd,EZGO
+3563,Scisparc Ltd,SPRC
+3564,Top Wealth Group Holding Ltd,TWG
+3565,Cheetah Net Supply Chain Service Inc,CTNT
+3566,Sobr Safe Inc,SOBR
+3567,Webuy Global Ltd,WBUY
+3568,Nanovibronix Inc,NAOV
+3569,Onconetix Inc,ONCO
+3570,AquaBounty Technologies Inc,AQB
+3571,Baosheng Media Group Holdings Ltd,BAOS
+3572,Reliance Global Group Inc,RELI
+3573,PMGC Holdings Inc,ELAB
+3574,Super League Enterprise Inc,SLE
+3575,CNS Pharmaceuticals Inc,CNSP
+3576,My Size Inc,MYSZ
+3577,Protagenic Therapeutics Inc,PTIX
+3578,Interactive Strength Inc,TRNR
+3579,urban-gro Inc,UGRO
+3580,Redhill Biopharma Ltd ADR,RDHL
+3581,Nuvve Holding Corp,NVVE
+3582,Work Medical Technology Group Ltd,WOK
+3583,Venus Concept Inc,VERO
+3584,Artelo Biosciences Inc,ARTL
+3585,Smart Powerr Corp,CREG
+3586,Safe and Green Development Corp,SGD
+3587,iSpecimen Inc,ISPC
+3588,Greenwave Technology Solutions Inc,GWAV
+3589,Tivic Health Systems Inc,TIVC
+3590,Jowell Global Ltd,JWEL
+3591,Bone Biologics Corp,BBLG
+3592,EPWK Holdings Ltd,EPWK
+3593,Erayak Power Solution Group Inc,RAYA
+3594,Urgent.ly Inc,ULY
+3595,Scinai Immunotherapeutics Ltd ADR,SCNI
+3596,CDT Equity Inc,CDT
+3597,Biodexa Pharmaceuticals PLC ADR,BDRX
+3598,Lion Group Holding Ltd ADR,LGHL
+3599,Aethlon Medical Inc,AEMD
+3600,DIH Holding US Inc,DHAI
+3601,Cemtrex Inc,CETX
+3602,Taoping Inc,TAOP
+3603,Oriental Rise Holdings Ltd,ORIS
+3604,Enveric Biosciences Inc,ENVB
+3605,StableX Technologies Inc,SBLX
+3606,XORTX Therapeutics Inc,XRTX
+3607,Haoxi Health Technology Ltd,HAO
+3608,Integrated Media Technology Ltd,IMTE
+3609,Indaptus Therapeutics Inc,INDP
+3610,MDJM Ltd,UOKA
+3611,Aditxt Inc,ADTX
+3612,Wheeler Real Estate Investment Trust Inc,WHLR
+3613,Icon Energy Corp,ICON
+3614,Digital Ally Inc,DGLY
+3615,FAT Brands Inc Class B,FATBB
+3616,SMX (Security Matters) PLC,SMX
+3617,INVO Fertility Inc,IVF
+3618,Lichen International Ltd,LICN
+3619,Shuttle Pharmaceuticals Holdings Inc,SHPH
+3620,Star Fashion Culture Holdings Ltd,STFS
+3621,Bluejay Diagnostics Inc,BJDX
+3622,Chanson International Holding,CHSN
+3623,Mobile-health Network Solutions,MNDR
+3624,Nuwellis Inc,NUWE
+3625,Auddia Inc,AUUD
+3626,Saverone 2014 Ltd ADR,SVRE
+3627,Freight Technologies Inc,FRGT
+3628,ECD Automotive Design Inc,ECDA
+3629,Universe Pharmaceuticals Inc,UPC
+3630,PainReform Ltd,PRFX
+3631,Virax Biolabs Group Ltd,VRAX
+3632,Tantech Holdings Ltd,TANH
+3633,Farmmi Inc,FAMI
+3634,Trugolf Holdings Inc,TRUG
+3635,Dermata Therapeutics Inc,DRMA
+3636,GT Biopharma Inc,GTBP
+3637,Fitell Corp,FTEL
+3638,Ucommune International Ltd,UK
+3639,Antelope Enterprise Holdings Ltd,AEHL
+3640,Senmiao Technology Ltd,AIHS
+3641,NewGenIvf Group Ltd,NIVF
+3642,Jeffs Brands Ltd,JFBR
+3643,Steakholder Foods Ltd ADR,STKH
+3644,Salarius Pharmaceuticals Inc,SLRX
+3645,Safe & Green Holdings Corp,SGBX
+3646,Akanda Corp,AKAN
+3647,Quhuo Ltd ADR,QH
+3648,Bio Green Med Solution 6 Conv Pref Shs,BGMSP
+3649,Rubico Inc,RUBI
+3650,MSP Recovery Inc,MSPR
+3651,First Merchants Depository Shares Reprs 1 100Th 7 50 Non Cum Perp Prf Shs A,FRMEP
+3652,Brighthouse Financial Junior Subordinated Debentures Exp 2058,BHFAL
+3653,Navient 6 Prcnt Senior Notes Exp 15 Dec 2043,JSM
+3654,SunPower Corp,SPWRV
+3655,Maxeon Solar Technologies Ltd,MAXNV
+3656,Spinal Elements Holdings Inc,SPEL
+3657,Mavenir Private Holdings II Ltd,MVNR
+3658,B Riley Financial 5.50% Senior Notes Due 2026,RILYK
+3659,B. Riley Financial 5 25 Senior Notes due 2028,RILYZ
+3660,Wheeler Real Estate Investment Trust 7 00 Senior Conv Notes Due 2031,WHLRL
+3661,Greenidge Generation Holdings 8 50 Senior Notes due 2026,GREEL
+3662,Fossil Group 7 Senior Notes due 2026,FOSLL
+3663,Atlanticus Holdings 6 125 Senior Notes due 2026,ATLCL
+3664,Argo Blockchain 8 75 Senior Notes due 2026,ARBKL
+3665,B. Riley Financial 5 00 Senior Notes due 2026,RILYG
+3666,AlphaVest Acquisition Units,ATMVU
+3667,AlphaTime Acquisition Rights Exp 1st Mar 2028,ATMCR
+3668,AlphaVest Acquisition Rights Exp 22 Jan 2026,ATMVR
+3669,Horizon Space Acquisition I Rights,HSPOR
+3670,Trailblazer Merger Rights Exp 21 April 2028,TBMCR
+3671,Oak Woods Acquisition Rights Exp 3 March 2028,OAKUR
+3672,ESH Acquisition Rights Exp 13 June 2028,ESHAR
+3673,Bowen Acquisition Right Exp 1 June 2028,BOWNR
+3674,SWK Holdings 9 00 Senior Notes due 2027,SWKHL
+3675,Abacus Global Management 9 875 Fixed Rate Senior Notes due 2028,ABLLL
+3676,Quetta Acquisition Rights Exp 30th Nov 2024,QETAR
+3677,Bayview Acquisition Rights,BAYAR
+3678,Aimei Health Technology Rights Exp 17 November 2028,AFJKR
+3679,Atlanticus Holding 9 25 Senior Notes due 2029,ATLCZ
+3680,DT Cloud Acquisition Rights,DYCQR
+3681,IB Acquisition Rights Exp 28th Mar 2026,IBACR
+3682,Black Hawk Acquisition Rights,BKHAR
+3683,NewtekOne 8 50 Fixed Rate Senior Notes due 2029,NEWTG
+3684,RF Acquisition II Right 01st May 2026,RFAIR
+3685,Flag Ship Acquisition Rights,FSHPR
+3686,Eureka Acquisition Rights,EURKR
+3687,DT Cloud Star Acquisition Rights,DTSQR
+3688,NewtekOne 8 625 Fixed Rate Senior Notes due 2029,NEWTH
+3689,Cayson Acquisition Rights,CAPNR
+3690,Future Vision II Acquisition Rights Expiry 20th June 2029,FVNNR
+3691,YHN Acquisition I Rights,YHNAR
+3692,Charlton Aria Acquisition Rights,CHARR
+3693,Inflection Point Acquisition IV Right Exp 4th Nov 2026,BACQR
+3694,Rising Dragon Acquisition Rights,RDACR
+3695,Ramaco Resources 8 375 Senior Notes due 2029,METCZ
+3696,Bold Eagle Acquisition Rights,BEAGR
+3697,Tavia Acquisition Rights,TAVIR
+3698,A Spac III Acquisition Rights Exp 05th Nov 2029,ASPCR
+3699,Range Capital Acquisition Rights Exp 23rd Jun 2026,RANGR
+3700,CO2 Energy Transition Rights,NOEMR
+3701,Mountain Lake Acquisition Rights,MLACR
+3702,Horizon Space Acquisition II Rights,HSPTR
+3703,Hennessy Capital Investment VII Rights,HVIIR
+3704,FG Merger II Rights Exp 21 Jan 2030,FGMCR
+3705,Drugs Made In America Acquisition Rights,DMAAR
+3706,Maywood Acquisition Rights,MAYAR
+3707,Ribbon Acquisition Rights,RIBBR
+3708,K and F Growth Acquisition II Rights,KFIIR
+3709,Columbus Acquisition Rights,COLAR
+3710,Artius II Acquisition Rights,AACBR
+3711,Gen Digital Contingent Value Rights,GENVR
+3712,Fifth Era Acquisition I Rights,FERAR
+3713,Quartzsea Acquisition Rights,QSEAR
+3714,Crane Harbor Acquistion Rights Exp 17th April 2030,CHACR
+3715,Sizzle Acquisition II Rights Exp 02nd April 2030,SZZLR
+3716,UY Scuti Acquisition Rights Exp 03rd March 2030,UYSCR
+3717,Siddhi Acquisition Rights,SDHIR
+3718,Pelican Acquisition Rights Exp 05th February 2030,PELIR
+3719,Inflection Point Acquisition III Rights Exp 25th April 2030,IPCXR
+3720,ChampionsGate Acquisition Rights Exp 14th May 2030,CHPGR
+3721,Cal Redwood Acquisition Right Exp 15th May 2030,CRAQR
+3722,Lakeshore Acquisition III Rights,LCCCR
+3723,EGH Acquisition Rights Exp 08th May 2025,EGHAR
+3724,Rainbow Capital Holdings Ltd,RNBW
+3725,Thayer Ventures Acquisition II Rights Exp 15th May 2030,TVAIR
+3726,Oyster Enterprises II Acquisition Rights Exp 22nd May 2030,OYSER
+3727,Kochav Defense Acquisition Rights Expiry 21st May 2030,KCHVR
+3728,Wintergreen Acquisition Rights,WTGUR
+3729,Globa Terra Acquisition Rights Exp 17 June 2030,GTERR
+3730,Indigo Acquisition Rights Exp 04 Feb 2027,INACR
+3731,Ramaco Resources 8 250 Senior Notes due 2030,METCI
+3732,Axiom Intelligence Acquisition 1 Rights Exp 10 June 2030,AXINR
+3733,Blue Acquisition Rights Exp 11 June 2030,BACCR
+3734,T Mobile US 5 500 Senior Notes due June 2070,TMUSI
+3735,T Mobile US 5 500 Senior Notes due March 2070,TMUSZ
+3736,T Mobile US 6 250 Senior Notes due 2069,TMUSL
+3737,BEST SPAC I Acquisition Rights Exp 27 May 2030,BSAAR
+3738,Pantages Capital Acquisition Rights,PGACR
+3739,FG Merger III Units,FGXCU
+3740,A Paradise Acquisition Rights,APADR
+3741,Adamas 9 875 Senior Notes Due 2030,ADAMH
+3742,NMP Acquisition Rights Expiry 27th June 2030,NMPAR
+3743,Adamas 9 125 Senior Notes Due 2029,ADAMI
+3744,Adamas 9 125 Senior Notes Due 2030,ADAMG
+3745,Silver Pegasus Acquisition Rights Exp 26 Jun 2030,SPEGR
+3746,Quantumsphere Acquisition Rights,QUMSR
+3747,Conifer Holdings 9 75 Senior Unsecured Notes 2028,PRHIZ
+3748,McKinley Acquisition Rights,MKLYR
+3749,Starry Sea Acquisition Rights Exp 07th Jul 2030,SSEAR
+3750,GSR IV Acquisition Rights Exp 22nd Aug 2030,GSRFR
+3751,Emmis Acquisition Rights Exp 12th Sep 2030,EMISR
+3752,GigCapital8 Rights Exp 30th Sep 2030,GIWWR
+3753,Lake Superior Acquisition Rights Exp 19th Sep 2030,LKSPR
+3754,BillionToOne Inc,BLLN
+3755,Tailwind 2 0 Acquisition Units,TDWDU
+3756,Crown Reserve Acquisition I Units,CRACU

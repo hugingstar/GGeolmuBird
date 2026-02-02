@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GGeolmuBird Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square-round.css" rel="stylesheet">
+    
+    <style>
+        /* (1) 폰트 크기: 전체적으로 10% 더 키움 */
+        body { 
+            font-family: 'NanumSquareRound', sans-serif; 
+            font-size: 1.1rem; 
+            background-color: #fcfcfc;
+        }
+        
+        /* 사이드바 스타일 */
+        .sidebar {
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 100;
+            padding: 20px;
+            background-color: #ffffff;
+            border-right: 1px solid #f0f0f0;
+            overflow-y: auto;
+            width: 280px;
+            box-shadow: 2px 0 5px rgba(0,0,0,0.03);
+            font-weight: bold; 
+        }
+
+        .sidebar-brand {
+            color: #5a1799; 
+            text-align: center;
+            font-size: 1.9rem; 
+        }
+        
+        .btn-search {
+            background-color: #5a1799; 
+            border-color: #5a1799;     
+            color: #ffffff;
+            font-size: 1.2rem; 
+        }
+        .btn-search:hover {
+            background-color: #450b7a; 
+            border-color: #450b7a;
+            color: #ffffff;
+        }
+
+        .main-content {
+            margin-left: 280px;
+            padding: 25px;
+            width: calc(100% - 280px);
+        }
+
+        .col-checkbox-container {
+            max-height: 45vh;
+            overflow-y: auto;
+            border: 1px solid #eee;
+            padding: 10px;
+            background-color: #ffffff !important;
+            color: #333 !important;
+            border-radius: 10px; 
+        }
+        
+        .col-checkbox-container .form-check-label {
+            color: #333 !important;
+            font-size: 1.05rem; 
+            font-weight: bold; 
+        }
+
+        /* 테이블 래퍼 */
+        .table-wrapper {
+            max-height: 50vh; 
+            overflow: auto;
+            background: white;
+            border-radius: 15px; 
+            border: 1px solid #f8f8f8; 
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05); 
+        }
+
+        .table-wrapper table {
+            table-layout: fixed; 
+            width: 100%;
+            border-collapse: separate; 
+            border-spacing: 0;
+            margin-bottom: 0;
+        }
+
+        /* 테이블 헤더 */
+        thead th { 
+            position: sticky; 
+            top: 0; 
+            background-color: #ffffff !important; 
+            color: #333 !important; 
+            font-size: 1.15rem;   
+            font-weight: 800;     
+            white-space: nowrap;
+            border-bottom: 1px solid #c0c0c0; 
+            border-right: 1px solid #e0e0e0;
+            z-index: 10;
+            text-align: center; 
+            padding: 16px 10px; 
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        thead th:first-child { border-top-left-radius: 15px; }
+        thead th:last-child { border-top-right-radius: 15px; border-right: none; }
+
+        /* 테이블 바디 */
+        tbody tr { background-color: #ffffff !important; }
+        
+        tbody td { 
+            white-space: nowrap; 
+            font-size: 1.2rem;      
+            vertical-align: middle; 
+            padding: 16px 12px;     
+            color: #444;            
+            font-weight: 400; 
+            border-bottom: 1px solid #e0e0e0;
+            border-right: 1px solid #e0e0e0;
+            text-align: right; 
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        tbody td:last-child { border-right: none; }
+        tbody tr:last-child td { border-bottom: none; }
+
+        /* 종목명 스타일 */
+        tbody td:first-child {
+            text-align: left;
+            padding-left: 20px;
+            font-weight: 800; 
+            color: #000;      
+            white-space: normal;   
+            overflow: visible;     
+            text-overflow: clip;   
+            word-break: keep-all;  
+        }
+
+        .stock-link { color: #4F5BD5; text-decoration: none; cursor: pointer; }
+        .stock-link:hover { text-decoration: underline; color: #4F5BD5; }
+
+        .card {
+            border: none;
+            border-radius: 15px; 
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        .card-header-custom { 
+            font-weight: 800; 
+            text-align: center; 
+            padding: 20px; 
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            font-size: 1.3rem; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .bg-bull { background-color: #EBFDF2; color: #00965E; }
+        .bg-bear { background-color: #FFF0F2; color: #D81B60; }
+        .bg-sell { background-color: #FFFBE6; color: #D97706; }
+        
+        .count-badge {
+            font-size: 1.0rem; 
+            padding: 6px 14px;
+            border-radius: 20px;
+            background-color: rgba(255, 255, 255, 0.7);
+            color: inherit;
+            font-weight: bold;
+        }
+        
+        .form-text, .small { font-size: 1.0rem !important; }
+
+        /* 차트 컨테이너 스타일 */
+        .chart-box {
+            background-color: #fff;
+            padding: 15px;
+            margin: 0;
+            border-bottom: 1px solid #f2f2f2;
+            height: 450px; /* 차트 세로 길이 유지 */
+        }
+    </style>
+</head>
+<body>
+
+<div class="container-fluid p-0">
+    <nav class="sidebar">
+        <h3 class="mb-4 fw-bold px-2 sidebar-brand">GGeolmuBird</h3>
+        
+        <form action="/" method="post">
+            <div class="mb-3">
+                <label for="market" class="form-label fw-bold">시장 선택</label>
+                <select class="form-select form-select-lg" id="market" name="market" style="font-size: 1.15rem; font-weight: bold;">
+                    {% for m in markets %}
+                    <option value="{{ m }}" {% if selected_market == m %}selected{% endif %}>{{ m }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label for="target_date" class="form-label fw-bold">날짜 선택</label>
+                <input type="date" class="form-control form-control-lg" id="target_date" name="target_date" value="{{ selected_date }}" style="font-size: 1.15rem; font-weight: bold;" required>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label fw-bold">조회할 컬럼</label>
+                <div class="d-flex gap-2 mb-2">
+                    <button type="button" class="btn btn-sm btn-outline-secondary flex-fill" style="font-size: 1.05rem; font-weight: bold;" onclick="checkAll(true)">전체</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary flex-fill" style="font-size: 1.05rem; font-weight: bold;" onclick="checkAll(false)">해제</button>
+                </div>
+                <div class="col-checkbox-container">
+                    {% for col in all_columns %}
+                    <div class="form-check">
+                        <input class="form-check-input col-chk" type="checkbox" name="selected_cols" value="{{ col }}" id="chk_{{ loop.index }}"
+                        {% if selected_columns and col in selected_columns %}checked{% endif %}>
+                        
+                        <label class="form-check-label small" for="chk_{{ loop.index }}">
+                            {% if col == 'Name' %} 종목명
+                            {% elif col == 'Open' %} 시가
+                            {% elif col == 'High' %} 고가
+                            {% elif col == 'Low' %} 저가
+                            {% elif col == 'Close' %} 종가
+                            {% elif col == 'Volume' %} 거래량
+                            {% else %} {{ col }}
+                            {% endif %}
+                        </label>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-search w-100 py-2 fw-bold" style="border-radius: 10px;">조회하기</button>
+        </form>
+    </nav>
+
+    <main class="main-content">
+        <div class="d-flex justify-content-between align-items-center pb-3 mb-4 border-bottom">
+            <h1 class="h3 fw-bold" style="font-size: 2.2rem;"> 
+                {{ selected_market }} 분석 대시보드
+                <span class="text-muted ms-2" style="font-size: 1.55rem;">({{ selected_date }})</span>
+            </h1>
+        </div>
+
+        {% if tables %}
+        <div class="row g-4">
+            <div class="col-xl-4 col-lg-12">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-header-custom bg-bull">
+                        <span>상승 예상 (Bull)</span>
+                        <span class="count-badge">{{ counts['bull'] }} 종목</span>
+                    </div>
+                    <div class="card-body p-0">
+                        <div class="chart-box">
+                            <canvas id="chart-bull"></canvas>
+                        </div>
+                        <div class="table-wrapper">
+                            {{ tables['bull']|safe }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-4 col-lg-12">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-header-custom bg-bear">
+                        <span>하락 예상 (Bear)</span>
+                        <span class="count-badge">{{ counts['bear'] }} 종목</span>
+                    </div>
+                    <div class="card-body p-0">
+                        <div class="chart-box">
+                            <canvas id="chart-bear"></canvas>
+                        </div>
+                        <div class="table-wrapper">
+                            {{ tables['bear']|safe }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-4 col-lg-12">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-header-custom bg-sell">
+                        <span>매도 신호 (Sell)</span>
+                        <span class="count-badge">{{ counts['sell'] }} 종목</span>
+                    </div>
+                    <div class="card-body p-0">
+                        <div class="chart-box">
+                            <canvas id="chart-sell"></canvas>
+                        </div>
+                        <div class="table-wrapper">
+                            {{ tables['sell']|safe }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% else %}
+        <div class="alert alert-light text-center mt-5 shadow-sm p-5" style="border-radius: 15px;">
+            <h4 class="text-secondary fw-bold" style="font-size: 1.6rem;">👈 왼쪽 사이드바에서 시장, 날짜를 선택하고 '조회하기'를 눌러주세요.</h4>
+        </div>
+        {% endif %}
+    </main>
+</div>
+
+<script>
+    function checkAll(check) {
+        const checkboxes = document.querySelectorAll('.col-chk');
+        checkboxes.forEach((chk) => {
+            chk.checked = check;
+        });
+    }
+
+    const dateInput = document.getElementById('target_date');
+    dateInput.addEventListener('input', function(e) {
+        const selectedDate = new Date(this.value);
+        if (!selectedDate) return;
+        const day = selectedDate.getDay();
+    });
+
+    document.addEventListener("DOMContentLoaded", function() {
+        // (1) 표 헤더 한글 변환
+        const headerMap = {
+            "Name": "종목명", "Open": "시가", "High": "고가",
+            "Low": "저가", "Close": "종가", "Volume": "거래량"
+        };
+        const ths = document.querySelectorAll("thead th");
+        ths.forEach(th => {
+            const text = th.innerText.trim();
+            if (headerMap[text]) {
+                th.innerText = headerMap[text];
+            }
+        });
+
+        // (2) 차트 생성 로직
+        const rawData = {{ chart_data|default('{}')|safe }};
+        
+        // [추가] 기준선 그리기 플러그인
+        const drawThresholdLines = {
+            id: 'drawThresholdLines',
+            beforeDraw: (chart) => {
+                const { ctx, chartArea: { top, bottom, left, right }, scales: { x, y } } = chart;
+                ctx.save();
+
+                // 선 그리기 헬퍼 함수
+                const drawLine = (axis, value, color) => {
+                    // 축 범위 내에 있는지 확인
+                    if (axis.id === 'x' && (value < x.min || value > x.max)) return;
+                    if (axis.id === 'y' && (value < y.min || value > y.max)) return;
+
+                    const pixel = axis.getPixelForValue(value);
+                    ctx.beginPath();
+                    ctx.lineWidth = 2;
+                    ctx.strokeStyle = color;
+                    ctx.setLineDash([5, 5]); // 점선 효과
+
+                    if (axis.id === 'x') {
+                        // 수직선
+                        ctx.moveTo(pixel, top);
+                        ctx.lineTo(pixel, bottom);
+                    } else {
+                        // 수평선
+                        ctx.moveTo(left, pixel);
+                        ctx.lineTo(right, pixel);
+                    }
+                    ctx.stroke();
+                };
+
+                // 1. CCI 기준선 (Y축) - 연한 초록 (#90EE90)
+                drawLine(y, 100, '#90EE90');
+                drawLine(y, -100, '#90EE90');
+
+                // 2. RSI 기준선 (X축) - 연한 파랑 (#87CEEB)
+                drawLine(x, 70, '#87CEEB');
+                drawLine(x, 30, '#87CEEB');
+
+                ctx.restore();
+            }
+        };
+
+        function createScatterChart(canvasId, dataKey, color, label) {
+            const ctx = document.getElementById(canvasId);
+            if (!ctx) return;
+
+            const items = rawData[dataKey] || [];
+            
+            const plotData = items.map(item => ({
+                x: item.RSI5,
+                y: item.CCI5,
+                name: item.Name
+            }));
+
+            new Chart(ctx, {
+                type: 'scatter',
+                data: {
+                    datasets: [{
+                        label: label,
+                        data: plotData,
+                        backgroundColor: color, 
+                        borderColor: color,
+                        pointRadius: 6,         
+                        pointHoverRadius: 10,   
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { display: false },
+                        tooltip: {
+                            bodyFont: { size: 14, weight: 'bold' },
+                            titleFont: { size: 16, weight: 'bold' },
+                            padding: 12,
+                            callbacks: {
+                                label: function(context) {
+                                    const point = context.raw;
+                                    return `${point.name} (RSI: ${point.x.toFixed(1)}, CCI: ${point.y.toFixed(1)})`;
+                                }
+                            }
+                        }
+                    },
+                    scales: {
+                        x: {
+                            title: { display: true, text: 'RSI', font: { size: 18, weight: 'bold' } },
+                            ticks: { 
+                                font: { size: 15, weight: 'bold' },
+                                maxTicksLimit: 6 
+                            }
+                        },
+                        y: {
+                            title: { display: true, text: 'CCI', font: { size: 18, weight: 'bold' } },
+                            ticks: { 
+                                font: { size: 15, weight: 'bold' },
+                                maxTicksLimit: 6 
+                            }
+                        }
+                    }
+                },
+                // [추가] 위에서 만든 기준선 플러그인 등록
+                plugins: [drawThresholdLines]
+            });
+        }
+
+        createScatterChart('chart-bull', 'bull', 'rgba(0, 150, 94, 0.7)', '상승 예상');
+        createScatterChart('chart-bear', 'bear', 'rgba(216, 27, 96, 0.7)', '하락 예상');
+        createScatterChart('chart-sell', 'sell', 'rgba(217, 119, 6, 0.7)', '매도 신호');
+    });
+</script>
+</body>
+</html>
