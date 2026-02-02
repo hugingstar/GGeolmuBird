@@ -72,8 +72,6 @@ stock_map_coin = {
 }
 
 def divergence(price, rsi, lookback):
-
-
     #Setting
     up_div_price = [0.01, 0.15] # 가격 저점 상승률 하한/상한
     up_div_rsi = [0.01, 0.15] # RSI 저점 상승률 하한/상한
